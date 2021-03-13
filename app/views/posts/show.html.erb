@@ -1,0 +1,25 @@
+<% content_for :title, "View Note" %>
+
+<div class="notes_wrapper">
+  <div class="home">
+
+    <div class="blog">
+      <div class="blog_c">
+        <span class="blog_title"><%= @post.title %></span>
+        <span class="blog_content"><%= @post.content %></span>
+      </div>
+      <div class="blog_actions">
+        <%= link_to "Edit", edit_post_path(@post.id), class: "sec_btn" %>
+        <%=
+          link_to "Delete",
+          delete_post_path(@post.id),
+          class: "sec_btn blog_dlt",
+          :data => { :confirm => "Are you sure??" },
+          :method => :delete
+        %>
+        <%= link_to "Back", posts_path, class: 'pri_btn' %>
+      </div>
+    </div>
+
+  </div>
+</div>
