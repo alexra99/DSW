@@ -27,12 +27,12 @@
           <%= link_to "Edit", edit_post_path(el.id), class: "sec_btn" %>
           <%=
             link_to "Delete",
-            posts_path(el.id),
+            el,
             class: "sec_btn",
             :method => :delete,
             :data => { :confirm => "Are you sure??" }            
           %>
-          <%= link_to "View", show_post_path(el.id), class: "pri_btn" %>
+          <%= link_to "View", post_path(el.id), class: "pri_btn" %>
         </div>
       </div>
     <% end %>
