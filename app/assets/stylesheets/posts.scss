@@ -1,5 +1,13 @@
 @import 'defaults';
 
+body{
+  font-family:arial,sans-serif;
+  font-size:100%;
+  
+  background:rgb(226, 100, 16);
+  color:#fff;
+}
+
 .header_loggedin{
   background: $ff;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
@@ -48,19 +56,37 @@
 }
 
 .note{
-  background: $ff;
-  padding: 10px;
-  display: block;
-  font-size: 14px;
+
+  text-decoration:none;
+  color:#000; // 
+  background:#ffc; //
+  display:block;
+  min-height:175px;
+  min-width:175px;
+  padding:20px; //
+  margin-bottom:10px; //
+  font-size: 20px;
   border: 1px solid $header_border;
   border-radius: 3px;
-  margin-bottom: 10px;
   overflow: auto;
-  
-  
+  /* Firefox */
+  //-moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  //-webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  transition:-moz-transform 0.2s linear;
 
-  &:hover{
+  &:hover, :focus{
     border-color: $ee;
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    position:relative;
+    z-index:5;
   }
 
   & .note_header{
@@ -142,6 +168,7 @@
     border: 1px solid $header_border;
     border-radius: 3px;
     font-size: 15px;
+    color: black;
     & a{
       position: absolute;
       right: 10px;
@@ -156,8 +183,28 @@
   position: relative;
   width: 400px;
   left: 490px;
-  font-size: 14px;
+  //font-size: 14px;
   top: 40px;
+
+  text-decoration:none;
+  color:#000; // 
+  background:#ffc; //
+  display:block;
+  //min-height:175px;
+  //min-width:175px;
+  padding:20px; //
+  margin-bottom:10px; //
+  font-size: 20px;
+  border: 1px solid $header_border;
+  border-radius: 3px;
+  overflow: auto;
+  /* Firefox */
+  //-moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  //-webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  transition:-moz-transform 0.2s linear;
 
   & form > * {
     display: block;
@@ -180,6 +227,19 @@
       font-size: 14px;
     }
 
+  }
+
+  & .btn {
+    text-align: right;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    border-radius: 6px;
+  }
+  
+  & .btn:hover {
+    background-color: #008CBA;
+    color: white;
   }
 
   & .edit_span{
@@ -235,6 +295,26 @@
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,.1);
   top: 80px;
 
+  text-decoration:none;
+  color:#000; // 
+  background:#ffc; //
+  display:block;
+  //min-height:175px;
+  //min-width:175px;
+  padding:20px; //
+  margin-bottom:10px; //
+  font-size: 20px;
+  border: 1px solid $header_border;
+  border-radius: 3px;
+  overflow: auto;
+  /* Firefox */
+  //-moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  //-webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  transition:-moz-transform 0.2s linear;
+
   & > * {
     display: block;
     margin-bottom: 15px;
@@ -251,6 +331,7 @@
   }
 
   & .blog_c {
+    color:black;
 
     & .blog_title {
       font-weight: 600;

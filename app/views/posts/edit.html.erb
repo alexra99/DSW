@@ -20,7 +20,10 @@
       <span class='edit_span'>Content</span>
       <%= f.text_area :content, placeholder: "Content..", autofocus: true, class: "e_bio", spellcheck:false, autocomplete: false %>
     </div>
-    <div class="eb_btns">
+    <div class="btn">
+      <%= f.submit "Cancel Note" %>
+    </div>
+    <div class="btn">
       <%= f.submit "Update Note" %>
     </div>
 

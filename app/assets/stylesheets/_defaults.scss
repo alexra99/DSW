@@ -53,11 +53,7 @@ hr{
   background: #6ab9e8 !important;
 }
 
-.sec_btn_disabled{
-  cursor: not-allowed !important;
-  pointer-events: none !important;
-  color: #d8c3c3 !important;
-}
+
 
 input[type="text"],input[type="email"],input[type="password"],textarea{
   border: 1px solid $ee;
@@ -101,7 +97,7 @@ input[type="submit"]:disabled, input[type="button"]:disabled{
   &:hover{ opacity: 1 !important; }
 }
 
-.sec_btn{
+.sec_btn{ // lo de abajo hace lo mismo 
   border: 1px solid $ee;
   background: $fb;
   color: $dark;
@@ -117,6 +113,36 @@ input[type="submit"]:disabled, input[type="button"]:disabled{
     color: $dark;
     background: #f7ebeb;
   }
+}
+
+.sec_btn_disabled{ // lo de abajo hace lo mismo 
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  color: #d8c3c3 !important;
+}
+
+.btn {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.btn_delete {
+  background-color: white; 
+  color: red; 
+  border: 2px solid red;
+  border-radius: 6px;
+}
+
+.btn_delete:hover {
+  background-color: red;
+  color: white;
 }
 
 .home_last_mssg{
