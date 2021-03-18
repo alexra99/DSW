@@ -1,5 +1,4 @@
-<% content_for :title, "Edit note | AESME" %>
-
+<% content_for :title, "Edit note" %>
 
   <div class="edit">
 
@@ -17,18 +16,16 @@
         <span class='edit_span'>Title</span>
         <%= f.text_field :title, class: "e_username", placeholder: 'Title..', autofocus: true, spellcheck:false, autocomplete: false %>
       </div>
+
       <div class="eb_div">
         <span class='edit_span'>Content</span>
         <%= f.text_area :content, placeholder: "Content..", autofocus: true, class: "e_bio", spellcheck:false, autocomplete: false %>
       </div>
-    
-
-          <%#= f.submit "Cancel Note" %>
-          <%= link_to "Back", posts_path, class: 'btn' %>
       
-          <%= f.submit "Update Note", class: "btn" %>
-
-
+      <div class="note_actions">
+        <%= f.submit "Cancel Note", class: "btn" %>
+        <%= f.submit "Update Note", class: "btn" %>
+      </div>
     <% end %>
 
   </div>
