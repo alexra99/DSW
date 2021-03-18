@@ -3392,3 +3392,2344 @@ Processing by PostsController#index as */*
 Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms | Allocations: 3181)
 
 
+Started GET "/" for 127.0.0.1 at 2021-03-18 16:43:17 +0100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 5182)
+  Rendered partials/_header.html.erb (Duration: 144.1ms | Allocations: 19590)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 171.2ms | Allocations: 28003)
+Completed 200 OK in 181ms (Views: 172.9ms | ActiveRecord: 0.5ms | Allocations: 31661)
+
+
+Started GET "/images/favicon.png" for 127.0.0.1 at 2021-03-18 16:43:19 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.png"):
+  
+Started GET "/" for 127.0.0.1 at 2021-03-18 16:43:47 +0100
+Processing by PostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1135)
+  Rendered partials/_header.html.erb (Duration: 2.8ms | Allocations: 1431)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 5612)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.3ms | Allocations: 6179)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 16:45:10 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1133)
+  Rendered partials/_header.html.erb (Duration: 1.5ms | Allocations: 1405)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 5447)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.1ms | Allocations: 5908)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 16:52:21 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/posts/index.html.erb:6
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1850)
+  Rendered partials/_header.html.erb (Duration: 1.8ms | Allocations: 1404)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 6163)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.4ms | Allocations: 6614)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 16:52:54 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1133)
+  Rendered partials/_header.html.erb (Duration: 2.0ms | Allocations: 1404)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 5447)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 5910)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 16:53:44 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 1.6ms | Allocations: 1404)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 5440)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 5893)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 16:56:05 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 4.6ms | Allocations: 1408)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 5444)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.1ms | Allocations: 5898)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 17:01:05 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 2.1ms | Allocations: 1404)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 5440)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 5893)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 17:02:27 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1552)
+  Rendered partials/_header.html.erb (Duration: 2.7ms | Allocations: 1692)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 6442)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.1ms | Allocations: 7675)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 17:02:55 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1544)
+  Rendered partials/_header.html.erb (Duration: 2.6ms | Allocations: 1697)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 6438)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.2ms | Allocations: 7660)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 17:04:15 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1543)
+  Rendered partials/_header.html.erb (Duration: 1.8ms | Allocations: 1688)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 6427)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 7643)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 17:04:36 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1541)
+  Rendered partials/_header.html.erb (Duration: 2.5ms | Allocations: 1688)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 6425)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.1ms | Allocations: 7641)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 17:07:02 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1543)
+  Rendered partials/_header.html.erb (Duration: 2.1ms | Allocations: 1697)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 6437)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.1ms | Allocations: 7659)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 17:07:33 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1544)
+  Rendered partials/_header.html.erb (Duration: 2.2ms | Allocations: 1694)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 6435)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.2ms | Allocations: 7657)
+
+
+Started GET "/posts/6/edit" for 127.0.0.1 at 2021-03-18 17:08:06 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1444)
+  Rendered partials/_header.html.erb (Duration: 1.5ms | Allocations: 1394)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 5685)
+Completed 200 OK in 16ms (Views: 7.8ms | ActiveRecord: 0.2ms | Allocations: 9749)
+
+
+Started PATCH "/posts/6" for 127.0.0.1 at 2021-03-18 17:08:12 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"f", "content"=>"fffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"}, "commit"=>"Update Note", "id"=>"6"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "fffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"], ["updated_at", "2021-03-18 16:08:12.358133"], ["id", 6]]
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (108.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 124ms (ActiveRecord: 109.1ms | Allocations: 6303)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:08:12 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 1.3ms | Allocations: 1408)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 5444)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.1ms | Allocations: 5905)
+
+
+Started GET "/posts/6" for 127.0.0.1 at 2021-03-18 17:08:20 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 355)
+  Rendered partials/_header.html.erb (Duration: 1.8ms | Allocations: 1404)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 4668)
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 5781)
+
+
+Started GET "/posts/6/edit" for 127.0.0.1 at 2021-03-18 17:08:26 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.6ms | Allocations: 427)
+  Rendered partials/_header.html.erb (Duration: 1.4ms | Allocations: 1400)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 4736)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 5721)
+
+
+Started PATCH "/posts/6" for 127.0.0.1 at 2021-03-18 17:08:32 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"f", "content"=>"fffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"}, "commit"=>"Update Note", "id"=>"6"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "fffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"], ["updated_at", "2021-03-18 16:08:32.332449"], ["id", 6]]
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (151.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 163ms (ActiveRecord: 151.9ms | Allocations: 5539)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:08:32 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 1.4ms | Allocations: 1406)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 5442)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 5903)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:09:00 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 44.8ms | Allocations: 11206)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.7ms | Allocations: 15132)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.1ms | Allocations: 15585)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:12:21 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 90.7ms | Allocations: 5218)
+  Rendered layout layouts/application.html.erb (Duration: 93.5ms | Allocations: 6480)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 0.1ms | Allocations: 6910)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "  box-shadow": expected "}", was ": 5px 5px 7px rgba("
+        on line 208:3 of app/assets/stylesheets/posts.scss
+>>   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+
+   --^
+):
+    10:     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    11:     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    12:     <%= csrf_meta_tags %>
+    13:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    14:     <%#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/stylesheets/posts.scss:208
+app/views/partials/_header.html.erb:13
+app/views/layouts/application.html.erb:1
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:12:32 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1126)
+  Rendered partials/_header.html.erb (Duration: 19.8ms | Allocations: 5201)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 6460)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.1ms | Allocations: 6876)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "  box-shadow": expected "}", was ": 5px 5px 7px rgba("
+        on line 208:3 of app/assets/stylesheets/posts.scss
+>>   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+
+   --^
+):
+    10:     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    11:     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    12:     <%= csrf_meta_tags %>
+    13:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    14:     <%#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/stylesheets/posts.scss:208
+app/views/partials/_header.html.erb:13
+app/views/layouts/application.html.erb:1
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:12:39 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1126)
+  Rendered partials/_header.html.erb (Duration: 46.7ms | Allocations: 10710)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.1ms | Allocations: 14635)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.1ms | Allocations: 15088)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:13:28 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 60.4ms | Allocations: 10709)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.3ms | Allocations: 14635)
+Completed 200 OK in 68ms (Views: 67.5ms | ActiveRecord: 0.2ms | Allocations: 15088)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:14:08 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 45.6ms | Allocations: 11236)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.2ms | Allocations: 15162)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.4ms | Allocations: 15615)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:16:29 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 48.5ms | Allocations: 10714)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.8ms | Allocations: 14640)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.1ms | Allocations: 15093)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:16:54 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 45.2ms | Allocations: 10710)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.0ms | Allocations: 14636)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.1ms | Allocations: 15089)
+
+
+Started GET "/posts/6/edit" for 127.0.0.1 at 2021-03-18 17:16:59 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 425)
+  Rendered partials/_header.html.erb (Duration: 2.5ms | Allocations: 1394)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 4728)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.2ms | Allocations: 5714)
+
+
+Started PATCH "/posts/6" for 127.0.0.1 at 2021-03-18 17:17:08 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 ", "content"=>"fffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"}, "commit"=>"Update Note", "id"=>"6"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mPost Update (0.4ms)[0m  [1m[33mUPDATE "posts" SET "title" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["title", "Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 Nota de mierda 1 "], ["updated_at", "2021-03-18 16:17:08.796679"], ["id", 6]]
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (141.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 159ms (ActiveRecord: 141.7ms | Allocations: 5683)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:17:08 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1129)
+  Rendered partials/_header.html.erb (Duration: 3.4ms | Allocations: 1406)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 5444)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.1ms | Allocations: 5905)
+
+
+Started GET "/posts/6/edit" for 127.0.0.1 at 2021-03-18 17:17:15 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.0ms | Allocations: 427)
+  Rendered partials/_header.html.erb (Duration: 1.7ms | Allocations: 1394)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4730)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 5716)
+
+
+Started PATCH "/posts/6" for 127.0.0.1 at 2021-03-18 17:17:24 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Nota de mierda 1", "content"=>"fffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"}, "commit"=>"Update Note", "id"=>"6"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mPost Update (0.2ms)[0m  [1m[33mUPDATE "posts" SET "title" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["title", "Nota de mierda 1"], ["updated_at", "2021-03-18 16:17:24.525030"], ["id", 6]]
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (131.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 143ms (ActiveRecord: 132.0ms | Allocations: 5684)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:17:24 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 1.4ms | Allocations: 1407)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5444)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 5906)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:17:54 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 45.7ms | Allocations: 11207)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.0ms | Allocations: 15133)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.1ms | Allocations: 15586)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:17:56 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.6ms | Allocations: 425)
+  Rendered partials/_header.html.erb (Duration: 1.5ms | Allocations: 1394)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 4728)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 5714)
+
+
+Started PATCH "/posts/5" for 127.0.0.1 at 2021-03-18 17:17:58 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"fsdsdafas", "content"=>"fsdfsadfsdafsa"}, "commit"=>"Cancel Note", "id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1031)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:17:58 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1129)
+  Rendered partials/_header.html.erb (Duration: 1.5ms | Allocations: 1406)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5445)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 5907)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:18:01 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 425)
+  Rendered partials/_header.html.erb (Duration: 1.5ms | Allocations: 1394)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 4728)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 5714)
+
+
+Started PATCH "/posts/5" for 127.0.0.1 at 2021-03-18 17:18:07 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"fsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefss", "content"=>"fsdfsadfsdafsa"}, "commit"=>"Update Note", "id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mPost Update (0.6ms)[0m  [1m[33mUPDATE "posts" SET "title" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["title", "fsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefssfsdsdafassdefss"], ["updated_at", "2021-03-18 16:18:07.597249"], ["id", 5]]
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (147.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 163ms (ActiveRecord: 148.4ms | Allocations: 5675)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:18:07 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1129)
+  Rendered partials/_header.html.erb (Duration: 1.7ms | Allocations: 1406)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 5444)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 5905)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:18:15 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.9ms | Allocations: 427)
+  Rendered partials/_header.html.erb (Duration: 1.7ms | Allocations: 1394)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 4730)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.1ms | Allocations: 5716)
+
+
+Started PATCH "/posts/5" for 127.0.0.1 at 2021-03-18 17:18:51 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"", "content"=>"fsdfsadfsdafsa"}, "commit"=>"Cancel Note", "id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mPost Update (0.2ms)[0m  [1m[33mUPDATE "posts" SET "title" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["title", ""], ["updated_at", "2021-03-18 16:18:51.258288"], ["id", 5]]
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (89.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 100ms (ActiveRecord: 89.6ms | Allocations: 5529)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:18:51 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 2.2ms | Allocations: 1448)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 5484)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 5945)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:24:00 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 3.2ms | Allocations: 1404)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 5440)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.1ms | Allocations: 5894)
+
+
+Started GET "/images/favicon.png" for 127.0.0.1 at 2021-03-18 17:24:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.png"):
+  
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:28:36 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.7ms | Allocations: 423)
+  Rendered partials/_header.html.erb (Duration: 1.5ms | Allocations: 1394)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4726)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 5711)
+
+
+Started GET "/images/favicon.png" for 127.0.0.1 at 2021-03-18 17:28:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.png"):
+  
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:28:47 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.3ms | Allocations: 423)
+  Rendered partials/_header.html.erb (Duration: 2.1ms | Allocations: 1395)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 4728)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 5712)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:28:53 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 4.5ms | Allocations: 771)
+  Rendered partials/_header.html.erb (Duration: 8.2ms | Allocations: 1680)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 5648)
+Completed 200 OK in 90ms (Views: 86.5ms | ActiveRecord: 0.2ms | Allocations: 7398)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:29:15 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.9ms | Allocations: 771)
+  Rendered partials/_header.html.erb (Duration: 2.5ms | Allocations: 1680)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 5647)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.1ms | Allocations: 7392)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:29:23 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 5.3ms | Allocations: 771)
+  Rendered partials/_header.html.erb (Duration: 6.8ms | Allocations: 1680)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 5648)
+Completed 200 OK in 36ms (Views: 29.9ms | ActiveRecord: 0.3ms | Allocations: 7394)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:29:56 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 775)
+  Rendered partials/_header.html.erb (Duration: 1.8ms | Allocations: 1681)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 5653)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 7404)
+
+
+Started PATCH "/posts/5" for 127.0.0.1 at 2021-03-18 17:29:59 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"", "content"=>"fsdfsadfsdafsa"}, "commit"=>"Cancel Note", "id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1020)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:29:59 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1521)
+  Rendered partials/_header.html.erb (Duration: 1.5ms | Allocations: 1406)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 5836)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 6426)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:31:55 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1538)
+  Rendered partials/_header.html.erb (Duration: 1.8ms | Allocations: 1693)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 6432)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.1ms | Allocations: 7651)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:32:05 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (12.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 22.3ms | Allocations: 5181)
+  Rendered partials/_header.html.erb (Duration: 127.7ms | Allocations: 10150)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 156.3ms | Allocations: 18672)
+Completed 200 OK in 182ms (Views: 144.7ms | ActiveRecord: 13.6ms | Allocations: 22292)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:32:15 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1549)
+  Rendered partials/_header.html.erb (Duration: 2.3ms | Allocations: 2149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 6900)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms | Allocations: 8138)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:32:18 +0100
+Processing by PostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1133)
+  Rendered partials/_header.html.erb (Duration: 2.0ms | Allocations: 1870)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 6053)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 6620)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:32:52 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1544)
+  Rendered partials/_header.html.erb (Duration: 2.3ms | Allocations: 2133)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 6878)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.1ms | Allocations: 8105)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:33:16 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1565)
+  Rendered partials/_header.html.erb (Duration: 2.3ms | Allocations: 1837)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 6253)
+Completed 200 OK in 16ms (Views: 8.4ms | ActiveRecord: 0.3ms | Allocations: 10340)
+
+
+Started PATCH "/posts/5" for 127.0.0.1 at 2021-03-18 17:33:23 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"AAAAAAAAAAAAAa", "content"=>"fsdfsadfsdafsa"}, "commit"=>"Update Note", "id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE "posts" SET "title" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["title", "AAAAAAAAAAAAAa"], ["updated_at", "2021-03-18 16:33:23.454941"], ["id", 5]]
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (95.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 111ms (ActiveRecord: 96.2ms | Allocations: 6330)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:33:23 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 5.4ms | Allocations: 1860)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 6228)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.2ms | Allocations: 6690)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:33:32 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.7ms | Allocations: 425)
+  Rendered partials/_header.html.erb (Duration: 1.9ms | Allocations: 1848)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 5186)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.1ms | Allocations: 6174)
+
+
+Started PATCH "/posts/5" for 127.0.0.1 at 2021-03-18 17:33:34 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"AAAAAAAAAAAAA", "content"=>"fsdfsadfsdafsa"}, "commit"=>"Update Note", "id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mPost Update (0.4ms)[0m  [1m[33mUPDATE "posts" SET "title" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["title", "AAAAAAAAAAAAA"], ["updated_at", "2021-03-18 16:33:34.127731"], ["id", 5]]
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (82.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 96ms (ActiveRecord: 82.7ms | Allocations: 5529)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:33:34 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 6.2ms | Allocations: 1849)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 5889)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.2ms | Allocations: 6351)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:33:43 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.6ms | Allocations: 423)
+  Rendered partials/_header.html.erb (Duration: 1.7ms | Allocations: 1837)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 5173)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.1ms | Allocations: 6158)
+
+
+Started PATCH "/posts/5" for 127.0.0.1 at 2021-03-18 17:33:47 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"AAAAAAAAAAAAA", "content"=>"fsdfsadfsdafsa"}, "commit"=>"Cancel Note", "id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1032)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:33:47 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1129)
+  Rendered partials/_header.html.erb (Duration: 2.3ms | Allocations: 1849)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 5891)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.1ms | Allocations: 6352)
+
+
+Started GET "/posts/6/edit" for 127.0.0.1 at 2021-03-18 17:34:25 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.7ms | Allocations: 427)
+  Rendered partials/_header.html.erb (Duration: 1.9ms | Allocations: 1837)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 5177)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.1ms | Allocations: 6162)
+
+
+Started PATCH "/posts/6" for 127.0.0.1 at 2021-03-18 17:34:28 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Nota de mierda 1", "content"=>"fffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"}, "commit"=>"Update Note", "id"=>"6"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mPost Update (0.2ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "fffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"], ["updated_at", "2021-03-18 16:34:28.930277"], ["id", 6]]
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (125.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 137ms (ActiveRecord: 125.7ms | Allocations: 5918)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:34:29 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 2.5ms | Allocations: 1860)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 5900)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.1ms | Allocations: 6363)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:38:11 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.7ms | Allocations: 425)
+  Rendered partials/_header.html.erb (Duration: 2.6ms | Allocations: 1849)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 5188)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.1ms | Allocations: 6192)
+
+
+Started PATCH "/posts/5" for 127.0.0.1 at 2021-03-18 17:38:13 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"AAAAAAAAAAAAA", "content"=>"fsdfsadfsdafsa"}, "commit"=>"Cancel Note", "id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1031)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:38:13 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1129)
+  Rendered partials/_header.html.erb (Duration: 1.6ms | Allocations: 1849)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 5891)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms | Allocations: 6353)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2021-03-18 17:38:13 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 356)
+  Rendered partials/_header.html.erb (Duration: 7.0ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 5116)
+Completed 200 OK in 28ms (Views: 22.4ms | ActiveRecord: 0.2ms | Allocations: 6228)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2021-03-18 17:39:18 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 8.8ms | Allocations: 7357)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 7426)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms | Allocations: 9154)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `el' for #<ActionView::Base:0x00000000008a70>):
+    12:         <%#= image_tag "ruby-red.png" %>
+    13:         <div class="note_h_left">
+    14:           <span class="note_username">You..</span>
+    15:           <span class='note_time'><%= el.created_at %></span>
+    16:         </div>
+    17:       </div>
+    18:       <div class="blog_actions">
+  
+app/views/posts/show.html.erb:15
+Started GET "/posts/5" for 127.0.0.1 at 2021-03-18 17:39:29 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 435)
+  Rendered partials/_header.html.erb (Duration: 2.4ms | Allocations: 2141)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 5777)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.1ms | Allocations: 7528)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2021-03-18 17:39:46 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 433)
+  Rendered partials/_header.html.erb (Duration: 2.4ms | Allocations: 2130)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 5763)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.1ms | Allocations: 7508)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2021-03-18 17:39:51 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 432)
+  Rendered partials/_header.html.erb (Duration: 2.5ms | Allocations: 2130)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 5762)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.1ms | Allocations: 7507)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2021-03-18 17:40:01 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 432)
+  Rendered partials/_header.html.erb (Duration: 3.0ms | Allocations: 2130)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 5762)
+Completed 200 OK in 15ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 7507)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2021-03-18 17:40:11 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 435)
+  Rendered partials/_header.html.erb (Duration: 2.5ms | Allocations: 2130)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5765)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.1ms | Allocations: 7511)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:40:46 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1518)
+  Rendered partials/_header.html.erb (Duration: 2.4ms | Allocations: 1858)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 6289)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.1ms | Allocations: 6875)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2021-03-18 17:40:49 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 174)
+  Rendered partials/_header.html.erb (Duration: 3.0ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 4958)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 5965)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2021-03-18 17:41:14 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 432)
+  Rendered partials/_header.html.erb (Duration: 2.0ms | Allocations: 2130)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5763)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.1ms | Allocations: 7512)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2021-03-18 17:41:25 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 435)
+  Rendered partials/_header.html.erb (Duration: 4.6ms | Allocations: 2130)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 5765)
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 0.1ms | Allocations: 7511)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:42:02 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1513)
+  Rendered partials/_header.html.erb (Duration: 1.9ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 6273)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 6856)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:46:09 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 148.0ms | Allocations: 11420)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 153.1ms | Allocations: 15350)
+Completed 200 OK in 154ms (Views: 153.4ms | ActiveRecord: 0.1ms | Allocations: 15804)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:46:18 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 36.7ms | Allocations: 11172)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.5ms | Allocations: 15102)
+Completed 200 OK in 42ms (Views: 41.8ms | ActiveRecord: 0.1ms | Allocations: 15555)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:46:31 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 41.0ms | Allocations: 11667)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.9ms | Allocations: 15597)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.1ms | Allocations: 16050)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:46:51 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 45.1ms | Allocations: 11200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.0ms | Allocations: 15130)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.1ms | Allocations: 15583)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:46:57 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 39.1ms | Allocations: 11175)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.8ms | Allocations: 15105)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.1ms | Allocations: 15558)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:48:01 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 38.4ms | Allocations: 11176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.5ms | Allocations: 15106)
+Completed 200 OK in 44ms (Views: 43.9ms | ActiveRecord: 0.1ms | Allocations: 15559)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:50:15 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.3ms | Allocations: 756)
+  Rendered partials/_header.html.erb (Duration: 1.9ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 5516)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 6630)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:51:27 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.9ms | Allocations: 773)
+  Rendered partials/_header.html.erb (Duration: 2.6ms | Allocations: 2127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 6101)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 7849)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:51:50 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 770)
+  Rendered partials/_header.html.erb (Duration: 2.0ms | Allocations: 2126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 6096)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 7841)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:51:59 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.3ms | Allocations: 770)
+  Rendered partials/_header.html.erb (Duration: 2.3ms | Allocations: 2124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 6094)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.1ms | Allocations: 7839)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:52:24 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.0ms | Allocations: 773)
+  Rendered partials/_header.html.erb (Duration: 1.9ms | Allocations: 2124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 6103)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 7849)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:53:11 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 787)
+  Rendered partials/_header.html.erb (Duration: 1.9ms | Allocations: 2135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 6123)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 7874)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:53:20 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.4ms | Allocations: 774)
+  Rendered partials/_header.html.erb (Duration: 3.4ms | Allocations: 2124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 6099)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.1ms | Allocations: 7848)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:53:45 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.5ms | Allocations: 776)
+  Rendered partials/_header.html.erb (Duration: 2.6ms | Allocations: 2126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 6102)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 7847)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:54:16 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 773)
+  Rendered partials/_header.html.erb (Duration: 2.0ms | Allocations: 2124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 6097)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.1ms | Allocations: 7842)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:54:21 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 777)
+  Rendered partials/_header.html.erb (Duration: 2.1ms | Allocations: 2135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 6113)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 7865)
+
+
+Started PATCH "/posts/5" for 127.0.0.1 at 2021-03-18 17:54:24 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"AAAAAAAAAAAAA", "content"=>"fsdfsadfsdafsa"}, "commit"=>"Cancel Note", "id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1016)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:54:24 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1520)
+  Rendered partials/_header.html.erb (Duration: 2.4ms | Allocations: 1860)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 6293)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 6883)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:54:33 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1538)
+  Rendered partials/_header.html.erb (Duration: 2.2ms | Allocations: 2132)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 6871)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.1ms | Allocations: 8090)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2021-03-18 17:54:35 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 406)
+  Rendered partials/_header.html.erb (Duration: 1.6ms | Allocations: 1849)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 5168)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.1ms | Allocations: 6281)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:54:37 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 3.0ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 5887)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms | Allocations: 6343)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:54:37 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 759)
+  Rendered partials/_header.html.erb (Duration: 1.9ms | Allocations: 1848)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 5520)
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.1ms | Allocations: 6634)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:54:42 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.9ms | Allocations: 775)
+  Rendered partials/_header.html.erb (Duration: 2.1ms | Allocations: 2135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 6111)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 7862)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:54:48 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 775)
+  Rendered partials/_header.html.erb (Duration: 1.9ms | Allocations: 2135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 6110)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 7856)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:55:48 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.7ms | Allocations: 423)
+  Rendered partials/_header.html.erb (Duration: 97.8ms | Allocations: 12730)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 101.3ms | Allocations: 15956)
+Completed 200 OK in 103ms (Views: 101.7ms | ActiveRecord: 0.1ms | Allocations: 16939)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:56:11 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.6ms | Allocations: 423)
+  Rendered partials/_header.html.erb (Duration: 2.2ms | Allocations: 1889)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 5225)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 6209)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:56:17 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 781)
+  Rendered partials/_header.html.erb (Duration: 2.2ms | Allocations: 2135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 6117)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 7868)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:56:52 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.0ms | Allocations: 775)
+  Rendered partials/_header.html.erb (Duration: 2.0ms | Allocations: 2135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 6110)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 7856)
+
+
+Started PATCH "/posts/5" for 127.0.0.1 at 2021-03-18 17:56:57 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"AAAAAAAAAAAAA", "content"=>"fsdfsadfsdafsa"}, "commit"=>"Cancel Note", "id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1020)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:56:57 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1519)
+  Rendered partials/_header.html.erb (Duration: 1.7ms | Allocations: 1849)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 6281)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 6870)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2021-03-18 17:56:58 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 406)
+  Rendered partials/_header.html.erb (Duration: 1.5ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 5166)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.1ms | Allocations: 6278)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 17:57:00 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 3.4ms | Allocations: 1858)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 5898)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.1ms | Allocations: 6356)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:57:01 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.6ms | Allocations: 423)
+  Rendered partials/_header.html.erb (Duration: 1.8ms | Allocations: 1839)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 5175)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.1ms | Allocations: 6160)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:57:04 +0100
+Processing by PostsController#edit as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 436)
+  Rendered partials/_header.html.erb (Duration: 1.9ms | Allocations: 1842)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 5327)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 6410)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:59:17 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.6ms | Allocations: 423)
+  Rendered partials/_header.html.erb (Duration: 75.7ms | Allocations: 12172)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 79.9ms | Allocations: 15398)
+Completed 200 OK in 82ms (Views: 80.3ms | ActiveRecord: 0.1ms | Allocations: 16380)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:59:29 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.9ms | Allocations: 423)
+  Rendered partials/_header.html.erb (Duration: 41.1ms | Allocations: 11187)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 14413)
+Completed 200 OK in 47ms (Views: 45.4ms | ActiveRecord: 0.1ms | Allocations: 15396)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:59:36 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 423)
+  Rendered partials/_header.html.erb (Duration: 40.0ms | Allocations: 11175)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.6ms | Allocations: 14401)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.1ms | Allocations: 15384)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:59:40 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 423)
+  Rendered partials/_header.html.erb (Duration: 41.7ms | Allocations: 11192)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.0ms | Allocations: 14418)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.1ms | Allocations: 15401)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:59:44 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.6ms | Allocations: 423)
+  Rendered partials/_header.html.erb (Duration: 38.5ms | Allocations: 11675)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.7ms | Allocations: 14904)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.1ms | Allocations: 15887)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 17:59:51 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.6ms | Allocations: 423)
+  Rendered partials/_header.html.erb (Duration: 82.8ms | Allocations: 12215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 87.3ms | Allocations: 15441)
+Completed 200 OK in 89ms (Views: 87.8ms | ActiveRecord: 0.1ms | Allocations: 16425)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:02:28 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.3ms | Allocations: 812)
+  Rendered partials/_header.html.erb (Duration: 3.0ms | Allocations: 2116)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 6129)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.1ms | Allocations: 7880)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:02:42 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 804)
+  Rendered partials/_header.html.erb (Duration: 2.9ms | Allocations: 2116)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6120)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 7865)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:03:16 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 227.3ms | Allocations: 3635)
+  Rendered partials/_header.html.erb (Duration: 7.6ms | Allocations: 2126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 246.3ms | Allocations: 8962)
+Completed 200 OK in 251ms (Views: 247.7ms | ActiveRecord: 0.2ms | Allocations: 10714)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 18:03:19 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1518)
+  Rendered partials/_header.html.erb (Duration: 1.8ms | Allocations: 1848)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 6279)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 6864)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2021-03-18 18:03:20 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 406)
+  Rendered partials/_header.html.erb (Duration: 3.4ms | Allocations: 1852)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 5171)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 6284)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 18:03:21 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 2.7ms | Allocations: 1850)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 5890)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 6346)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:03:22 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.4ms | Allocations: 549)
+  Rendered partials/_header.html.erb (Duration: 3.7ms | Allocations: 1837)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 5302)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.1ms | Allocations: 6289)
+
+
+Started GET "/posts/5/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Update%20Post%22%20data-disable-with=%22Update%20Post%22%20/%3E" for 127.0.0.1 at 2021-03-18 18:03:25 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/posts/5/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Update%20Post%22%20data-disable-with=%22Update%20Post%22%20/%3E"):
+  
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:03:30 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.0ms | Allocations: 549)
+  Rendered partials/_header.html.erb (Duration: 1.9ms | Allocations: 1846)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 5308)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.1ms | Allocations: 6291)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:03:54 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.4ms | Allocations: 804)
+  Rendered partials/_header.html.erb (Duration: 36.1ms | Allocations: 11435)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.0ms | Allocations: 15330)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.1ms | Allocations: 17080)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:03:58 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.9ms | Allocations: 424)
+  Rendered partials/_header.html.erb (Duration: 3.4ms | Allocations: 1883)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 5220)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 6204)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:05:03 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.0ms | Allocations: 424)
+  Rendered partials/_header.html.erb (Duration: 40.0ms | Allocations: 11164)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.4ms | Allocations: 14391)
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.1ms | Allocations: 15375)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:05:16 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.7ms | Allocations: 424)
+  Rendered partials/_header.html.erb (Duration: 41.6ms | Allocations: 11697)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.3ms | Allocations: 14924)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.1ms | Allocations: 15907)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:06:22 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 424)
+  Rendered partials/_header.html.erb (Duration: 60.5ms | Allocations: 11683)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 75.0ms | Allocations: 14910)
+Completed 200 OK in 77ms (Views: 75.3ms | ActiveRecord: 0.1ms | Allocations: 15893)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:06:32 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.3ms | Allocations: 810)
+  Rendered partials/_header.html.erb (Duration: 16.9ms | Allocations: 2113)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.0ms | Allocations: 6124)
+Completed 200 OK in 50ms (Views: 48.2ms | ActiveRecord: 0.1ms | Allocations: 7874)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:07:29 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 808)
+  Rendered partials/_header.html.erb (Duration: 2.9ms | Allocations: 2121)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 6130)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.1ms | Allocations: 7881)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:08:55 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.5ms | Allocations: 805)
+  Rendered partials/_header.html.erb (Duration: 3.7ms | Allocations: 2156)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 6161)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.1ms | Allocations: 7908)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:09:53 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 802)
+  Rendered partials/_header.html.erb (Duration: 2.0ms | Allocations: 2113)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 6115)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 7860)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:10:36 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.0ms | Allocations: 810)
+  Rendered partials/_header.html.erb (Duration: 2.1ms | Allocations: 2124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 6138)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 7890)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:10:45 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 804)
+  Rendered partials/_header.html.erb (Duration: 2.7ms | Allocations: 2115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 6120)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 7869)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 18:10:49 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 1517)
+  Rendered partials/_header.html.erb (Duration: 2.0ms | Allocations: 1849)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 6279)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.1ms | Allocations: 6865)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:11:08 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.0ms | Allocations: 424)
+  Rendered partials/_header.html.erb (Duration: 3.6ms | Allocations: 1881)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 5218)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 6204)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:13:36 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 808)
+  Rendered partials/_header.html.erb (Duration: 2.4ms | Allocations: 2116)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 6131)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 7882)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:13:47 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.4ms | Allocations: 803)
+  Rendered partials/_header.html.erb (Duration: 3.0ms | Allocations: 2117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 6121)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.1ms | Allocations: 7872)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:14:10 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.6ms | Allocations: 424)
+  Rendered partials/_header.html.erb (Duration: 39.5ms | Allocations: 11673)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.6ms | Allocations: 14900)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.1ms | Allocations: 15883)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:14:20 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.0ms | Allocations: 424)
+  Rendered partials/_header.html.erb (Duration: 76.2ms | Allocations: 12180)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 80.4ms | Allocations: 15411)
+Completed 200 OK in 82ms (Views: 80.9ms | ActiveRecord: 0.1ms | Allocations: 16394)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:14:28 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.0ms | Allocations: 809)
+  Rendered partials/_header.html.erb (Duration: 2.1ms | Allocations: 2137)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 6147)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 7898)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:14:38 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.3ms | Allocations: 803)
+  Rendered partials/_header.html.erb (Duration: 2.7ms | Allocations: 2115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 6118)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.1ms | Allocations: 7864)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:14:54 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 424)
+  Rendered partials/_header.html.erb (Duration: 38.5ms | Allocations: 11726)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.9ms | Allocations: 14953)
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 0.1ms | Allocations: 15937)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:16:37 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1329)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1399)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 3116)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% content_for :title, "Edit note | AESME" %>
+
+
+  <div class="edit">
+
+    <div class="edit_info">
+      <%#= image_tag  "ruby-red.png", class: "edit_img", alt: "Your avatar" %>
+      <span>Edit Note</span>
+    </div>
+
+    <%= form_for @post, url: { action: 'update' } do |f| %>
+      <% if @post.errors.any? %>
+        <%= render 'partials/emssg', mssg: @post.errors.full_messages[0] %>
+      <% end %>
+
+      <div class="eu_div">
+        <span class='edit_span'>Title</span>
+        <%= f.text_field :title, class: "e_username", placeholder: 'Title..', autofocus: true, spellcheck:false, autocomplete: false %>
+      </div>
+      <div class="eb_div">
+        <span class='edit_span'>Content</span>
+        <%= f.text_area :content, placeholder: "Content..", autofocus: true, class: "e_bio", spellcheck:false, autocomplete: false %>
+      </div>
+    
+        <div class="eb_btns">
+          <%#= f.submit "Cancel Note" %>
+          <%= link_to "Back", posts_path, class: 'btn' %>
+      
+          <%= f.submit "Update Note" class: "btn" %>
+        </div>
+
+    <% end %>
+
+  </div>
+
+):
+1:    <% content_for :title, "Edit note | AESME" %>
+2:    
+3:    
+4:      <div class="edit">
+5:    
+6:        <div class="edit_info">
+7:          <%#= image_tag  "ruby-red.png", class: "edit_img", alt: "Your avatar" %>
+8:          <span>Edit Note</span>
+9:        </div>
+10:    
+11:        <%= form_for @post, url: { action: 'update' } do |f| %>
+12:          <% if @post.errors.any? %>
+13:            <%= render 'partials/emssg', mssg: @post.errors.full_messages[0] %>
+14:          <% end %>
+15:    
+16:          <div class="eu_div">
+17:            <span class='edit_span'>Title</span>
+18:            <%= f.text_field :title, class: "e_username", placeholder: 'Title..', autofocus: true, spellcheck:false, autocomplete: false %>
+19:          </div>
+20:          <div class="eb_div">
+21:            <span class='edit_span'>Content</span>
+22:            <%= f.text_area :content, placeholder: "Content..", autofocus: true, class: "e_bio", spellcheck:false, autocomplete: false %>
+23:          </div>
+24:        
+25:            <div class="eb_btns">
+26:              <%#= f.submit "Cancel Note" %>
+27:              <%= link_to "Back", posts_path, class: 'btn' %>
+28:          
+29:              <%= f.submit "Update Note" class: "btn" %>
+30:            </div>
+31:    
+32:        <% end %>
+33:    
+34:      </div>
+  
+app/views/posts/edit.html.erb:29: syntax error, unexpected `class', expecting ')'
+app/views/posts/edit.html.erb:29: syntax error, unexpected `class', expecting ')'
+app/views/posts/edit.html.erb:29: syntax error, unexpected `class', expecting ')'
+app/views/posts/edit.html.erb:29: syntax error, unexpected `class', expecting ')'
+app/views/posts/edit.html.erb:29: syntax error, unexpected `class', expecting ')'
+app/views/posts/edit.html.erb:29: syntax error, unexpected `class', expecting ')'
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:16:46 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 2.1ms | Allocations: 813)
+  Rendered partials/_header.html.erb (Duration: 4.2ms | Allocations: 2146)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 6160)
+Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 0.1ms | Allocations: 7911)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:17:01 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 814)
+  Rendered partials/_header.html.erb (Duration: 2.9ms | Allocations: 2113)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 6127)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.1ms | Allocations: 7872)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:17:14 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.3ms | Allocations: 813)
+  Rendered partials/_header.html.erb (Duration: 2.1ms | Allocations: 2113)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 6126)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 7871)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2021-03-18 18:17:27 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 819)
+  Rendered partials/_header.html.erb (Duration: 3.0ms | Allocations: 2122)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 6142)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.1ms | Allocations: 7894)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 18:17:36 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1517)
+  Rendered partials/_header.html.erb (Duration: 1.8ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 6277)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 6858)
+
+
+Started GET "/posts/6" for 127.0.0.1 at 2021-03-18 18:18:58 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 21.3ms | Allocations: 408)
+  Rendered partials/_header.html.erb (Duration: 1.7ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 5168)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.1ms | Allocations: 6280)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 18:19:04 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 2.5ms | Allocations: 1847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 5933)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 6389)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 18:19:48 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1127)
+  Rendered partials/_header.html.erb (Duration: 3.5ms | Allocations: 1858)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 5898)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.2ms | Allocations: 6353)
+
+

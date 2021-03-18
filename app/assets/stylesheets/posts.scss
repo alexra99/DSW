@@ -61,14 +61,17 @@ body{
   color:#000; // 
   background:#ffc; //
   display:block;
-  min-height:175px;
+  min-height:20px;
   min-width:175px;
+
   padding:20px; //
   margin-bottom:10px; //
   font-size: 20px;
   border: 1px solid $header_border;
   border-radius: 3px;
   overflow: auto;
+  word-wrap: break-word;
+
   /* Firefox */
   //-moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
   /* Safari+Chrome */
@@ -127,6 +130,14 @@ body{
     color: $dark;
   }
 
+  & .note_content{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical; 
+  }
+
+    
   & .note_title{
     margin-bottom: 4px;
     font-weight: 600;
@@ -180,7 +191,8 @@ body{
 
 // EDIT
 .edit{
-  position: relative;
+  //position: relative;
+  margin-left: 30%;
   width: 400px;
   left: 490px;
   //font-size: 14px;
@@ -198,6 +210,7 @@ body{
   border: 1px solid $header_border;
   border-radius: 3px;
   overflow: auto;
+  
   /* Firefox */
   //-moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
   /* Safari+Chrome */
@@ -221,16 +234,19 @@ body{
     text-align: right;
 
     & input[type="submit"]{
-      display: inline-block;
-      margin-right: 38px;
-      padding: 7px 20px;
-      font-size: 14px;
+      background-color: white; 
+      color: black; 
+      border: 2px solid #008CBA;
+      border-radius: 6px;
     }
 
+    & input[type="submit"]:hover{
+      background-color: #008CBA;
+      color: white;
+    }
   }
 
   & .btn {
-    text-align: right;
     background-color: white; 
     color: black; 
     border: 2px solid #008CBA;
@@ -248,6 +264,7 @@ body{
     position: relative;
     font-size: 14px;
     margin-bottom: 5px;
+    max-lines: 1;
   }
 
   & .edit_info{

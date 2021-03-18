@@ -1,4 +1,4 @@
-<% content_for :title, "Notes" %>
+<% content_for :title, "Notes | AESME" %>
 
 <div class="home">
 
@@ -10,19 +10,18 @@
   <% unless @posts.empty? %>
     <% @posts.each do |el| %>
       <div class="note">
-        <div class="note_header common_header">
-          <%#= image_tag "ruby-red.png" %>
-          <div class="note_h_left">
-            <span class="note_username">You..</span>
-            <br>
-            <span class='note_time'><%= el.created_at %></span>
-          </div>
-        </div>
         <div class="note_title">
           <span><%= el.title %></span>
         </div>
         <div class="note_content">
           <span><%= el.content %></span>
+        </div>
+        <div class="note_header common_header">
+          <%#= image_tag "ruby-red.png" %>
+          <div class="note_h_left">
+            <span class="note_username">You..</span>
+            <span class='note_time'><%= el.created_at %></span>
+          </div>
         </div>
         <div class="note_actions">
           <%= link_to "Edit", edit_post_path(el.id), class: "btn" %>
