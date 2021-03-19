@@ -19,8 +19,6 @@
     <% if flash.any? %>
       <%#= render 'partials/emssg', mssg: flash[:notice] %>
     <% end %>
-
-<<<<<<< HEAD
   
     
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -37,9 +35,15 @@
           <a class="nav-link" <%= link_to "About", posts_path %></a>
         </li>
         <li class="nav-item">
-          <button id="change-theme-btn">theme</button></a>
+          <a class="nav-link">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+          <label class="onoffswitch-label" for="myonoffswitch">
+              <span class="onoffswitch-inner"></span>
+              <!--<span class="onoffswitch-switch"></span>-->
+          </label>
+          </a>
           <script>
-            document.getElementById('change-theme-btn').addEventListener('click', function() {
+            document.getElementById('myonoffswitch').addEventListener('click', function() {
               let darkThemeEnabled = document.body.classList.toggle('dark-theme');
               localStorage.setItem('dark-theme-enabled', darkThemeEnabled);
             });
@@ -48,6 +52,7 @@
               document.body.classList.add('dark-theme');
             }
           </script>
+          
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -57,14 +62,3 @@
     </div>
   </nav>
 
-
-
-
-
-=======
-    <div class="header_loggedin">
-      <div class="header_text">
-        Yo aquí pondría el nombre le pongamos a esta vaina <%= link_to "Notes", posts_path %>
-      </div>
-    </div>
->>>>>>> fb62ab5c6a0e03919c8288efe70b682b1d10850c

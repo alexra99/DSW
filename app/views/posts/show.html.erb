@@ -3,7 +3,7 @@
 <div class="notes_wrapper">
   <div class="home">
 
-    <div class="note">
+    <div class="note" id=>
       <div class="note_content">
         <span class="note_title"><%= @post.title %></span>
         <span class="note_content"><%= @post.content %></span>
@@ -16,6 +16,21 @@
         </div>
       </div>
       <div class="note_actions">
+      <input type="color" list="list_colors" id="color">
+          <datalist id="list_colors">
+            <option value="#ffffcc">
+            <option value="#ff0000">
+            <option value="#FF00FF">
+          </datalist>
+
+          <script type="text/javascript">
+            document.getElementById("color").onchange = function(){
+              backRGB = this.value
+
+              document.getElementsByClassName("note")[0].style.background = backRGB
+              
+            }
+            </script>
         <%= link_to "Back", posts_path, class: 'btn' %>
         <%= link_to "Edit", edit_post_path(@post.id), class: "btn" %> 
         <%=
