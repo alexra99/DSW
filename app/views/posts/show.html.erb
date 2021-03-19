@@ -1,23 +1,30 @@
-<% content_for :title, "View Note" %>
+<% content_for :title, "View Note | AESME" %>
 
 <div class="notes_wrapper">
   <div class="home">
 
-    <div class="blog">
-      <div class="blog_c">
-        <span class="blog_title"><%= @post.title %></span>
-        <span class="blog_content"><%= @post.content %></span>
+    <div class="note">
+      <div class="note_content">
+        <span class="note_title"><%= @post.title %></span>
+        <span class="note_content"><%= @post.content %></span>
       </div>
-      <div class="blog_actions">
-        <%= link_to "Edit", edit_post_path(@post.id), class: "sec_btn" %>
+      <div class="note_header common_header">
+        <%#= image_tag "ruby-red.png" %>
+        <div class="note_h_left">
+          <span class="note_username">You..</span>
+          <span class='note_time'><%= @post.created_at %></span>
+        </div>
+      </div>
+      <div class="note_actions">
+        <%= link_to "Back", posts_path, class: 'btn' %>
+        <%= link_to "Edit", edit_post_path(@post.id), class: "btn" %> 
         <%=
           link_to "Delete",
           post_path(@post.id),
-          class: "sec_btn blog_dlt",
-          :data => { :confirm => "Are you sure??" },
+          class: "btn_delete",
+          :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." },
           :method => :delete
         %>
-        <%= link_to "Back", posts_path, class: 'pri_btn' %>
       </div>
     </div>
 

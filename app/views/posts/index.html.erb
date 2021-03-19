@@ -1,30 +1,30 @@
-<% content_for :title, "Notes" %>
+<% content_for :title, "Notes | AESME" %>
 
 <div class="home">
 
   <div class="home_info">
-    <span><%= @posts.length %> Notes</span>
+    <span> Hello USERNAME! You have <%= @posts.length %> notes saved!</span>
     <%= link_to "Create Note", new_post_path, class: "btn" %>
   </div>
 
   <% unless @posts.empty? %>
     <% @posts.each do |el| %>
       <div class="note">
-        <div class="note_header common_header">
-          <%#= image_tag "ruby-red.png" %>
-          <div class="note_h_left">
-            <span class="note_username">You..</span>
-            <br>
-            <span class='note_time'><%= el.created_at %></span>
-          </div>
-        </div>
         <div class="note_title">
-          <span><%= el.title %></span>
+          <span><h3><%= el.title %></h3></span>
         </div>
         <div class="note_content">
           <span><%= el.content %></span>
         </div>
+        <div class="note_header common_header">
+          <%#= image_tag "ruby-red.png" %>
+          <div class="note_h_left">
+            <span class="note_username">Note by You.</span>
+            <span class='note_time'>Last modification: <%= el.created_at %></span>
+          </div>
+        </div>
         <div class="note_actions">
+          <button onclick='cambiar_color()'>Rojo</button>
           <%= link_to "Edit", edit_post_path(el.id), class: "btn" %>
           <%= link_to "View", post_path(el.id), class: "btn" %>
           <%=
@@ -32,7 +32,7 @@
             el,
             class: "btn_delete",
             :method => :delete,
-            :data => { :confirm => "Are you sure??" }            
+            :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." }            
           %>
         </div>
       </div>
@@ -46,3 +46,10 @@
   <% end %>
 
 </div>
+
+<script type="text/javascript"> 
+  function cambiar_color() {
+    var color = document.getElementById("note");
+    color[0].style.background = "#FF0000";
+  }
+</script>

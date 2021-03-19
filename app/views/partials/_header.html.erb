@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %> | Rails Notes App</title>
+    <title><%= yield(:title) %></title>
     <link rel="icon" href="/images/favicon.png" type="image/png">
-    <%#= favicon_link_tag 'favicon.ico' %>
+    <%= favicon_link_tag 'favicon.ico' %>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
@@ -20,6 +20,7 @@
       <%#= render 'partials/emssg', mssg: flash[:notice] %>
     <% end %>
 
+<<<<<<< HEAD
   
     
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -60,3 +61,10 @@
 
 
 
+=======
+    <div class="header_loggedin">
+      <div class="header_text">
+        Yo aquí pondría el nombre le pongamos a esta vaina <%= link_to "Notes", posts_path %>
+      </div>
+    </div>
+>>>>>>> fb62ab5c6a0e03919c8288efe70b682b1d10850c
