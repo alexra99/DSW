@@ -3392,3 +3392,2125 @@ Processing by PostsController#index as */*
 Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms | Allocations: 3181)
 
 
+Started GET "/" for 127.0.0.1 at 2021-03-18 12:24:29 +0100
+  [1m[35m (30.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 52.8ms | Allocations: 5205)
+  Rendered partials/_header.html.erb (Duration: 738.4ms | Allocations: 22728)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/webpacker-5.2.1/lib/webpacker/webpack_runner.rb:23:in `exec': No such file or directory - C:\\Users\\aleja\\Desktop\\ReposLocales\\DSW\\node_modules\\.bin/webpack (Errno::ENOENT)
+	from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/webpacker-5.2.1/lib/webpacker/webpack_runner.rb:23:in `block in run'
+	from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/webpacker-5.2.1/lib/webpacker/webpack_runner.rb:22:in `chdir'
+	from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/webpacker-5.2.1/lib/webpacker/webpack_runner.rb:22:in `run'
+	from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/webpacker-5.2.1/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered layout layouts/application.html.erb (Duration: 4076.9ms | Allocations: 71993)
+Completed 200 OK in 4371ms (Views: 4168.2ms | ActiveRecord: 2.0ms | Allocations: 84244)
+
+
+Started GET "/images/favicon.png" for 127.0.0.1 at 2021-03-18 12:24:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.png"):
+  
+Started GET "/posts/6/edit" for 127.0.0.1 at 2021-03-18 12:25:06 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 62.1ms | Allocations: 1356)
+  Rendered partials/_header.html.erb (Duration: 16.6ms | Allocations: 2077)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 211.0ms | Allocations: 6394)
+Completed 200 OK in 305ms (Views: 212.9ms | ActiveRecord: 0.3ms | Allocations: 13748)
+
+
+Started PATCH "/posts/6" for 127.0.0.1 at 2021-03-18 12:25:16 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"f", "content"=>"fffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\n\r\neeeeee\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\nffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"}, "commit"=>"Update Note", "id"=>"6"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mPost Update (1.4ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "fffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\r\n\r\neeeeee\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\ne\r\nffffffffffffffffffffff\r\n\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\n\r\nffffffffffffffffffffffffffffffffffffff\r\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"], ["updated_at", "2021-03-18 11:25:16.919533"], ["id", 6]]
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (15.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `update'
+Redirected to http://127.0.0.1:3000/posts
+Completed 302 Found in 45ms (ActiveRecord: 17.1ms | Allocations: 3185)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 12:25:16 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1142)
+  Rendered partials/_header.html.erb (Duration: 8.6ms | Allocations: 2060)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.9ms | Allocations: 12631)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.3ms | Allocations: 13141)
+
+
+Started GET "/posts/6" for 127.0.0.1 at 2021-03-18 12:25:22 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 31.7ms | Allocations: 363)
+  Rendered partials/_header.html.erb (Duration: 8.4ms | Allocations: 2059)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 77.6ms | Allocations: 5442)
+Completed 200 OK in 85ms (Views: 79.0ms | ActiveRecord: 0.3ms | Allocations: 6480)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-03-18 12:25:31 +0100
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 29.8ms | Allocations: 704)
+  Rendered partials/_header.html.erb (Duration: 6.2ms | Allocations: 2059)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.0ms | Allocations: 5784)
+Completed 200 OK in 73ms (Views: 70.2ms | ActiveRecord: 0.0ms | Allocations: 6539)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-03-18 12:25:35 +0100
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 368)
+  Rendered partials/_header.html.erb (Duration: 8.5ms | Allocations: 2057)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.4ms | Allocations: 5445)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.0ms | Allocations: 5844)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 12:25:41 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1142)
+  Rendered partials/_header.html.erb (Duration: 7.3ms | Allocations: 2057)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.3ms | Allocations: 6219)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.3ms | Allocations: 6609)
+
+
+Started DELETE "/posts/6" for 127.0.0.1 at 2021-03-18 12:25:59 +0100
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"6"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:39:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:40:in `destroy'
+  [1m[36mPost Destroy (7.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/posts_controller.rb:40:in `destroy'
+  [1m[36mTRANSACTION (335.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:40:in `destroy'
+Redirected to http://127.0.0.1:3000/posts
+Completed 302 Found in 362ms (ActiveRecord: 343.0ms | Allocations: 2934)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-18 12:25:59 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 992)
+  Rendered partials/_header.html.erb (Duration: 8.5ms | Allocations: 2060)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.0ms | Allocations: 6432)
+Completed 200 OK in 66ms (Views: 64.9ms | ActiveRecord: 0.3ms | Allocations: 6830)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 10:41:06 +0100
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 21.3ms | Allocations: 4572)
+  Rendered partials/_header.html.erb (Duration: 24.1ms | Allocations: 5085)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 90.6ms | Allocations: 12974)
+Completed 200 OK in 176ms (Views: 118.1ms | ActiveRecord: 1.2ms | Allocations: 16557)
+
+
+Started GET "/images/favicon.png" for 127.0.0.1 at 2021-03-19 10:41:06 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.png"):
+  
+Started GET "/" for 127.0.0.1 at 2021-03-19 10:48:59 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/posts/index.html.erb:6
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 44.1ms | Allocations: 2119)
+  Rendered partials/_header.html.erb (Duration: 49.0ms | Allocations: 2309)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 234.9ms | Allocations: 7741)
+Completed 200 OK in 248ms (Views: 244.9ms | ActiveRecord: 0.9ms | Allocations: 8868)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 10:49:03 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 1004)
+  Rendered partials/_header.html.erb (Duration: 8.4ms | Allocations: 2059)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.2ms | Allocations: 6084)
+Completed 200 OK in 61ms (Views: 59.0ms | ActiveRecord: 0.5ms | Allocations: 6482)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 10:49:51 +0100
+  [1m[35m (20.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 41.4ms | Allocations: 4572)
+  Rendered partials/_header.html.erb (Duration: 144.4ms | Allocations: 5077)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 244.9ms | Allocations: 12966)
+Completed 200 OK in 445ms (Views: 303.1ms | ActiveRecord: 4.1ms | Allocations: 15886)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 10:49:57 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1004)
+  Rendered partials/_header.html.erb (Duration: 7.7ms | Allocations: 2060)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.3ms | Allocations: 6444)
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 0.5ms | Allocations: 6846)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 10:59:06 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 23.5ms | Allocations: 5412)
+  Rendered partials/_header.html.erb (Duration: 36.0ms | Allocations: 5076)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/aleja/Desktop/ReposLocales/DSW/public/packs
+[Webpacker] Hash: 099831afa63234758cf5
+Version: webpack 4.46.0
+Time: 8490ms
+Built at: 19/03/2021 10:59:18
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-5aaf9e22d10437ba970d.js   1.33 MiB  application  [emitted] [immutable]  application
+js/application-5aaf9e22d10437ba970d.js.map   1.46 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-5aaf9e22d10437ba970d.js js/application-5aaf9e22d10437ba970d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 612 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 315 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 10 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 12535.3ms | Allocations: 150657)
+Completed 200 OK in 12566ms (Views: 12545.5ms | ActiveRecord: 2.5ms | Allocations: 155100)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 11:01:32 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 28.8ms | Allocations: 5416)
+  Rendered partials/_header.html.erb (Duration: 74.0ms | Allocations: 5154)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 149.0ms | Allocations: 14929)
+Completed 200 OK in 182ms (Views: 161.1ms | ActiveRecord: 3.4ms | Allocations: 19787)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:01:42 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1004)
+  Rendered partials/_header.html.erb (Duration: 10.6ms | Allocations: 2094)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.7ms | Allocations: 6138)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.4ms | Allocations: 6540)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:01:43 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1000)
+  Rendered partials/_header.html.erb (Duration: 6.8ms | Allocations: 2085)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.3ms | Allocations: 6125)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.6ms | Allocations: 6525)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:01:44 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1000)
+  Rendered partials/_header.html.erb (Duration: 10.2ms | Allocations: 2094)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.0ms | Allocations: 6135)
+Completed 200 OK in 70ms (Views: 67.3ms | ActiveRecord: 1.1ms | Allocations: 6535)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:01:49 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 992)
+  Rendered partials/_header.html.erb (Duration: 13.0ms | Allocations: 2379)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.0ms | Allocations: 7002)
+Completed 200 OK in 69ms (Views: 68.2ms | ActiveRecord: 0.3ms | Allocations: 7391)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:01:50 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 992)
+  Rendered partials/_header.html.erb (Duration: 18.7ms | Allocations: 2084)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.1ms | Allocations: 6116)
+Completed 200 OK in 65ms (Views: 63.0ms | ActiveRecord: 0.6ms | Allocations: 6505)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:01:51 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 992)
+  Rendered partials/_header.html.erb (Duration: 6.8ms | Allocations: 2093)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.8ms | Allocations: 6124)
+Completed 200 OK in 67ms (Views: 65.5ms | ActiveRecord: 0.4ms | Allocations: 6513)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:01:52 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 992)
+  Rendered partials/_header.html.erb (Duration: 8.9ms | Allocations: 2084)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.7ms | Allocations: 12004)
+Completed 200 OK in 62ms (Views: 60.6ms | ActiveRecord: 0.4ms | Allocations: 12632)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:01:53 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1000)
+  Rendered partials/_header.html.erb (Duration: 8.9ms | Allocations: 2085)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.4ms | Allocations: 6125)
+Completed 200 OK in 62ms (Views: 60.6ms | ActiveRecord: 0.3ms | Allocations: 6524)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:01:55 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 992)
+  Rendered partials/_header.html.erb (Duration: 9.0ms | Allocations: 2089)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 6121)
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.3ms | Allocations: 6510)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2021-03-19 11:02:01 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 28.1ms | Allocations: 361)
+  Rendered partials/_header.html.erb (Duration: 8.2ms | Allocations: 2095)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 78.1ms | Allocations: 5433)
+Completed 200 OK in 211ms (Views: 79.6ms | ActiveRecord: 0.6ms | Allocations: 9719)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:02:03 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 994)
+  Rendered partials/_header.html.erb (Duration: 12.0ms | Allocations: 2093)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.3ms | Allocations: 6126)
+Completed 200 OK in 67ms (Views: 65.3ms | ActiveRecord: 0.7ms | Allocations: 6517)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2021-03-19 11:02:04 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 142)
+  Rendered partials/_header.html.erb (Duration: 9.7ms | Allocations: 2093)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.9ms | Allocations: 5274)
+Completed 200 OK in 72ms (Views: 66.6ms | ActiveRecord: 0.4ms | Allocations: 6186)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:02:05 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 992)
+  Rendered partials/_header.html.erb (Duration: 24.0ms | Allocations: 3459)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 77.4ms | Allocations: 10672)
+Completed 200 OK in 80ms (Views: 78.8ms | ActiveRecord: 0.3ms | Allocations: 11061)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 11:03:11 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 21.9ms | Allocations: 5121)
+  Rendered partials/_header.html.erb (Duration: 77.7ms | Allocations: 5335)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 157.4ms | Allocations: 14655)
+Completed 200 OK in 199ms (Views: 172.4ms | ActiveRecord: 3.6ms | Allocations: 19673)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 11:03:18 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1300)
+  Rendered partials/_header.html.erb (Duration: 10.7ms | Allocations: 5128)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.0ms | Allocations: 15741)
+Completed 200 OK in 69ms (Views: 67.8ms | ActiveRecord: 0.3ms | Allocations: 16368)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 11:03:19 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1000)
+  Rendered partials/_header.html.erb (Duration: 14.4ms | Allocations: 2068)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.5ms | Allocations: 6109)
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.3ms | Allocations: 6506)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 11:03:58 +0100
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 22.8ms | Allocations: 5219)
+  Rendered partials/_header.html.erb (Duration: 39.3ms | Allocations: 5117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 106.6ms | Allocations: 13934)
+Completed 200 OK in 143ms (Views: 116.5ms | ActiveRecord: 3.4ms | Allocations: 18699)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 11:05:04 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 26.1ms | Allocations: 6443)
+  Rendered partials/_header.html.erb (Duration: 51.8ms | Allocations: 7450)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 133.7ms | Allocations: 18000)
+Completed 200 OK in 166ms (Views: 144.9ms | ActiveRecord: 2.1ms | Allocations: 24890)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 11:08:39 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 16.7ms | Allocations: 5160)
+  Rendered partials/_header.html.erb (Duration: 40.7ms | Allocations: 5131)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 108.6ms | Allocations: 14612)
+Completed 200 OK in 139ms (Views: 119.0ms | ActiveRecord: 1.3ms | Allocations: 19572)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:08:44 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1004)
+  Rendered partials/_header.html.erb (Duration: 7.2ms | Allocations: 2077)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.9ms | Allocations: 6122)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.3ms | Allocations: 6524)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2021-03-19 11:08:47 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 359)
+  Rendered partials/_header.html.erb (Duration: 6.7ms | Allocations: 2074)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 11977)
+Completed 200 OK in 60ms (Views: 50.0ms | ActiveRecord: 0.5ms | Allocations: 13444)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:08:48 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1002)
+  Rendered partials/_header.html.erb (Duration: 11.0ms | Allocations: 2068)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.4ms | Allocations: 6110)
+Completed 200 OK in 62ms (Views: 60.4ms | ActiveRecord: 0.6ms | Allocations: 6512)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2021-03-19 11:08:49 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 142)
+  Rendered partials/_header.html.erb (Duration: 16.6ms | Allocations: 2432)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.3ms | Allocations: 5613)
+Completed 200 OK in 65ms (Views: 58.6ms | ActiveRecord: 0.3ms | Allocations: 6524)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:08:50 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1000)
+  Rendered partials/_header.html.erb (Duration: 6.0ms | Allocations: 2077)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.8ms | Allocations: 6117)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.4ms | Allocations: 6517)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:10:00 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 1995)
+  Rendered partials/_header.html.erb (Duration: 55.7ms | Allocations: 3145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 116.0ms | Allocations: 9587)
+Completed 200 OK in 134ms (Views: 128.8ms | ActiveRecord: 0.3ms | Allocations: 11949)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:10:22 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 1996)
+  Rendered partials/_header.html.erb (Duration: 10.5ms | Allocations: 3410)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.0ms | Allocations: 9611)
+Completed 200 OK in 86ms (Views: 81.4ms | ActiveRecord: 0.7ms | Allocations: 11970)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:10:46 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1396)
+  Rendered partials/_header.html.erb (Duration: 55.8ms | Allocations: 2394)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 104.9ms | Allocations: 7152)
+Completed 200 OK in 123ms (Views: 118.7ms | ActiveRecord: 0.5ms | Allocations: 8252)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:10:58 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1396)
+  Rendered partials/_header.html.erb (Duration: 10.1ms | Allocations: 2394)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.1ms | Allocations: 7152)
+Completed 200 OK in 81ms (Views: 76.3ms | ActiveRecord: 0.6ms | Allocations: 8252)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:20:18 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/posts/index.html.erb:6
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 17.5ms | Allocations: 2104)
+  Rendered partials/_header.html.erb (Duration: 41.2ms | Allocations: 2452)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/aleja/Desktop/ReposLocales/DSW/public/packs
+[Webpacker] Hash: 099831afa63234758cf5
+Version: webpack 4.46.0
+Time: 3930ms
+Built at: 19/03/2021 11:20:25
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-5aaf9e22d10437ba970d.js   1.33 MiB  application  [emitted] [immutable]  application
+js/application-5aaf9e22d10437ba970d.js.map   1.46 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-5aaf9e22d10437ba970d.js js/application-5aaf9e22d10437ba970d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 612 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 315 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 10 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 7388.9ms | Allocations: 84502)
+Completed 200 OK in 7402ms (Views: 7399.7ms | ActiveRecord: 2.1ms | Allocations: 85604)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:20:26 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:20:47 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1014)
+  Rendered partials/_header.html.erb (Duration: 9.2ms | Allocations: 2112)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.3ms | Allocations: 6180)
+Completed 200 OK in 56ms (Views: 54.3ms | ActiveRecord: 0.4ms | Allocations: 6589)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:20:47 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:20:47 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 12.0ms | Allocations: 2093)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.2ms | Allocations: 6135)
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.7ms | Allocations: 6525)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:20:48 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:20:55 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 10.4ms | Allocations: 2093)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.0ms | Allocations: 6135)
+Completed 200 OK in 62ms (Views: 61.4ms | ActiveRecord: 0.3ms | Allocations: 6522)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:20:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-03-19 11:21:31 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 5388)
+  Rendered partials/_header.html.erb (Duration: 37.4ms | Allocations: 5165)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 95.3ms | Allocations: 14713)
+Completed 200 OK in 143ms (Views: 117.1ms | ActiveRecord: 1.2ms | Allocations: 19739)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:21:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-03-19 11:22:28 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 1421)
+  Rendered partials/_header.html.erb (Duration: 11.3ms | Allocations: 2415)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.0ms | Allocations: 7213)
+Completed 200 OK in 81ms (Views: 77.3ms | ActiveRecord: 0.4ms | Allocations: 8348)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:22:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:22:31 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1003)
+  Rendered partials/_header.html.erb (Duration: 6.0ms | Allocations: 2094)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.3ms | Allocations: 6149)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.4ms | Allocations: 6551)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:22:31 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/" for ::1 at 2021-03-19 11:23:11 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 999)
+  Rendered partials/_header.html.erb (Duration: 9.9ms | Allocations: 2109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.1ms | Allocations: 6160)
+Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.3ms | Allocations: 6506)
+
+
+Started GET "/change-theme.js" for ::1 at 2021-03-19 11:23:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/images/favicon.png" for ::1 at 2021-03-19 11:23:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.png"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:24:38 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1395)
+  Rendered partials/_header.html.erb (Duration: 17.0ms | Allocations: 2395)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.2ms | Allocations: 7164)
+Completed 200 OK in 81ms (Views: 76.3ms | ActiveRecord: 0.3ms | Allocations: 8264)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:24:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:24:41 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 1003)
+  Rendered partials/_header.html.erb (Duration: 6.7ms | Allocations: 2093)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.1ms | Allocations: 6147)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.2ms | Allocations: 6543)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:24:41 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:24:43 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 9.4ms | Allocations: 2093)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.7ms | Allocations: 6135)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.2ms | Allocations: 6522)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:24:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-03-19 11:25:15 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 19.6ms | Allocations: 5412)
+  Rendered partials/_header.html.erb (Duration: 33.8ms | Allocations: 5381)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 101.4ms | Allocations: 15204)
+Completed 200 OK in 129ms (Views: 111.9ms | ActiveRecord: 2.5ms | Allocations: 19731)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:25:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:25:19 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1022)
+  Rendered partials/_header.html.erb (Duration: 12.4ms | Allocations: 2113)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.9ms | Allocations: 6190)
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.5ms | Allocations: 6610)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:25:19 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:26:28 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 1403)
+  Rendered partials/_header.html.erb (Duration: 42.3ms | Allocations: 2755)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/aleja/Desktop/ReposLocales/DSW/public/packs
+[Webpacker] Hash: 099831afa63234758cf5
+Version: webpack 4.46.0
+Time: 4084ms
+Built at: 19/03/2021 11:26:36
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-5aaf9e22d10437ba970d.js   1.33 MiB  application  [emitted] [immutable]  application
+js/application-5aaf9e22d10437ba970d.js.map   1.46 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-5aaf9e22d10437ba970d.js js/application-5aaf9e22d10437ba970d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 612 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 315 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 10 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 7496.6ms | Allocations: 90308)
+Completed 200 OK in 7510ms (Views: 7505.4ms | ActiveRecord: 0.5ms | Allocations: 91429)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:26:36 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:27:07 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1403)
+  Rendered partials/_header.html.erb (Duration: 12.2ms | Allocations: 2395)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.6ms | Allocations: 7175)
+Completed 200 OK in 82ms (Views: 78.5ms | ActiveRecord: 0.2ms | Allocations: 8283)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:27:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:27:10 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 1003)
+  Rendered partials/_header.html.erb (Duration: 9.9ms | Allocations: 2094)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.6ms | Allocations: 6149)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.8ms | Allocations: 6548)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:27:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:27:52 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1395)
+  Rendered partials/_header.html.erb (Duration: 15.4ms | Allocations: 2395)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.2ms | Allocations: 7164)
+Completed 200 OK in 79ms (Views: 74.9ms | ActiveRecord: 0.2ms | Allocations: 8264)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:27:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:28:29 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1395)
+  Rendered partials/_header.html.erb (Duration: 41.7ms | Allocations: 2395)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 87.7ms | Allocations: 7164)
+Completed 200 OK in 104ms (Views: 97.2ms | ActiveRecord: 0.9ms | Allocations: 8264)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:28:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:28:47 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1827)
+  Rendered partials/_header.html.erb (Duration: 40.8ms | Allocations: 6655)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 96.4ms | Allocations: 12827)
+Completed 200 OK in 110ms (Views: 105.6ms | ActiveRecord: 0.6ms | Allocations: 14768)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:28:49 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 996)
+  Rendered partials/_header.html.erb (Duration: 7.0ms | Allocations: 2093)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.7ms | Allocations: 6140)
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.4ms | Allocations: 6584)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:29:58 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1396)
+  Rendered partials/_header.html.erb (Duration: 14.6ms | Allocations: 2394)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.1ms | Allocations: 7164)
+Completed 200 OK in 81ms (Views: 77.2ms | ActiveRecord: 0.2ms | Allocations: 8264)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:30:00 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 996)
+  Rendered partials/_header.html.erb (Duration: 8.3ms | Allocations: 2084)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.9ms | Allocations: 6131)
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.4ms | Allocations: 6518)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:30:01 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 992)
+  Rendered partials/_header.html.erb (Duration: 9.7ms | Allocations: 3879)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.9ms | Allocations: 9461)
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.3ms | Allocations: 9847)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:30:36 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 1396)
+  Rendered partials/_header.html.erb (Duration: 13.1ms | Allocations: 2394)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 73.3ms | Allocations: 7164)
+Completed 200 OK in 88ms (Views: 82.4ms | ActiveRecord: 0.3ms | Allocations: 8264)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:30:39 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 996)
+  Rendered partials/_header.html.erb (Duration: 7.5ms | Allocations: 2093)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 6499)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.3ms | Allocations: 6887)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:30:41 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 992)
+  Rendered partials/_header.html.erb (Duration: 7.7ms | Allocations: 2084)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.9ms | Allocations: 6127)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.3ms | Allocations: 6513)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:30:46 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 992)
+  Rendered partials/_header.html.erb (Duration: 6.7ms | Allocations: 2093)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 6136)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.3ms | Allocations: 6526)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:30:47 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 992)
+  Rendered partials/_header.html.erb (Duration: 7.6ms | Allocations: 2084)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.8ms | Allocations: 6127)
+Completed 200 OK in 60ms (Views: 58.4ms | ActiveRecord: 0.6ms | Allocations: 6516)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:31:14 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 1396)
+  Rendered partials/_header.html.erb (Duration: 13.3ms | Allocations: 2354)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.8ms | Allocations: 7124)
+Completed 200 OK in 82ms (Views: 76.3ms | ActiveRecord: 0.6ms | Allocations: 8250)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:32:33 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1396)
+  Rendered partials/_header.html.erb (Duration: 10.3ms | Allocations: 2355)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.6ms | Allocations: 7125)
+Completed 200 OK in 74ms (Views: 70.7ms | ActiveRecord: 0.3ms | Allocations: 8245)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:32:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:33:11 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1395)
+  Rendered partials/_header.html.erb (Duration: 13.5ms | Allocations: 2355)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | Allocations: 7483)
+Completed 200 OK in 75ms (Views: 71.6ms | ActiveRecord: 0.6ms | Allocations: 8583)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:33:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:33:21 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1395)
+  Rendered partials/_header.html.erb (Duration: 39.5ms | Allocations: 2355)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 89.2ms | Allocations: 7483)
+Completed 200 OK in 106ms (Views: 100.5ms | ActiveRecord: 0.3ms | Allocations: 8583)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:33:21 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:37:08 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1395)
+  Rendered partials/_header.html.erb (Duration: 360.7ms | Allocations: 15893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 410.6ms | Allocations: 23888)
+Completed 200 OK in 428ms (Views: 422.9ms | ActiveRecord: 0.5ms | Allocations: 24988)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:37:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:37:13 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 995)
+  Rendered partials/_header.html.erb (Duration: 10.9ms | Allocations: 2076)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.8ms | Allocations: 6122)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.3ms | Allocations: 6510)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:37:14 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:37:14 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 6.5ms | Allocations: 2075)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.0ms | Allocations: 6117)
+Completed 200 OK in 63ms (Views: 58.8ms | ActiveRecord: 0.5ms | Allocations: 6503)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:37:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:39:55 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 1395)
+  Rendered partials/_header.html.erb (Duration: 255.5ms | Allocations: 19000)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 308.8ms | Allocations: 23665)
+Completed 200 OK in 325ms (Views: 321.4ms | ActiveRecord: 0.5ms | Allocations: 24765)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:39:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:40:02 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 995)
+  Rendered partials/_header.html.erb (Duration: 7.9ms | Allocations: 2251)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.1ms | Allocations: 6301)
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 0.2ms | Allocations: 6692)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:40:03 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:40:46 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1395)
+  Rendered partials/_header.html.erb (Duration: 200.0ms | Allocations: 13409)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 247.8ms | Allocations: 18074)
+Completed 200 OK in 266ms (Views: 261.5ms | ActiveRecord: 0.2ms | Allocations: 19174)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:40:47 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:41:36 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 22.1ms | Allocations: 5361)
+  Rendered partials/_header.html.erb (Duration: 296.2ms | Allocations: 13501)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 373.1ms | Allocations: 23051)
+Completed 200 OK in 401ms (Views: 380.8ms | ActiveRecord: 3.7ms | Allocations: 28096)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:41:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:44:22 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 1022)
+  Rendered partials/_header.html.erb (Duration: 231.7ms | Allocations: 18745)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 278.8ms | Allocations: 22717)
+Completed 200 OK in 282ms (Views: 280.3ms | ActiveRecord: 0.7ms | Allocations: 23134)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:44:22 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:44:24 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 999)
+  Rendered partials/_header.html.erb (Duration: 11.3ms | Allocations: 2246)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.7ms | Allocations: 6300)
+Completed 200 OK in 72ms (Views: 68.6ms | ActiveRecord: 0.4ms | Allocations: 6694)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:44:25 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:44:26 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 999)
+  Rendered partials/_header.html.erb (Duration: 15.8ms | Allocations: 2611)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.6ms | Allocations: 6665)
+Completed 200 OK in 67ms (Views: 65.6ms | ActiveRecord: 0.5ms | Allocations: 7060)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:44:27 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:44:28 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 999)
+  Rendered partials/_header.html.erb (Duration: 8.3ms | Allocations: 2252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.7ms | Allocations: 6307)
+Completed 200 OK in 56ms (Views: 55.4ms | ActiveRecord: 0.3ms | Allocations: 6705)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:44:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:45:09 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 184.1ms | Allocations: 12470)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 230.0ms | Allocations: 16404)
+Completed 200 OK in 232ms (Views: 231.4ms | ActiveRecord: 0.2ms | Allocations: 16811)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:45:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:49:35 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 215.8ms | Allocations: 26066)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 259.1ms | Allocations: 30000)
+Completed 200 OK in 261ms (Views: 260.0ms | ActiveRecord: 0.4ms | Allocations: 30387)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:49:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:49:43 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 12.0ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.5ms | Allocations: 6122)
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.6ms | Allocations: 6509)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:49:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:49:44 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 6.7ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.7ms | Allocations: 6121)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.2ms | Allocations: 6508)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:49:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:49:45 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 10.4ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.3ms | Allocations: 6124)
+Completed 200 OK in 67ms (Views: 65.5ms | ActiveRecord: 0.3ms | Allocations: 6511)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:49:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:49:46 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 11.4ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.1ms | Allocations: 6121)
+Completed 200 OK in 67ms (Views: 65.5ms | ActiveRecord: 0.7ms | Allocations: 6508)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:49:46 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:49:51 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 7.4ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.5ms | Allocations: 6121)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.2ms | Allocations: 6508)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:49:51 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:49:56 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 10.8ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.9ms | Allocations: 6480)
+Completed 200 OK in 70ms (Views: 68.1ms | ActiveRecord: 0.5ms | Allocations: 6867)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:49:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:49:56 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 9.9ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.8ms | Allocations: 6121)
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.3ms | Allocations: 6508)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:49:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:49:57 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 9.4ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.1ms | Allocations: 6121)
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.3ms | Allocations: 6508)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:49:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:49:58 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 11.5ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.1ms | Allocations: 6121)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.7ms | Allocations: 6508)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:49:58 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:49:58 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 11.2ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.9ms | Allocations: 6121)
+Completed 200 OK in 62ms (Views: 60.6ms | ActiveRecord: 0.3ms | Allocations: 6508)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:49:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:49:59 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 12.9ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.2ms | Allocations: 6121)
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.5ms | Allocations: 6508)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:49:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:50:01 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1329)
+  Rendered partials/_header.html.erb (Duration: 13.5ms | Allocations: 4953)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 68.6ms | Allocations: 10157)
+Completed 200 OK in 72ms (Views: 71.0ms | ActiveRecord: 0.3ms | Allocations: 10768)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:50:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:50:03 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 12.9ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 88.6ms | Allocations: 8824)
+Completed 200 OK in 94ms (Views: 91.6ms | ActiveRecord: 0.8ms | Allocations: 9478)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:50:03 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:50:04 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 12.8ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.3ms | Allocations: 6121)
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.5ms | Allocations: 6508)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:50:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:50:30 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 220.3ms | Allocations: 13048)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 262.5ms | Allocations: 16982)
+Completed 200 OK in 265ms (Views: 263.9ms | ActiveRecord: 0.3ms | Allocations: 17369)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:50:31 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:50:42 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 10.6ms | Allocations: 2078)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.2ms | Allocations: 9813)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.3ms | Allocations: 10200)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:50:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:50:44 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 11.5ms | Allocations: 2078)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.0ms | Allocations: 6120)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.4ms | Allocations: 6507)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:50:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:50:45 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 7.1ms | Allocations: 2078)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.0ms | Allocations: 6120)
+Completed 200 OK in 62ms (Views: 59.8ms | ActiveRecord: 0.5ms | Allocations: 6507)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:50:46 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:50:46 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 13.7ms | Allocations: 2078)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 71.5ms | Allocations: 6120)
+Completed 200 OK in 75ms (Views: 73.5ms | ActiveRecord: 0.4ms | Allocations: 6507)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:50:47 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:51:48 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 194.0ms | Allocations: 14069)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 239.7ms | Allocations: 24507)
+Completed 200 OK in 242ms (Views: 240.5ms | ActiveRecord: 0.6ms | Allocations: 24894)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:51:48 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:52:54 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 187.1ms | Allocations: 12523)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 239.0ms | Allocations: 16457)
+Completed 200 OK in 248ms (Views: 246.8ms | ActiveRecord: 0.6ms | Allocations: 16844)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:52:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:52:59 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 6.1ms | Allocations: 2078)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.2ms | Allocations: 6120)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.5ms | Allocations: 6507)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:52:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:53:13 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 173.2ms | Allocations: 16712)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 220.5ms | Allocations: 20646)
+Completed 200 OK in 223ms (Views: 222.4ms | ActiveRecord: 0.3ms | Allocations: 21033)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:53:14 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:53:25 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 991)
+  Rendered partials/_header.html.erb (Duration: 185.7ms | Allocations: 20051)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 229.7ms | Allocations: 23985)
+Completed 200 OK in 233ms (Views: 231.3ms | ActiveRecord: 0.4ms | Allocations: 24372)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:53:25 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts/new" for 127.0.0.1 at 2021-03-19 11:53:42 +0100
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 103.8ms | Allocations: 4700)
+  Rendered partials/_header.html.erb (Duration: 5.4ms | Allocations: 2360)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 143.4ms | Allocations: 10036)
+Completed 200 OK in 149ms (Views: 145.2ms | ActiveRecord: 0.0ms | Allocations: 10568)
+
+
+Started GET "/posts/change-theme.js" for 127.0.0.1 at 2021-03-19 11:53:42 +0100
+Processing by PostsController#show as JS
+  Parameters: {"id"=>"change-theme"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+Completed 404 Not Found in 10ms (ActiveRecord: 0.6ms | Allocations: 1478)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=change-theme):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started POST "/posts" for 127.0.0.1 at 2021-03-19 11:53:45 +0100
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"", "content"=>""}, "commit"=>"Cancel Note"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:18:in `create'
+  [1m[36mPost Create (7.0ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["content", ""], ["created_at", "2021-03-19 10:53:45.220549"], ["updated_at", "2021-03-19 10:53:45.220549"]]
+  ↳ app/controllers/posts_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:18:in `create'
+Redirected to http://127.0.0.1:3000/posts
+Completed 302 Found in 41ms (ActiveRecord: 23.1ms | Allocations: 2561)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:53:45 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1140)
+  Rendered partials/_header.html.erb (Duration: 6.1ms | Allocations: 2080)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.1ms | Allocations: 6271)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.3ms | Allocations: 6668)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:53:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:53:46 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1136)
+  Rendered partials/_header.html.erb (Duration: 5.0ms | Allocations: 2078)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.2ms | Allocations: 6265)
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.4ms | Allocations: 6655)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:53:47 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:53:47 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:53:47 +0100
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1136)
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+  Rendered partials/_header.html.erb (Duration: 49.9ms | Allocations: 13931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 125.4ms | Allocations: 40753)
+Completed 200 OK in 128ms (Views: 127.0ms | ActiveRecord: 0.5ms | Allocations: 41207)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:53:48 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1144)
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:53:48 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+  Rendered partials/_header.html.erb (Duration: 40.3ms | Allocations: 14371)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 125.6ms | Allocations: 42063)
+Completed 200 OK in 128ms (Views: 126.8ms | ActiveRecord: 0.4ms | Allocations: 42453)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:53:49 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:53:49 +0100
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1226)
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+  Rendered partials/_header.html.erb (Duration: 31.1ms | Allocations: 13737)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 120.7ms | Allocations: 46253)
+Completed 200 OK in 124ms (Views: 121.8ms | ActiveRecord: 0.9ms | Allocations: 46644)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:53:50 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1703)
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:53:50 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+  Rendered partials/_header.html.erb (Duration: 34.9ms | Allocations: 13913)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 113.0ms | Allocations: 42797)
+Completed 200 OK in 116ms (Views: 114.7ms | ActiveRecord: 0.2ms | Allocations: 43186)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:53:50 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1605)
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:53:50 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+  Rendered partials/_header.html.erb (Duration: 36.1ms | Allocations: 13999)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 107.6ms | Allocations: 41716)
+Completed 200 OK in 110ms (Views: 109.2ms | ActiveRecord: 0.5ms | Allocations: 42244)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:53:50 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1136)
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:53:50 +0100
+  Rendered partials/_header.html.erb (Duration: 11.8ms | Allocations: 3053)
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 116.0ms | Allocations: 46311)
+Completed 200 OK in 123ms (Views: 121.5ms | ActiveRecord: 0.4ms | Allocations: 48282)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:53:50 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 1709)
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:53:50 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+  Rendered partials/_header.html.erb (Duration: 50.3ms | Allocations: 13750)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 145.3ms | Allocations: 41397)
+Completed 200 OK in 148ms (Views: 147.0ms | ActiveRecord: 0.4ms | Allocations: 41870)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:56:07 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1972)
+  Rendered partials/_header.html.erb (Duration: 183.3ms | Allocations: 18253)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 230.1ms | Allocations: 24273)
+Completed 200 OK in 245ms (Views: 240.2ms | ActiveRecord: 0.3ms | Allocations: 26222)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:56:07 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:57:27 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1540)
+  Rendered partials/_header.html.erb (Duration: 12.0ms | Allocations: 2363)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.2ms | Allocations: 7277)
+Completed 200 OK in 77ms (Views: 71.1ms | ActiveRecord: 0.4ms | Allocations: 8377)
+
+
+Started GET "/app/javascript/change-theme.js" for 127.0.0.1 at 2021-03-19 11:57:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/javascript/change-theme.js"):
+  
+Started GET "/posts" for 127.0.0.1 at 2021-03-19 11:58:17 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1543)
+  Rendered partials/_header.html.erb (Duration: 16.8ms | Allocations: 2355)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.2ms | Allocations: 7272)
+Completed 200 OK in 78ms (Views: 75.5ms | ActiveRecord: 0.3ms | Allocations: 8372)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:58:17 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-03-19 11:58:37 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 16.3ms | Allocations: 5250)
+  Rendered partials/_header.html.erb (Duration: 319.4ms | Allocations: 20791)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 378.5ms | Allocations: 30535)
+Completed 200 OK in 404ms (Views: 387.2ms | ActiveRecord: 1.6ms | Allocations: 34559)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:58:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-03-19 11:59:42 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1558)
+  Rendered partials/_header.html.erb (Duration: 12.4ms | Allocations: 2374)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.7ms | Allocations: 7309)
+Completed 200 OK in 78ms (Views: 73.0ms | ActiveRecord: 0.4ms | Allocations: 8436)
+
+
+Started GET "/change-theme.js" for 127.0.0.1 at 2021-03-19 11:59:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/change-theme.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-03-19 12:05:48 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 18.5ms | Allocations: 5293)
+  Rendered partials/_header.html.erb (Duration: 58.6ms | Allocations: 5630)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 120.2ms | Allocations: 15103)
+Completed 200 OK in 151ms (Views: 130.8ms | ActiveRecord: 1.8ms | Allocations: 20339)
+
+
+Started GET "/javascript/channels" for 127.0.0.1 at 2021-03-19 12:05:48 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/javascript/channels"):
+  
