@@ -16,13 +16,13 @@
         </div>
       </div>
       <div class="note_actions">
-      <input type="color" list="list_colors" id="color">
+      <select list="list_colors" id="color" class="btn">
           <datalist id="list_colors">
-            <option value="#ffffcc">
-            <option value="#ff0000">
-            <option value="#FF00FF">
+            <option style="color:#ffffcc"value="#ffffcc">Amarillo</option>
+            <option style="color:#ff0000" value="#ff0000">Rojo</option>
+            <option style="color:#FF00FF" value="#FF00FF">Rosa</option>
           </datalist>
-
+        </select>
           <script type="text/javascript">
             document.getElementById("color").onchange = function(){
               backRGB = this.value
