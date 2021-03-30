@@ -16,7 +16,10 @@
         <span class='edit_span'>Title</span>
         <%= f.text_field :title, class: "e_username", placeholder: 'Title..', autofocus: true, spellcheck:false, autocomplete: false %>
       </div>
+      <%if @post.img%>
 
+          <%= image_tag (@post.img)%>
+        <%end%>
       <div class="eb_div">
         <span class='edit_span'>Content</span>
         <%= f.text_area :content, placeholder: "Content..", autofocus: true, class: "e_bio", spellcheck:false, autocomplete: false %>

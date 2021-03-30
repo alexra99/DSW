@@ -91,6 +91,22 @@ input[type="submit"],input[type="button"],.pri_btn{
   &:focus{ background: #198bd0; }
 }
 
+.cancel_btn{  
+  border: 1px solid #56b4ef !important;
+  font-weight: 600;
+  font-size: 16px;
+  background: $pric;
+  vertical-align: middle;
+  border: 1px solid $pric;
+  color: $ff;
+  border-radius: 3px;
+  padding: 6px 12px !important;
+  cursor: pointer;
+  outline: none;
+  &:hover{ opacity: .9; }
+  &:focus{ background: #198bd0; }
+}
+
 input[type="submit"]:disabled, input[type="button"]:disabled{
   background: #6ab9e8 !important;
   cursor: auto !important;
@@ -127,6 +143,7 @@ input[type="submit"]:disabled, input[type="button"]:disabled{
   border: 2px solid #008CBA;
   border-radius: 6px;
 }
+
 
 .btn:hover {
   background-color: #008CBA;

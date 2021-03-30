@@ -1,5 +1,5 @@
 @import 'defaults';
-$dark: #333;
+$dark: #343a40;
 $light: #fff;
 :root {
     font-size: 100%;
@@ -18,9 +18,9 @@ body {
     &.dark-theme {
         background-color: $dark;
         color: $light;
+       
     }
 }
-
 
 
 .header_loggedin {

@@ -45,12 +45,31 @@
           <script>
             document.getElementById('myonoffswitch').addEventListener('click', function() {
               let darkThemeEnabled = document.body.classList.toggle('dark-theme');
+              let navb = document.getElementsByClassName("navbar").item(0);
+              if(!darkThemeEnabled){
+                navb.classList.replace("navbar-dark", "navbar-light");
+                navb.classList.replace("bg-dark", "bg-light");
+              }
+              else{
+                navb.classList.replace("navbar-light", "navbar-dark");
+                navb.classList.replace("bg-light", "bg-dark");
+              }
+
               localStorage.setItem('dark-theme-enabled', darkThemeEnabled);
             });
 
             if (JSON.parse(localStorage.getItem('dark-theme-enabled'))) {
+              let navb = document.getElementsByClassName("navbar").item(0);
               document.body.classList.add('dark-theme');
+              navb.classList.replace("navbar-light", "navbar-dark");
+              navb.classList.replace("bg-light", "bg-dark");   
+              navb.classList.add("border-bottom");
+              navb.classList.add("border-light");      
             }
+            else{
+              document.getElementById('myonoffswitch').removeAttribute("checked","false");
+            }
+            
           </script>
           
         </li>

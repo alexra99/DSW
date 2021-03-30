@@ -1,10 +1,13 @@
 <% content_for :title, "View Note | AESME" %>
-
 <div class="notes_wrapper">
   <div class="home">
 
     <div class="note" id=>
       <div class="note_content">
+        <%if @post.img%>
+
+          <%= image_tag (@post.img)%>
+        <%end%>
         <span class="note_title"><%= @post.title %></span>
         <span class="note_content"><%= @post.content %></span>
       </div>

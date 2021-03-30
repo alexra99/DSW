@@ -23,8 +23,10 @@
       </div>
 
       <div class="note_actions">
-        <%= f.submit "Cancel Note", class: "btn" %>
+        <%= link_to "Cancel Note", posts_path, class: "cancel_btn" %>
+        
         <%= f.submit "Create Note", class: "btn" %>
+        <%= f.submit "Add image", class: "btn" %>
       </div>
     <% end %>
 
