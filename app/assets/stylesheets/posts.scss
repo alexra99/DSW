@@ -95,9 +95,9 @@ body {
         box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
         -moz-box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
         -webkit-box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
-        transform: scale(1.1);
+      /*  transform: scale(1.1);
         -moz-transform: scale(1.1);
-        -o-transform: scale(1.1);
+        -o-transform: scale(1.1);*/
         position: relative;
         z-index: 5;
     }
@@ -410,12 +410,12 @@ body {
     box-sizing: border-box;
 }
 .onoffswitch-inner:before {
-    content: "ON";
+    content: "Dark";
     padding-left: 10px;
     background-color: #000000; color: #FFFFFF;
 }
 .onoffswitch-inner:after {
-    content: "OFF";
+    content: "Light";
     padding-right: 10px;
     background-color: #FFFFFF; color: #000000;
     text-align: right;

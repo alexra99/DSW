@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <title><%= yield(:title) %></title>
     <link rel="icon" href="/images/favicon.png" type="image/png">
     <%= favicon_link_tag 'favicon.ico' %>
@@ -29,7 +32,7 @@
       <a class="navbar-brand" href="#">Notes App</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-link" <%= link_to "Notes", posts_path %></span></a>
+          <a class="nav-link" <%= link_to "Notes", posts_path %></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" <%= link_to "About", about_path %></a>
