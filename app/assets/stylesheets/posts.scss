@@ -137,6 +137,7 @@ body {
     & .note_content {
         color: $dark;
     }
+    
     & .note_content {
         overflow: hidden;
         display: -webkit-box;
@@ -174,7 +175,6 @@ body {
 .home {
     position: relative;
     width: 607px;
-    margin-left: 365px;
     margin-bottom: 60px;
     & .home_info {
         margin-bottom: 10px;
@@ -196,7 +196,6 @@ body {
 // EDIT
 .edit {
     //position: relative;
-    margin-left: 30%;
     width: 400px;
     left: 490px;
     //font-size: 14px;
