@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
 
-  root 'posts#index'
+
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  get 'welcome', to: 'sessions#welcome'
+  get 'authorized', to: 'sessions#pages_requires_login'
+  
+  #root 'posts#index'
 
   
   

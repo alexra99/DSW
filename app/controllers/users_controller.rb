@@ -1,31 +1,34 @@
 class UsersController < ApplicationController
+  layout false
+  
+    skip_before_action :authorized, only: [:new, :create]
+
   def index
-      @users = user.all
+      @users = User.all
   end
 
   def show
-      @user = user.find(params[:id])
+      @user = User.find(params[:id])
   end
 
   def new
-      @user = user.new
+      @user = User.new
   end
 
   def create
-      @user = user.new(user_params)
-      if @user.save
-          redirect_to users_path, :notice => "user created!!"
-      else
-          render 'new'
-      end
+      @user = User.create(user_params)
+      
+      session[:user_id] = @user.id
+
+      redirect_to '/welcome'
   end
 
   def edit
-      @user = user.find(params[:id])
+      @user = User.find(params[:id])
   end
 
   def update
-      @user = user.find(params[:id])
+      @user = User.find(params[:id])
       if @user.update(user_params)
           redirect_to users_path, :notice => "user edited!!"
       else
@@ -34,13 +37,13 @@ class UsersController < ApplicationController
   end
 
   def destroy
-      @user = user.find(params[:id])
+      @user = User.find(params[:id])
       @user.destroy
       redirect_to users_path, :notice => "user deleted!!"
   end
 
   private def user_params
-      params.require(:user).permit(:title, :content)
+      params.require(:user).permit(:username, :password, :email, :rol)
   end
 
 end
