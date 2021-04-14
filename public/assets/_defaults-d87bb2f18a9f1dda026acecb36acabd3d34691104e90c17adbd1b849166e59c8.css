@@ -1,0 +1,221 @@
+/* line 21, app/assets/stylesheets/_defaults.scss */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 26, app/assets/stylesheets/_defaults.scss */
+body {
+  font-family: "Open Sans", "Roboto", Tahoma, arial, sans-serif;
+  background: #fbfbfb;
+  font-size: 13px;
+  color: #3d464d;
+  font-weight: normal;
+}
+
+/* line 34, app/assets/stylesheets/_defaults.scss */
+a {
+  text-decoration: none;
+  color: #2895F1;
+  outline: none;
+}
+
+/* line 40, app/assets/stylesheets/_defaults.scss */
+i {
+  pointer-events: none;
+}
+
+/* line 44, app/assets/stylesheets/_defaults.scss */
+hr {
+  border: 0;
+  border-top: 1px solid #c1c7cd;
+}
+
+/* line 49, app/assets/stylesheets/_defaults.scss */
+img {
+  display: block;
+}
+
+/* line 53, app/assets/stylesheets/_defaults.scss */
+.a_disabled {
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  background: #6ab9e8 !important;
+}
+
+/* line 61, app/assets/stylesheets/_defaults.scss */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  border: 1px solid black;
+  border-radius: 4px;
+  font-family: "Open Sans", "Roboto", Tahoma, arial, sans-serif;
+  color: #0b867a;
+  outline: none;
+  padding: 5px 5px;
+}
+
+/* line 70, app/assets/stylesheets/_defaults.scss */
+input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner {
+  padding: 0 !important;
+  border: 0 none !important;
+}
+
+/* line 75, app/assets/stylesheets/_defaults.scss */
+textarea {
+  word-break: break-all;
+  font-size: 13px;
+}
+
+/* line 80, app/assets/stylesheets/_defaults.scss */
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
+  border: 1px solid #56b4ef !important;
+  box-shadow: 0px 0px 5px 1px #c8def0;
+}
+
+/* line 85, app/assets/stylesheets/_defaults.scss */
+input[type="submit"], input[type="button"], .pri_btn {
+  font-weight: 600;
+  background: #1b9be9;
+  border: 1px solid #1b9be9;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* line 93, app/assets/stylesheets/_defaults.scss */
+input[type="submit"]:hover, input[type="button"]:hover, .pri_btn:hover {
+  opacity: .9;
+}
+
+/* line 94, app/assets/stylesheets/_defaults.scss */
+input[type="submit"]:focus, input[type="button"]:focus, .pri_btn:focus {
+  background: #198bd0;
+}
+
+/* line 97, app/assets/stylesheets/_defaults.scss */
+.cancel_btn {
+  border: 1px solid #56b4ef !important;
+  font-weight: 600;
+  font-size: 16px;
+  background: #1b9be9;
+  vertical-align: middle;
+  border: 1px solid #1b9be9;
+  color: #fff;
+  border-radius: 3px;
+  padding: 6px 12px !important;
+  cursor: pointer;
+  outline: none;
+}
+
+/* line 109, app/assets/stylesheets/_defaults.scss */
+.cancel_btn:hover {
+  opacity: .9;
+}
+
+/* line 110, app/assets/stylesheets/_defaults.scss */
+.cancel_btn:focus {
+  background: #198bd0;
+}
+
+/* line 113, app/assets/stylesheets/_defaults.scss */
+input[type="submit"]:disabled, input[type="button"]:disabled {
+  background: #6ab9e8 !important;
+  cursor: auto !important;
+}
+
+/* line 116, app/assets/stylesheets/_defaults.scss */
+input[type="submit"]:disabled:hover, input[type="button"]:disabled:hover {
+  opacity: 1 !important;
+}
+
+/* line 119, app/assets/stylesheets/_defaults.scss */
+.sec_btn {
+  border: 1px solid black;
+  background: #fbfbfb;
+  color: #1b2733;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 600;
+  outline: none;
+}
+
+/* line 127, app/assets/stylesheets/_defaults.scss */
+.sec_btn:hover {
+  color: #1b2733;
+  background-color: #fff7f7;
+}
+
+/* line 131, app/assets/stylesheets/_defaults.scss */
+.sec_btn:focus {
+  color: #1b2733;
+  background: #f7ebeb;
+}
+
+/* line 137, app/assets/stylesheets/_defaults.scss */
+.sec_btn_disabled {
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  color: #d8c3c3 !important;
+}
+
+/* line 143, app/assets/stylesheets/_defaults.scss */
+.btn {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+  border-radius: 6px;
+}
+
+/* line 151, app/assets/stylesheets/_defaults.scss */
+.btn:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+/* line 156, app/assets/stylesheets/_defaults.scss */
+.btn_delete {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+  border-radius: 6px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+/* line 167, app/assets/stylesheets/_defaults.scss */
+.btn_delete:hover {
+  background-color: red;
+  color: white;
+}
+
+/* line 172, app/assets/stylesheets/_defaults.scss */
+.home_last_mssg {
+  position: relative;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #f7f5f5;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  cursor: default;
+}
+
+/* line 181, app/assets/stylesheets/_defaults.scss */
+.home_last_mssg img {
+  position: relative;
+  text-align: center;
+  width: 150px;
+  display: block;
+  left: 48%;
+  transform: translate(-50%);
+}
+
+/* line 189, app/assets/stylesheets/_defaults.scss */
+.home_last_mssg span {
+  position: relative;
+  text-align: center;
+  display: block;
+  left: -5px;
+}

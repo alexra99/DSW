@@ -22,7 +22,6 @@ gem 'jbuilder', '~> 2.7'
 gem 'bcrypt-ruby'
 
 gem 'bootstrap', '~> 5.0.0.beta2'
-
 gem 'jquery-rails'
 
 
