@@ -29823,3 +29823,1592 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 973)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-16 19:02:23 +0200
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb
+  Rendered sessions/welcome.html.erb (Duration: 4557.9ms | Allocations: 80779)
+Completed 200 OK in 4605ms (Views: 4570.8ms | ActiveRecord: 0.0ms | Allocations: 83606)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 19:02:30 +0200
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 27.1ms | Allocations: 5129)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 219.9ms | Allocations: 15169)
+  Rendered layout layouts/application.html.erb (Duration: 248.2ms | Allocations: 20665)
+Completed 200 OK in 502ms (Views: 376.9ms | ActiveRecord: 1.8ms | Allocations: 22059)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:02:38 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.7ms | Allocations: 302)
+Completed 200 OK in 45ms (Views: 1.4ms | ActiveRecord: 1.4ms | Allocations: 6591)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:02:39 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.5ms | Allocations: 96)
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 994)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:03:03 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 24.7ms | Allocations: 4321)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.1ms | Allocations: 5517)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    13: %>
+    14:    <%=
+    15:           link_to "Delete",
+    16:           post_path(@post.id),
+    17:           class: "btn_delete",
+    18:           :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." },
+    19:           :method => :delete
+  
+app/views/users/show.html.erb:16
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:03:07 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 1.1ms | Allocations: 339)
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1691)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2021-04-16 19:03:09 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1251)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=2):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/posts/2" for 127.0.0.1 at 2021-04-16 19:04:09 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1074)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=2):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:04:44 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.7ms | Allocations: 134)
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1015)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2021-04-16 19:04:46 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1075)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=2):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:05:05 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 1.3ms | Allocations: 197)
+Completed 200 OK in 18ms (Views: 2.4ms | ActiveRecord: 1.3ms | Allocations: 5755)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:05:05 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.5ms | Allocations: 134)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1014)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2021-04-16 19:05:06 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+Completed 404 Not Found in 6ms (ActiveRecord: 1.0ms | Allocations: 1934)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=2):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 19:05:40 +0200
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 3752)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 10.2ms | Allocations: 6354)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 10464)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.2ms | Allocations: 11496)
+
+
+Started GET "/fonts/poppins/Poppins-Regular.ttf" for 127.0.0.1 at 2021-04-16 19:05:40 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/poppins/Poppins-Regular.ttf"):
+  
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-16 19:05:42 +0200
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1472)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 9.8ms | Allocations: 5770)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 7370)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 7906)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-16 19:05:46 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"grdrgdr", "content"=>"gder"}, "commit"=>"Create Note"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:19:in `create'
+  [1m[36mPost Create (9.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "grdrgdr"], ["content", "gder"], ["created_at", "2021-04-16 17:05:46.394646"], ["updated_at", "2021-04-16 17:05:46.394646"]]
+  ↳ app/controllers/posts_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (123.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:19:in `create'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 152ms (ActiveRecord: 133.7ms | Allocations: 4887)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 19:05:46 +0200
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1128)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 17.2ms | Allocations: 5785)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 7041)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.3ms | Allocations: 7444)
+
+
+Started DELETE "/posts/13" for 127.0.0.1 at 2021-04-16 19:05:52 +0200
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"13"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:40:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:41:in `destroy'
+  [1m[36mPost Destroy (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/posts_controller.rb:41:in `destroy'
+  [1m[36mTRANSACTION (109.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:41:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 125ms (ActiveRecord: 110.2ms | Allocations: 4879)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 19:05:53 +0200
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 992)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 24.0ms | Allocations: 5769)
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 6889)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.3ms | Allocations: 7289)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-16 19:06:14 +0200
+Processing by PostsController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:14:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 998)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 8.3ms | Allocations: 5762)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 6888)
+Completed 200 OK in 22ms (Views: 13.5ms | ActiveRecord: 1.0ms | Allocations: 11286)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-16 19:06:17 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"fse", "content"=>"fse"}, "commit"=>"Create Note"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:19:in `create'
+  [1m[36mPost Create (2.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "fse"], ["content", "fse"], ["created_at", "2021-04-16 17:06:17.264316"], ["updated_at", "2021-04-16 17:06:17.264316"]]
+  ↳ app/controllers/posts_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (79.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:19:in `create'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 93ms (ActiveRecord: 81.6ms | Allocations: 4616)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 19:06:17 +0200
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1159)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 11.4ms | Allocations: 5785)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 7072)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.4ms | Allocations: 7480)
+
+
+Started DELETE "/posts/13" for 127.0.0.1 at 2021-04-16 19:06:24 +0200
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"13"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:40:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:41:in `destroy'
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/posts_controller.rb:41:in `destroy'
+  [1m[36mTRANSACTION (83.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:41:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 97ms (ActiveRecord: 84.6ms | Allocations: 4859)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 19:06:25 +0200
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 992)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 12.9ms | Allocations: 5769)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 6889)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.1ms | Allocations: 7289)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:06:48 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 1.1ms | Allocations: 195)
+Completed 200 OK in 14ms (Views: 2.5ms | ActiveRecord: 0.9ms | Allocations: 5623)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2021-04-16 19:06:49 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.8ms | Allocations: 1934)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=2):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:06:52 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.8ms | Allocations: 134)
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1016)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:07:01 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 1.4ms | Allocations: 302)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1506)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:07:02 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.5ms | Allocations: 134)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1017)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:08:12 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 193)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 11.4ms | Allocations: 6166)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 6720)
+Completed 200 OK in 35ms (Views: 17.6ms | ActiveRecord: 2.2ms | Allocations: 12571)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:08:59 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.8ms | Allocations: 193)
+Completed 200 OK in 17ms (Views: 1.9ms | ActiveRecord: 1.2ms | Allocations: 5574)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:09:00 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.7ms | Allocations: 134)
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 1014)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 19:09:45 +0200
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 4275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 7.0ms | Allocations: 5749)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 10152)
+Completed 200 OK in 23ms (Views: 19.7ms | ActiveRecord: 1.6ms | Allocations: 11183)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-16 19:09:49 +0200
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 13.7ms | Allocations: 1255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 9.9ms | Allocations: 5769)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 7152)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.0ms | Allocations: 7678)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-16 19:09:51 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"fsf", "content"=>"fsefse"}, "commit"=>"Create Note"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:19:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "fsf"], ["content", "fsefse"], ["created_at", "2021-04-16 17:09:51.799137"], ["updated_at", "2021-04-16 17:09:51.799137"]]
+  ↳ app/controllers/posts_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (73.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:19:in `create'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 81ms (ActiveRecord: 73.7ms | Allocations: 4599)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 19:09:51 +0200
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1205)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 10.3ms | Allocations: 5769)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 7102)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.1ms | Allocations: 7770)
+
+
+Started DELETE "/posts/13" for 127.0.0.1 at 2021-04-16 19:10:03 +0200
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"13"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:40:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:41:in `destroy'
+  [1m[36mPost Destroy (0.5ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/posts_controller.rb:41:in `destroy'
+  [1m[36mTRANSACTION (54.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:41:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 84ms (ActiveRecord: 55.3ms | Allocations: 4858)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 19:10:04 +0200
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 992)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 15.3ms | Allocations: 5785)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 6905)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.3ms | Allocations: 7308)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-04-16 19:10:21 +0200
+Processing by UsersController#index as HTML
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 1852)
+
+
+  
+ActionController::MissingExactTemplate (UsersController#index is missing a template for request formats: text/html):
+  
+actionpack (6.1.3.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.1.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.1.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3.1) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:10:23 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.5ms | Allocations: 140)
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 0.3ms | Allocations: 1019)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:10:39 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.4ms | Allocations: 134)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1012)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:12:24 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.9ms | Allocations: 193)
+Completed 200 OK in 19ms (Views: 2.3ms | ActiveRecord: 2.1ms | Allocations: 5610)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:12:25 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.6ms | Allocations: 134)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1012)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:17:45 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 1.6ms | Allocations: 305)
+Completed 200 OK in 6ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1505)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:17:52 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.3ms | Allocations: 134)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1013)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:18:46 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.9ms | Allocations: 229)
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1428)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:18:48 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.3ms | Allocations: 89)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 968)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:19:15 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 1.0ms | Allocations: 230)
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1430)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:19:16 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.3ms | Allocations: 89)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 968)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:19:18 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.5ms | Allocations: 89)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 968)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:19:22 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.8ms | Allocations: 229)
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1428)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:19:24 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.4ms | Allocations: 89)
+Completed 200 OK in 6ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 968)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:19:25 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.2ms | Allocations: 89)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 967)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:19:26 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.2ms | Allocations: 89)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 967)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:19:32 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.6ms | Allocations: 236)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1438)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:19:33 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.4ms | Allocations: 91)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 970)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:19:35 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.4ms | Allocations: 91)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 969)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:19:35 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.3ms | Allocations: 91)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 971)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:19:35 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.2ms | Allocations: 91)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 980)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:19:40 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 1.1ms | Allocations: 1108)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 2281)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Users#user</h1>
+Username: <%= @user.username %>
+<br>
+E-mail: <%= @user.email %>
+<br>
+Rol: <%= @user.rol %>
+<br>
+<%=
+    link_to "Delete",
+    user_path(@user.id),
+    :method => :dick
+    :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." },
+    
+%>
+):
+1:    <h1>Users#user</h1>
+2:    Username: <%= @user.username %>
+3:    <br>
+4:    E-mail: <%= @user.email %>
+5:    <br>
+6:    Rol: <%= @user.rol %>
+7:    <br>
+8:    <%=
+9:        link_to "Delete",
+10:        user_path(@user.id),
+11:        :method => :dick
+12:        :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." },
+13:        
+14:    %>
+  
+app/views/users/show.html.erb:12: syntax error, unexpected =>, expecting ')'
+app/views/users/show.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/users/show.html.erb:16: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:12: syntax error, unexpected =>, expecting ')'
+app/views/users/show.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/users/show.html.erb:16: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:12: syntax error, unexpected =>, expecting ')'
+app/views/users/show.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/users/show.html.erb:16: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:12: syntax error, unexpected =>, expecting ')'
+app/views/users/show.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/users/show.html.erb:16: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:12: syntax error, unexpected =>, expecting ')'
+app/views/users/show.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/users/show.html.erb:16: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:12: syntax error, unexpected =>, expecting ')'
+app/views/users/show.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/users/show.html.erb:16: syntax error, unexpected `end', expecting ')'
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:19:51 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 1.7ms | Allocations: 232)
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1432)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:19:52 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.3ms | Allocations: 91)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 970)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:20:00 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 2.1ms | Allocations: 253)
+Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 1452)
+
+
+Started GET "/users.2" for 127.0.0.1 at 2021-04-16 19:20:02 +0200
+Processing by UsersController#index as */*
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 1705)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:20:24 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.9ms | Allocations: 250)
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1449)
+
+
+Started GET "/users.2" for 127.0.0.1 at 2021-04-16 19:20:25 +0200
+Processing by UsersController#index as */*
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 1688)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:20:38 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.7ms | Allocations: 230)
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1429)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:20:41 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.5ms | Allocations: 89)
+Completed 200 OK in 8ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 970)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:21:51 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 7.1ms | Allocations: 4417)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms | Allocations: 5589)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<ActionView::Base:0x00000000017b60>
+Did you mean?  @user):
+     7: <br>
+     8: <%=
+     9:     link_to "Delete",
+    10:     user,
+    11:     :method => :delete,
+    12:     :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." }
+    13:     
+  
+app/views/users/show.html.erb:10
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:21:55 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.7ms | Allocations: 240)
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1441)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:21:56 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.3ms | Allocations: 95)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 974)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:24:05 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 1.2ms | Allocations: 237)
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 1436)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:24:06 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.5ms | Allocations: 95)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 974)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:26:08 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 1.1ms | Allocations: 290)
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1489)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:26:09 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.4ms | Allocations: 124)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1003)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:26:14 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.7ms | Allocations: 289)
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1488)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-04-16 19:26:23 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.5ms | Allocations: 124)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 1003)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:26:24 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.9ms | Allocations: 124)
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1002)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:26:25 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.3ms | Allocations: 124)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 1002)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-04-16 19:26:31 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.4ms | Allocations: 124)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 1002)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:26:33 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.5ms | Allocations: 124)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1002)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:26:35 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.4ms | Allocations: 124)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1002)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-04-16 19:26:36 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.4ms | Allocations: 124)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 1002)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-04-16 19:26:50 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.8ms | Allocations: 296)
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1495)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:26:51 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.4ms | Allocations: 130)
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 1009)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:26:52 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.3ms | Allocations: 130)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 1008)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-04-16 19:26:54 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.4ms | Allocations: 130)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1008)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-04-16 19:28:20 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 1.1ms | Allocations: 376)
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1576)
+
+
+Started DELETE "/users/1" for 127.0.0.1 at 2021-04-16 19:28:21 +0200
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:41:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:42:in `destroy'
+  [1m[36mUser Destroy (19.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/users_controller.rb:42:in `destroy'
+  [1m[36mTRANSACTION (91.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:42:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 123ms (ActiveRecord: 111.5ms | Allocations: 4775)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-04-16 19:28:21 +0200
+Processing by UsersController#index as HTML
+Completed 406 Not Acceptable in 26ms (ActiveRecord: 0.0ms | Allocations: 1873)
+
+
+  
+ActionController::MissingExactTemplate (UsersController#index is missing a template for request formats: text/html):
+  
+actionpack (6.1.3.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.1.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.1.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3.1) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/users/1" for 127.0.0.1 at 2021-04-16 19:29:32 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1082)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:11:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2021-04-16 19:29:35 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1082)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:11:in `show'
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:29:38 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 1.2ms | Allocations: 366)
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1573)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-04-16 19:29:42 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1083)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:11:in `show'
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:30:15 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 1.8ms | Allocations: 366)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.1ms | Allocations: 1574)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:30:16 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.6ms | Allocations: 199)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1086)
+
+
+Started DELETE "/users/2" for 127.0.0.1 at 2021-04-16 19:30:17 +0200
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:41:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:42:in `destroy'
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/users_controller.rb:42:in `destroy'
+  [1m[36mTRANSACTION (71.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:42:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 84ms (ActiveRecord: 72.3ms | Allocations: 4783)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-04-16 19:30:17 +0200
+Processing by UsersController#index as HTML
+Completed 406 Not Acceptable in 4ms (ActiveRecord: 0.0ms | Allocations: 1870)
+
+
+  
+ActionController::MissingExactTemplate (UsersController#index is missing a template for request formats: text/html):
+  
+actionpack (6.1.3.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.1.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.1.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3.1) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/users/2" for 127.0.0.1 at 2021-04-16 19:30:22 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.3ms | Allocations: 1082)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=2):
+  
+app/controllers/users_controller.rb:11:in `show'
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2021-04-16 19:34:05 +0200
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb
+  Rendered sessions/welcome.html.erb (Duration: 37.5ms | Allocations: 1671)
+Completed 200 OK in 39ms (Views: 38.2ms | Allocations: 2271)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-04-16 19:34:13 +0200
+Processing by UsersController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:16:in `new'
+  Rendering users/new.html.erb
+  Rendered users/new.html.erb (Duration: 290.1ms | Allocations: 22316)
+Completed 200 OK in 343ms (Views: 291.4ms | ActiveRecord: 1.4ms | Allocations: 27236)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-04-16 19:34:18 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"user", "password"=>"[FILTERED]", "email"=>"user", "rol"=>"user"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "email", "rol", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "user"], ["password_digest", "$2a$12$x43B32Pij6hzsD/mso63H.cBPeT9IHvDZuz1jkveUS6AYM46S85oK"], ["email", "user"], ["rol", "user"], ["created_at", "2021-04-16 17:34:19.193269"], ["updated_at", "2021-04-16 17:34:19.193269"]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (58.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 300ms (ActiveRecord: 58.8ms | Allocations: 4150)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2021-04-16 19:34:19 +0200
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb
+  Rendered sessions/welcome.html.erb (Duration: 1.6ms | Allocations: 1451)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1786)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/users/3" for 127.0.0.1 at 2021-04-16 19:34:33 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.5ms | Allocations: 201)
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.3ms | Allocations: 1216)
+
+
+Started DELETE "/users/3" for 127.0.0.1 at 2021-04-16 19:34:50 +0200
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:41:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:42:in `destroy'
+  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/users_controller.rb:42:in `destroy'
+  [1m[36mTRANSACTION (106.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:42:in `destroy'
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 118ms (ActiveRecord: 107.2ms | Allocations: 4897)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-04-16 19:34:50 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb
+  Rendered users/new.html.erb (Duration: 3.5ms | Allocations: 2760)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3446)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-04-16 19:35:37 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"aa", "password"=>"[FILTERED]", "email"=>"aa", "rol"=>"aa"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "email", "rol", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "aa"], ["password_digest", "$2a$12$SusF4ImXPTKGan.Iubi4VuDt26fI00VikO.5ffzFf6h5Mi11a5U56"], ["email", "aa"], ["rol", "aa"], ["created_at", "2021-04-16 17:35:37.892943"], ["updated_at", "2021-04-16 17:35:37.892943"]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (160.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 412ms (ActiveRecord: 161.9ms | Allocations: 9378)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2021-04-16 19:35:38 +0200
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb
+  Rendered sessions/welcome.html.erb (Duration: 9.7ms | Allocations: 1674)
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 2272)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2021-04-16 19:35:43 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 1.0ms | Allocations: 310)
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1568)
+
+
+Started DELETE "/users/4" for 127.0.0.1 at 2021-04-16 19:36:01 +0200
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:41:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:42:in `destroy'
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/users_controller.rb:42:in `destroy'
+  [1m[36mTRANSACTION (92.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:42:in `destroy'
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 93.1ms | Allocations: 7949)
+
+
+  
+NameError (undefined local variable or method `welcome' for #<UsersController:0x0000000001cf70>
+Did you mean?  welcome_url):
+  
+app/controllers/users_controller.rb:43:in `destroy'
+Started GET "/" for 127.0.0.1 at 2021-04-16 19:36:21 +0200
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb
+  Rendered sessions/welcome.html.erb (Duration: 7.0ms | Allocations: 1458)
+Completed 200 OK in 12ms (Views: 9.6ms | Allocations: 1960)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-04-16 19:36:22 +0200
+Processing by UsersController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:16:in `new'
+  Rendering users/new.html.erb
+  Rendered users/new.html.erb (Duration: 3.1ms | Allocations: 2486)
+Completed 200 OK in 52ms (Views: 3.7ms | ActiveRecord: 1.2ms | Allocations: 7261)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-04-16 19:36:26 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"bb", "password"=>"[FILTERED]", "email"=>"bb", "rol"=>"bb"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "email", "rol", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "bb"], ["password_digest", "$2a$12$GdIe44K5A38d2vPyzwLrnu5WzD/GFIyKeekOXXc3owlX1zykIUBpa"], ["email", "bb"], ["rol", "bb"], ["created_at", "2021-04-16 17:36:26.664484"], ["updated_at", "2021-04-16 17:36:26.664484"]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (94.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 341ms (ActiveRecord: 95.3ms | Allocations: 4759)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2021-04-16 19:36:26 +0200
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb
+  Rendered sessions/welcome.html.erb (Duration: 1.9ms | Allocations: 1441)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1774)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2021-04-16 19:37:43 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 0.5ms | Allocations: 166)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 1181)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2021-04-16 19:38:14 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb
+  Rendered users/show.html.erb (Duration: 1.2ms | Allocations: 175)
+Completed 200 OK in 20ms (Views: 3.1ms | ActiveRecord: 1.4ms | Allocations: 5582)
+
+
+Started DELETE "/users/5" for 127.0.0.1 at 2021-04-16 19:38:15 +0200
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:41:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:42:in `destroy'
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/users_controller.rb:42:in `destroy'
+  [1m[36mTRANSACTION (118.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:42:in `destroy'
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 130ms (ActiveRecord: 119.4ms | Allocations: 4884)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2021-04-16 19:38:16 +0200
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb
+  Rendered sessions/welcome.html.erb (Duration: 2.2ms | Allocations: 1457)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 1955)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]

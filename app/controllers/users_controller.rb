@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   layout false
   
-    skip_before_action :authorized, only: [:new, :create]
+   # skip_before_action :authorized, only: [:new, :create]
 
   def index
       @users = User.all
@@ -9,6 +9,7 @@ class UsersController < ApplicationController
 
   def show
       @user = User.find(params[:id])
+      puts("en show")
   end
 
   def new
@@ -39,7 +40,8 @@ class UsersController < ApplicationController
   def destroy
       @user = User.find(params[:id])
       @user.destroy
-      redirect_to users_path, :notice => "user deleted!!"
+      redirect_to '/welcome', :notice => "user deleted!!"
+      puts("en destroy")
   end
 
   private def user_params

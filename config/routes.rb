@@ -16,6 +16,6 @@ Rails.application.routes.draw do
   resources :posts
   get "/about", to: "posts#about"
   resources :users
-  get "/user", to: "posts#user"
+  #get "/user", to: "posts#user"
   
 end

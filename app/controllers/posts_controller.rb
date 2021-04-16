@@ -7,6 +7,7 @@ class PostsController < ApplicationController
 
   def show
       @post = Post.find(params[:id])
+      puts("en show")
   end
 
   def new
@@ -39,6 +40,8 @@ class PostsController < ApplicationController
       @post = Post.find(params[:id])
       @post.destroy
       redirect_to posts_path, :notice => "Post deleted!!"
+      puts("en destroy")
+
   end
 
   private def post_params
