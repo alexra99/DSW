@@ -2,14 +2,12 @@
 
 one:
   username: MyString
-  password: MyString
+  password_digest: MyString
   email: MyString
   rol: MyString
-  posts: MyText
 
 two:
   username: MyString
-  password: MyString
+  password_digest: MyString
   email: MyString
   rol: MyString
-  posts: MyText

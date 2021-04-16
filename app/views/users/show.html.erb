@@ -1,0 +1,13 @@
+<h1>Users#user</h1>
+Username: <%= @user.username %>
+<br>
+E-mail: <%= @user.email %>
+<br>
+Rol: <%= @user.rol %>
+<br>
+<%=
+    link_to "Delete",
+    @user,
+    :method => :delete,
+    :data => { :confirm => "Are you sure to delete the user? You won't be able to get it back." }            
+%>
