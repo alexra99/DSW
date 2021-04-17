@@ -8,14 +8,14 @@ Rails.application.routes.draw do
   get 'sessions/welcome'
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
-  get 'welcome', to: 'sessions#welcome'
   get 'authorized', to: 'sessions#pages_requires_login'
   
-  root 'sessions#welcome'
+  root 'sessions#new'
   
   resources :posts
   get "/about", to: "posts#about"
-  resources :users
-  #get "/user", to: "posts#user"
+  resources :users do
+    resources :posts
+  end
   
 end

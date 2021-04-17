@@ -3,44 +3,43 @@
 <div class="home">
 
   <div class="home_info">
-    <span> Hello USERNAME! You have <%= @posts.length %> notes saved!</span>
-    <%= link_to "Create Note", new_post_path, class: "btn" %>
+    <span> Hello <%= @user.username %> You have <%= @posts.length %> notes saved!</span>
+    <%= link_to "Create Note", new_user_post_path(@user.id), class: "btn" %>
   </div>
 
   <% unless @posts.empty? %>
     <% @posts.each do |el| %>
-      <div class="note">
-        <div class="note_title">
-          <span><h3><%= el.title %></h3></span>
-        </div>
-        <div class="note_content">
-          <%if el.img%>
-            <%= image_tag (el.img)%>
-          <%end%>
-          <span><%= el.content %></span>
-        </div>
-        <div class="note_header common_header">
-          <%#= image_tag "ruby-red.png" %>
-          <div class="note_h_left">
-            <span class="note_username">Note by You.</span>
-            <span class='note_time'>Last modification: <%= el.created_at %></span>
+      <% if @user.id == el.user_id %>
+        <div class="note">
+          <div class="note_title">
+            <span><h3><%= el.title %></h3></span>
+          </div>
+          <div class="note_content">
+            <%if el.img%>
+              <%= image_tag (el.img)%>
+            <%end%>
+            <span><%= el.content %></span>
+          </div>
+          <div class="note_header common_header">
+            <%#= image_tag "ruby-red.png" %>
+            <div class="note_h_left">
+              <span class="note_username">Note by You.</span>
+              <span class='note_time'>Last modification: <%= el.created_at %></span>
+            </div>
+          </div>
+          <div class="note_actions">
+            <%= link_to "Edit", edit_user_post_path(@user.id, el.id ), class: "btn" %>
+            <%= link_to "View", user_post_path(@user.id, el.id), class: "btn" %>
+            <%=
+              link_to "Delete",
+              el,
+              class: "btn_delete",
+              :method => :delete,
+              :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." }            
+            %>
           </div>
         </div>
-        <div class="note_actions">
-          
-          
-          
-          <%= link_to "Edit", edit_post_path(el.id), class: "btn" %>
-          <%= link_to "View", post_path(el.id), class: "btn" %>
-          <%=
-            link_to "Delete",
-            el,
-            class: "btn_delete",
-            :method => :delete,
-            :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." }            
-          %>
-        </div>
-      </div>
+      <% end %>
     <% end %>
   <% end %>
   <% if @posts.empty? %>
