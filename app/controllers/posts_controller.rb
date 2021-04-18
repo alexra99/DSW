@@ -2,7 +2,7 @@
 class PostsController < ApplicationController
 
   def index
-    @user =  User.find_by(id: session[:user_id])
+    @user =  User.find(7)
     puts("Posts: #{@user.id}")
     @posts = Post.all
   end

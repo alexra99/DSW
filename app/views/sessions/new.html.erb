@@ -3,9 +3,8 @@
     <%= button_to "Sign Up", '/users/new', method: :get%> -->    
 
 <%= stylesheet_link_tag "sessions" %>
-<span>aa</span>
 
-<% if logged_in? %>    <h1>You are Logged In, <%= current_user.username %></h1><%end%>
+<% if logged_in? %> <h1>You are Logged In, <%= @current_user.username %></h1><%end%>
 <div class="limiter">
 	<div class="container-login100">
 		<div class="wrap-login100">
@@ -35,10 +34,9 @@
 				</div>
 					
 				<div class="container-login100-form-btn">
-					<!--<button class="login100-form-btn">-->
-						
-						<%= link_to "login", user_posts_path(@user.id)%>
-					<!--</button>-->
+					<%= form_tag('/login', :method => :post) do %>			
+						<%= submit_tag "Login" , :class => 'login100-form-btn'%>
+					<%end%>
 				</div>
 
 				<div class="text-center p-t-12">
