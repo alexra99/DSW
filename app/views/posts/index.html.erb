@@ -3,13 +3,21 @@
 <div class="home">
 
   <div class="home_info">
-    <span> Hello <%= @user.username %> You have <%= @posts.length %> notes saved!</span>
-    <%= link_to "Create Note", new_user_post_path(@user.id), class: "btn" %>
+     <% n_posts = 0%>
+    <% @posts.each do |el| %>
+     <% if current_user.id == el.user_id %>
+        <% n_posts = n_posts + 1%>
+      <% end %>
+    <% end %>
+      
+    <span> Hello <%= current_user.username %> You have <%= n_posts %> notes saved!</span>
+    <%= link_to "Create Note", new_post_path, class: "btn" %>
   </div>
 
   <% unless @posts.empty? %>
     <% @posts.each do |el| %>
-      <% if @user.id == el.user_id %>
+     
+      <% if current_user.id == el.user_id %>
         <div class="note">
           <div class="note_title">
             <span><h3><%= el.title %></h3></span>
@@ -28,8 +36,8 @@
             </div>
           </div>
           <div class="note_actions">
-            <%= link_to "Edit", edit_user_post_path(@user.id, el.id ), class: "btn" %>
-            <%= link_to "View", user_post_path(@user.id, el.id), class: "btn" %>
+            <%= link_to "Edit", edit_post_path(el.id ), class: "btn" %>
+            <%= link_to "View", post_path(el.id), class: "btn" %>
             <%=
               link_to "Delete",
               el,

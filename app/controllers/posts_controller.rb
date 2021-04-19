@@ -1,14 +1,12 @@
 
 class PostsController < ApplicationController
+  skip_before_action :authorized
 
   def index
-    @user =  User.find(7)
-    puts("Posts: #{@user.id}")
     @posts = Post.all
   end
 
   def show
-    @user =  User.find(params[:user_id])
       @post = Post.find(params[:id])
       puts(params[:id])
   end
@@ -18,12 +16,12 @@ class PostsController < ApplicationController
   end
 
   def create
-    @user =  User.find(params[:user_id])
-    post_paramsdwaaw = post_params
-    post_paramsdwaaw["user_id"] = @user.id
-    @post = Post.new(post_paramsdwaaw)
+    
+    post_params2 = post_params
+    post_params2["user_id"] = current_user.id
+    @post = Post.new(post_params2)
       if @post.save
-          redirect_to user_posts_path(@user.id), :notice => "Post created!!"
+          redirect_to user_posts_path(current_user.id), :notice => "Post created!!"
       else
           render 'new'
       end
@@ -34,20 +32,18 @@ class PostsController < ApplicationController
   end
 
   def update
-    @user =  User.find(params[:user_id])
-      @post = Post.find(params[:id])
+    @post = Post.find(params[:id])
       if @post.update(post_params)
-          redirect_to user_posts_path(@user.id), :notice => "Post edited!!"
+          redirect_to user_posts_path(current_user.id), :notice => "Post edited!!"
       else
           render 'edit'
       end
   end
 
   def destroy
-    @user =  User.find(params[:user_id])
       @post = Post.find(params[:id])
       @post.destroy
-      redirect_to  user_posts_path(@user.id), :notice => "Post deleted!!"
+      redirect_to  user_posts_path(current_user.id), :notice => "Post deleted!!"
       puts("en destroy")
 
   end

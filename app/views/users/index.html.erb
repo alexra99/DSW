@@ -1,0 +1,16 @@
+<h1>Users#user</h1>
+Username: <%= current_user.username %>
+<br>
+E-mail: <%= current_user.email %>
+<br>
+Rol: <%= current_user.rol %>
+<br>
+
+<%= button_to "Cancel Note", posts_path, class: "cancel_btn", :method => :get%>
+<%= button_to "Edit", edit_user_path(current_user.id), class: "btn", :method => :get %>
+<%=
+    button_to "Delete",
+    user_path(current_user.id),
+    :method => :delete,
+    :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." }
+%>

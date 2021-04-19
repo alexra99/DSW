@@ -11,22 +11,23 @@
 			<div class="login100-pic js-tilt" data-tilt>
 				<img src="assets/img-01.png" alt="IMG">
 			</div>
-
-			<form class="login100-form validate-form">
+ 			<%= form_tag('/login', :method => :post) do %>	
+			<!--<form class="login100-form validate-form">-->
 				<span class="login100-form-title">
 					Member Login
 				</span>
 
 				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<input class="input100" type="text" name="email" placeholder="Email">
-					<span class="focus-input100"></span>
+					<!--<input class="input100" type="text" name="email" placeholder="Email">-->
+					<%= text_field_tag :username, params[:username], :class => "form-control", :placeholder => "Enter Username", :required => true%>
 					<span class="symbol-input100">
 						<i class="fa fa-envelope" aria-hidden="true"></i>
 					</span>
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate = "Password is required">
-					<input class="input100" type="password" name="pass" placeholder="Password">
+					<!--<input class="input100" type="password" name="pass" placeholder="Password">-->
+					<%= password_field_tag :password, params[:password], :class => "form-control", :placeholder => "Enter Password", :required => true %>
 					<span class="focus-input100"></span>
 					<span class="symbol-input100">
 						<i class="fa fa-lock" aria-hidden="true"></i>
@@ -34,12 +35,10 @@
 				</div>
 					
 				<div class="container-login100-form-btn">
-					<%= form_tag('/login', :method => :post) do %>			
-						<%= submit_tag "Login" , :class => 'login100-form-btn'%>
-					<%end%>
-				</div>
-
-				<div class="text-center p-t-12">
+					<%#= link_to "Login" , :method => :post, :class => 'login100-form-btn'%>
+ 					<%#= f.submit "Login Note", class: "btn" %>
+					<div><%= submit_tag "Log in Now"%></div>
+					
 					<span class="txt1">
 						Forgot
 					</span>
@@ -54,7 +53,7 @@
 					<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 					</a>
 				</div>
-			</form>
+			<% end %>
 		</div>
 	</div>
 </div>

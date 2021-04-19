@@ -1,0 +1,35 @@
+<% content_for :title, "Edit note" %>
+
+  <div class="edit">
+
+    <div class="edit_info">
+      <%#= image_tag  "ruby-red.png", class: "edit_img", alt: "Your avatar" %>
+      <span>Edit User</span>
+    </div>
+
+    <%= form_for current_user, url: { action: 'update' } do |f| %>
+      <% if current_user.errors.any? %>
+        <%= render 'partials/emssg', mssg: current_user.errors.full_messages[0] %>
+      <% end %>
+
+      <div class="eu_div">
+        <span class='edit_span'>Username</span>
+        <%= f.text_field :username, class: "e_username", placeholder: 'Username', autofocus: true, spellcheck:false, autocomplete: false %>
+      </div>
+      <%#if current_user.img%>
+
+          <%#= image_tag (current_user.img)%>
+        <%#end%>
+      <div class="eb_div">
+        <span class='edit_span'>Email</span>
+        <%= f.text_field :email, placeholder: "Email", autofocus: true, class: "e_bio", spellcheck:false, autocomplete: false %>
+      </div>
+      
+      
+      <div class="note_actions">
+        <%= link_to "Cancel Note", users_path, class: "cancel_btn" %>
+        <%= f.submit "Update Note", class: "btn" %>
+      </div>
+    <% end %>
+
+  </div>

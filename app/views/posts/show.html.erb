@@ -33,11 +33,11 @@
               
             }
             </script>
-        <%= link_to "Back", user_posts_path(@user.id), class: 'btn' %>
-        <%= link_to "Edit", edit_user_post_path(@user.id, @post.id), class: "btn" %> 
+        <%= link_to "Back", posts_path, class: 'btn' %>
+        <%= link_to "Edit", edit_post_path(@post.id), class: "btn" %> 
         <%=
           link_to "Delete",
-          user_post_path(@user.id),
+          posts_path,
           class: "btn_delete",
           :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." },
           :method => :delete
