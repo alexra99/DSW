@@ -1,18 +1,47 @@
-<h1>Users#user</h1>
-Username: <%= @user.username %>
-<br>
-E-mail: <%= @user.email %>
-<br>
-Rol: <%= @user.rol %>
-<br>
+<%= stylesheet_link_tag "users" %>
 
-<%= button_to "Back", posts_path, class: "cancel_btn", :method => :get%>
-<% if @user.id == current_user.id || current_user.rol == "admin" %>
-  <%= button_to "Edit", edit_user_path(@user.id), class: "btn", :method => :get %>
-  <%=
-      button_to "Delete",
-      @user,
-      :method => :delete,
-      :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." }
-  %>
-<%end%>
+
+
+
+<div class="container">
+<div id="content" class="content p-0">
+    <div class="profile-header">
+        <div class="profile-header-cover"></div>
+        <div class="profile-header-content">
+            <div class="profile-header-img mb-4">
+                <img src="https://www.adl-logistica.org/wp-content/uploads/2019/07/imagen-perfil-sin-foto.png" class="mb-4" alt="" />
+            </div>
+
+            <div class="profile-header-info">
+          
+                <h3 class="m-t-sm"><%= @user.username %></h3>
+                <h6 class="m-b-sm">E-mail: <%= @user.email %></h6>
+                <br>
+                <div class="form-group row">
+                    <div class="col-md-4">
+                        <%= button_to "Edit profile", edit_user_path(@user.id), class: "btn form-control", :method => :get %>
+                    </div>
+                    <div class="col-md-4">
+                        <%= button_to "Back", posts_path, class: "btn form-control", :method => :get%>
+                    </div>
+                    <div class="col-md-4">
+                        <% if @user.id == current_user.id || current_user.rol == "admin" %>
+    
+                        <%=
+                            button_to "Delete",
+                            @user,
+                            :method => :delete,
+                            class: "btn form-control",
+                            :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." }
+                        %>
+                        <%end%>
+                    </div>
+                </div>
+               
+              
+            </div>
+        </div>
+
+        
+    </div>
+</div>
