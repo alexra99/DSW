@@ -34,6 +34,9 @@
         <li class="nav-item active">
           <a class="nav-link" <%= link_to "Notes", posts_path %></a>
         </li>
+        <li class="nav-item active">
+          <a class="nav-link" <%= link_to "Users", users_path%> </a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" <%= link_to "About", about_path %></a>
         </li>
@@ -82,7 +85,10 @@
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
       <li class="nav-item active">
-          <a class="nav-link" <%= link_to "My profile", users_path %></a>
+          <a class="nav-link" <%= link_to "My profile", user_path(current_user.id)%> </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" <%= link_to "Logout", "logout"%> </a>
         </li>
     </div>
   </nav>

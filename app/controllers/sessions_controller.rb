@@ -15,12 +15,17 @@ class SessionsController < ApplicationController
       session[:user_id] = @user.id
       redirect_to posts_path
     else
-      puts("PAL LOGIN")
       redirect_to root_path
     end
   end
 
   def login
+  end
+
+  def destroy
+    session[:user] = nil
+    current_user = nil
+    redirect_to :root
   end
 
   def pages_requires_login

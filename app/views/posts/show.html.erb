@@ -13,7 +13,8 @@
       <div class="note_header common_header">
         <%#= image_tag "ruby-red.png" %>
         <div class="note_h_left">
-          <span class="note_username">You..</span>
+          <% user = User.find(@post.user_id)%>
+          <span class="note_username">Note by <%= user.username%></span>
           <span class='note_time'><%= @post.created_at %></span>
         </div>
       </div>

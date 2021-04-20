@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
     def current_user
         
         User.find_by(id: session[:user_id])
+        
     end
 
     def logged_in?
@@ -14,6 +15,7 @@ class ApplicationController < ActionController::Base
     end
 
     def authorized           
+        puts("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA #{session[:user_id]}")
         redirect_to '/login' unless logged_in?
     end
 end

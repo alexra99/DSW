@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'users/new'
   get 'users/create'
   get 'login', to: 'sessions#new'
+  get 'logout', to: 'sessions#destroy'
   post 'login', to: 'sessions#create'
   get 'authorized', to: 'sessions#pages_requires_login'
   

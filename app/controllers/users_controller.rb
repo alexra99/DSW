@@ -40,6 +40,7 @@ class UsersController < ApplicationController
 
   def destroy
       @user = User.find(params[:id])
+      puts(" AAAAAAAAAAAAAAAAAAAAAAAAa #{@user.id}, #{@user.username}")
       @user.destroy
       redirect_to root_path, :notice => "user deleted!!"
       puts("en destroy")

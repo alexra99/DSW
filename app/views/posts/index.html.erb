@@ -5,7 +5,7 @@
   <div class="home_info">
      <% n_posts = 0%>
     <% @posts.each do |el| %>
-     <% if current_user.id == el.user_id %>
+     <% if current_user.id == el.user_id  || current_user.rol == "admin" %>
         <% n_posts = n_posts + 1%>
       <% end %>
     <% end %>
@@ -17,7 +17,7 @@
   <% unless @posts.empty? %>
     <% @posts.each do |el| %>
      
-      <% if current_user.id == el.user_id %>
+      <% if current_user.id == el.user_id || current_user.rol == "admin" %>
         <div class="note">
           <div class="note_title">
             <span><h3><%= el.title %></h3></span>
@@ -31,7 +31,8 @@
           <div class="note_header common_header">
             <%#= image_tag "ruby-red.png" %>
             <div class="note_h_left">
-              <span class="note_username">Note by You.</span>
+              <% user = User.find(el.user_id)%>
+              <span class="note_username">Note by <%= user.username%></span>
               <span class='note_time'>Last modification: <%= el.created_at %></span>
             </div>
           </div>
@@ -58,10 +59,3 @@
   <% end %>
 
 </div>
-
-<script type="text/javascript"> 
-  function cambiar_color() {
-    var color = document.getElementById("note");
-    color[0].style.background = "#FF0000";
-  }
-</script>

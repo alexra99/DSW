@@ -1,6 +1,6 @@
 
 class PostsController < ApplicationController
-  skip_before_action :authorized
+  skip_before_action :authorized, only: [:new, :create, :index, :show, :update, :destroy]
 
   def index
     @posts = Post.all
