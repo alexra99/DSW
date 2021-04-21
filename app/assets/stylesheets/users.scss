@@ -243,6 +243,9 @@ body .fc-widget-header a {
 .profile-header-img img {
     max-width: 100%;
 }
+.profile-header-img-users img{
+    max-width:  100%;
+}
 .table.table-profile th {
     border: none;
     color: #000;
@@ -304,4 +307,18 @@ body .fc-widget-header a {
 .friend-list .friend-info p {
     color: #666;
     margin: 0;
+}
+
+.profile-header-img-users {
+    float: left;
+    width: 5.5rem;
+    height: 5.5rem;
+    overflow: hidden;
+    z-index: 10;
+    margin: 0 1.25rem -1.25rem 0;
+    padding: 0.1875rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    border-radius: 0.25rem;
+    background: #fff;
 }

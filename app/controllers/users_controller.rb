@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    layout false, :except => [:show,:edit]
+    layout false, :except => [:show,:edit,:index]
   
     skip_before_action :authorized
 
