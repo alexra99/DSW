@@ -1,76 +1,58 @@
-<!--<%= stylesheet_link_tag "form" %>
+<%= stylesheet_link_tag "form" %>
 
 <body style="background-color: #999999;">
-	
+	<form class="new_user" id="new_user" action="/users" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="FvTevYhgnJoIzfgLCmfY6qZBvolW1aDzyG6RSZ2U_4elbKrrS93m0Kk11RisvCD3lilSQn9YeN6RZXaHftV2ow">
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
-
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
 				<form class="login100-form validate-form">
 					<span class="login100-form-title p-b-59">
 						Sign Up
 					</span>
-
-					<div class="wrap-input100 validate-input" data-validate="Name is required">
-						<span class="label-input100">Full Name</span>
-						<input class="input100" type="text" name="name" placeholder="Name...">
-						<span class="focus-input100"></span>
-					</div>
-
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<span class="label-input100">Email</span>
-						<input class="input100" type="text" name="email" placeholder="Email addess...">
+						<input type="text" placeholder="Email" name="user[email]" id="user_email"><br>
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Username is required">
-						<span class="label-input100">Username</span>
-						<input class="input100" type="text" name="username" placeholder="Username...">
+						<input type="text" placeholder="Username" name="user[username]" id="user_username"><br> 
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<span class="label-input100">Password</span>
-						<input class="input100" type="text" name="pass" placeholder="*************">
+						<input type="password" placeholder="Password" name="user[password]" id="user_password"><br>  
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Repeat Password is required">
-						<span class="label-input100">Repeat Password</span>
-						<input class="input100" type="text" name="repeat-pass" placeholder="*************">
+						<input type="password" placeholder="Confirm Password" name="user[password]" id="user_password"><br>  
 						<span class="focus-input100"></span>
 					</div>
-
-					<div class="flex-m w-full p-b-33">
-						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								<span class="txt1">
-									I agree to the
-									<a href="#" class="txt2 hov1">
-										Terms of User
-									</a>
-								</span>
-							</label>
+					
+					<div class="row">
+						<div class="col md-3">
+							
+								<input class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30" type="submit" name="commit" value="Create User" data-disable-with="Create User"></form>
+							
 						</div>
-
+						<div class="col">
+							<br>
+						</div>
+						
+						
+							
+								<div class="login100-form-bgbtn"></div>
+								<%= link_to 'Back', '/login', class: 'dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30'%>
+							
 						
 					</div>
+					
+						
+					
 
-					<div class="container-login100-form-btn">
-						<div class="wrap-login100-form-btn">
-							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">
-								Sign Up
-							</button>
-						</div>
+					
 
-						<a href="#" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
-							Sign in
-							<i class="fa fa-long-arrow-right m-l-5"></i>
-						</a>
-					</div>
 				</form>
 			</div>
 		</div>
@@ -85,18 +67,8 @@
 	<script src="vendor/daterangepicker/daterangepicker.js"></script>
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 	<script src="js/main.js"></script>
-
 </body>
-</html> -->
 
-<h1>Sign Up</h1>
-<%= form_for @user do |f|%>  
-<%= f.label :username%><br>  
-<%= f.text_field :username%><br>  
-<%= f.label :password%><br>  
-<%= f.password_field :password%><br>  
-<%= f.label :email%><br>  
-<%= f.text_field :email%><br>
-<%= f.label :rol%><br>  
-<%= f.text_field :rol%><br>
-<%= f.submit %><%end%>
+ 
+
+
