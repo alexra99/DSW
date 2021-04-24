@@ -11,6 +11,7 @@ $header_border: #f7f5f5;
 $second_border: #f7f9fa;
 $third-border: #f6f7f9;
 
+
 @mixin center{
   position: absolute;
   top: 50%;
@@ -145,6 +146,10 @@ input[type="submit"]:disabled, input[type="button"]:disabled{
   color: black; 
   border: 2px solid #008CBA;
   border-radius: 6px;
+}
+
+.btn-back{
+  margin-bottom: 10px;
 }
 
 

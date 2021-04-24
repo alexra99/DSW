@@ -4,7 +4,6 @@
 
 <%= stylesheet_link_tag "sessions" %>
 
-<% if logged_in? %> <h1>You are Logged In, <%= @current_user.username %></h1><%end%>
 <div class="limiter">
 	<div class="container-login100">
 		<div class="wrap-login100">
@@ -33,7 +32,10 @@
 						<i class="fa fa-lock" aria-hidden="true"></i>
 					</span>
 				</div>
-					
+    			<% if flash[:login_error] %>
+ 					<div class="error_message"><%= flash[:login_error] %></div>
+  				<% end %>
+	
 				<div class="container-login100-form-btn">
 					<button class="login100-form-btn" type="submit" name="commit" value="Login">LOGIN</button>					
 					<a class="txt" href="#">

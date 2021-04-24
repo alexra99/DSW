@@ -9,11 +9,13 @@
         <% n_posts = n_posts + 1%>
       <% end %>
     <% end %>
-      
     <span> Hello <%= current_user.username %> You have <%= n_posts %> notes saved!</span>
     <%= link_to "Create Note", new_post_path, class: "btn" %>
   </div>
-
+	<% if flash[:edit_post_error] %>
+ 	  <div class="error_message"><%= flash[:edit_post_error] %></div>
+  <% end %>
+	
   <% unless @posts.empty? %>
     <% @posts.each do |el| %>
      

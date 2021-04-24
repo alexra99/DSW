@@ -1,8 +1,19 @@
 <%= stylesheet_link_tag "users" %>
 
 <div class="container">
+
+<div class="row justify-content-center">
+    <%= link_to 'Back', posts_path, class: 'btn btn-back'%>
+</div>
+
+<% if flash[:edit_user_error] %>
+  <div class="error_message"><%= flash[:edit_user_error] %></div>
+<% end %>
+
 <span class="border border-secondary row flex-lg-nowrap">
 <div class="col">
+
+
     <div class="row align-items-center">
       <div class="col">
 
@@ -68,7 +79,6 @@
 </div>
 
 <div>
-<%= link_to 'Back', posts_path, class: 'btn btn-secondary'%>
 </div>
 
 

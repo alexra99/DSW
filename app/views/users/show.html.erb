@@ -18,24 +18,34 @@
                 <h6 class="m-b-sm">E-mail: <%= @user.email %></h6>
                 <br>
                 <div class="form-group row">
-                    <div class="col-md-4">
-                        <%= button_to "Edit profile", edit_user_path(@user.id), class: "btn form-control", :method => :get %>
-                    </div>
+                 
+                    <% if current_user.id == @user.id%>
+
                     <div class="col-md-4">
                         <%= button_to "Back", posts_path, class: "btn form-control", :method => :get%>
                     </div>
+                    <% else %>
                     <div class="col-md-4">
-                        <% if @user.id == current_user.id || current_user.rol == "admin" %>
-    
-                        <%=
-                            button_to "Delete",
-                            @user,
-                            :method => :delete,
-                            class: "btn form-control",
-                            :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." }
-                        %>
-                        <%end%>
+                        <%= button_to "Back", users_path, class: "btn form-control", :method => :get%>
                     </div>
+                    <%end%>
+               
+                    
+                    <% if @user.id == current_user.id || current_user.rol == "admin" %>
+                    <div class="col-md-4">    
+                    <%= button_to "Edit profile", edit_user_path(@user.id), class: "btn form-control", :method => :get %>
+                    </div>
+                    <div class="col-md-4">
+                    <%=
+                        button_to "Delete",
+                        @user,
+                        :method => :delete,
+                        class: "btn form-control",
+                        :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." }
+                    %>
+                    </div>
+                    <%end%>
+                
                 </div>
                
               
