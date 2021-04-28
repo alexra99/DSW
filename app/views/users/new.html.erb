@@ -1,0 +1,74 @@
+<%= stylesheet_link_tag "form" %>
+
+<body style="background-color: #999999;">
+	<form class="new_user" id="new_user" action="/users" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="FvTevYhgnJoIzfgLCmfY6qZBvolW1aDzyG6RSZ2U_4elbKrrS93m0Kk11RisvCD3lilSQn9YeN6RZXaHftV2ow">
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
+			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-59">
+						Sign Up
+					</span>
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input type="text" placeholder="Email" name="user[email]" id="user_email"><br>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Username is required">
+						<input type="text" placeholder="Username" name="user[username]" id="user_username"><br> 
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input type="password" placeholder="Password" name="user[password]" id="user_password"><br>  
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Repeat Password is required">
+						<input type="password" placeholder="Confirm Password" name="user[password]" id="user_password"><br>  
+						<span class="focus-input100"></span>
+					</div>
+					
+					<div class="row">
+						<div class="col md-3">
+							
+								<input class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30" type="submit" name="commit" value="Create User" data-disable-with="Create User"></form>
+							
+						</div>
+						<div class="col">
+							<br>
+						</div>
+						
+						
+							
+								<div class="login100-form-bgbtn"></div>
+								<%= link_to 'Back', '/login', class: 'dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30'%>
+							
+						
+					</div>
+					
+						
+					
+
+					
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js"></script>
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+ 
+
+

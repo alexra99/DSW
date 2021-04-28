@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <title><%= yield(:title) %></title>
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <%= favicon_link_tag 'favicon.ico' %>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <% if flash.any? %>
+      <%#= render 'partials/emssg', mssg: flash[:notice] %>
+    <% end %>
+  
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href=/posts>Notes App</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" <%= link_to "Notes", posts_path %></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" <%= link_to "Users", users_path%> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" <%= link_to "About", about_path %></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+          <label class="onoffswitch-label" for="myonoffswitch">
+              <span class="onoffswitch-inner"></span>
+              <!--<span class="onoffswitch-switch"></span>-->
+          </label>
+          </a>
+          <script>
+            document.getElementById('myonoffswitch').addEventListener('click', function() {
+              let darkThemeEnabled = document.body.classList.toggle('dark-theme');
+              let navb = document.getElementsByClassName("navbar").item(0);
+              if(!darkThemeEnabled){
+                navb.classList.replace("navbar-dark", "navbar-light");
+                navb.classList.replace("bg-dark", "bg-light");
+              }
+              else{
+                navb.classList.replace("navbar-light", "navbar-dark");
+                navb.classList.replace("bg-light", "bg-dark");
+              }
+
+              localStorage.setItem('dark-theme-enabled', darkThemeEnabled);
+            });
+
+            if (JSON.parse(localStorage.getItem('dark-theme-enabled'))) {
+              let navb = document.getElementsByClassName("navbar").item(0);
+              document.body.classList.add('dark-theme');
+              navb.classList.replace("navbar-light", "navbar-dark");
+              navb.classList.replace("bg-light", "bg-dark");   
+              navb.classList.add("border-bottom");
+              navb.classList.add("border-light");      
+            }
+            else{
+              document.getElementById('myonoffswitch').removeAttribute("checked","false");
+            }
+            
+          </script>
+          
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <li class="nav-item active">
+          <a class="nav-link" <%= link_to "My profile", user_path(current_user.id)%> </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" <%= link_to  "Logout", "/logout" %> </a>
+        </li>
+    </div>
+  </nav>
+

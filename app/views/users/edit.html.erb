@@ -1,0 +1,139 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+<div id="content" class="content p-0">
+    <div class="profile-header">
+        <div class="profile-header-cover"></div>
+        <div class="profile-header-content">
+            <div class="profile-header-img mb-4">
+                <img src="https://www.adl-logistica.org/wp-content/uploads/2019/07/imagen-perfil-sin-foto.png" class="mb-4" alt="" />
+            </div>
+
+            <div class="profile-header-info">
+          
+                <h3 class="m-t-sm"><%= @user.username %></h3>
+                <h6 class="m-b-sm">E-mail: <%= @user.email %></h6>
+                <br>
+                <div class="form-group row">
+                  <div class="col-md-4">
+                    <%= button_to "Back", user_path(current_user.id), class: "btn form-control", :method => :get%>
+                  </div>
+                </div>
+               
+              
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+<br>
+<div class="container">
+
+<span class="border border-secondary row flex-lg-nowrap">
+
+  <div class="col">
+    <div class="row">
+      <div class="col mb-3">
+        
+          <div class="card-body">
+            <div class="e-profile">
+              <div class="row">
+                
+                <div class="col d-flex flex-column flex-sm-row justify-content-between mb-3">
+                  <div class="text-center text-sm-left mb-2 mb-sm-0">
+                    <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap"><%= @user.username %></h4>
+                    
+                    
+                    <div class="mt-2">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fa fa-fw fa-camera"></i>
+                        <span>Change Photo</span>
+                      </button>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <div class="tab-content pt-3">
+                <div class="tab-pane active">
+                  <%= form_for @user, url: { action: 'update' } do |f| %>
+                    <div class="row">
+                      <div class="col">
+                        <div class="row">
+                          
+                          <div class="col">
+                            <div class="form-group">
+                              <label>Username</label>
+                              <%= f.text_field :username, class: "form-control", placeholder: @user.username, autofocus: true, spellcheck:false, autocomplete: false %>
+                            </div>
+                          </div>
+                          <div class="col">
+                            
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div class="form-group">
+                              <label>Email</label>
+                              <%= f.text_field :email, class: "form-control", placeholder: @user.email, autofocus: true, spellcheck:false, autocomplete: false %>
+                            </div>
+                          </div>
+                           <div class="col">
+                            
+                          </div>
+                        </div>
+                       
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-sm-6 mb-3">
+                        <div class="mb-2"><b>Change Password</b></div>
+                        <!--<div class="row">
+                          <div class="col">
+                            <div class="form-group">
+                              <label>Current Password</label>
+                              <%= f.password_field :password, class: "form-control", placeholder: '••••••', autofocus: true, spellcheck:false, autocomplete: false %>
+                            </div>
+                          </div>
+                        </div>-->
+                        <div class="row">
+                          <div class="col">
+                            <div class="form-group">
+                              <label>New Password</label>
+                              <%= f.password_field :password, class: "form-control", placeholder: '••••••', autofocus: true, spellcheck:false, autocomplete: false %>
+                     
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div class="form-group">
+                              <label>Confirm <span class="d-none d-xl-inline">Password</span></label>
+                              <%= f.password_field :password, class: "form-control", placeholder: '••••••', autofocus: true, spellcheck:false, autocomplete: false %>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col d-flex justify-content-end">
+                          <%= f.submit "Update User", class: "btn" %>
+                        </div>
+                      </div>
+                 
+                    </div>
+                     <% end %>
+
+                </div>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+
+      
+
+  </div>
+</span>
+</div>
+
