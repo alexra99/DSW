@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   root 'sessions#new'
   
   resources :posts
+  resources :collects
   get "/about", to: "posts#about"
   resources :users do
     resources :posts

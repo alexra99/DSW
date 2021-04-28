@@ -1,0 +1,62 @@
+<% content_for :title, "Collections | AESME" %>
+
+<div class="home">
+
+  <div class="home_info">
+     <% n_collects = 0%>
+    <% @collects.each do |el| %>
+     <% if current_user.id == el.user_id  || current_user.rol == "admin" %>
+        <% n_collects = n_collects + 1%>
+      <% end %>
+    <% end %>
+    <span> Hello <%= current_user.username %> You have <%= n_collects %> collections saved!</span>
+    <%= link_to "Create Collections", new_post_path, class: "btn" %>
+  </div>
+	<% if flash[:edit_post_error] %>
+ 	  <div class="error_message"><%= flash[:edit_post_error] %></div>
+  <% end %>
+	
+  <% unless @collects.empty? %>
+    <% @collects.each do |el| %>
+     
+      <% if current_user.id == el.user_id || current_user.rol == "admin" %>
+        <div class="note">
+            <div class="note_title">
+                <span><h3><%= el.name %></h3></span>
+            </div>
+        <div class="note_header common_header">
+            <%#= image_tag "ruby-red.png" %>
+            <div class="note_h_left">
+                <% user = User.find(el.user_id)%>
+                <% @posts.each do |post| %>
+                    <% if post.id == el.id %>
+                        <% n_notes = n_notes + 1%>
+                    <% end %>
+                <% end%>
+              <span class="note_username">Collection by <%= user.username%>. This collection has <%= n_collects%> notes</span>
+              <span class='note_time'>Last modification: <%= el.created_at %></span>
+            </div>
+        </div>
+          <div class="note_actions">
+            <%= link_to "Edit", edit_post_path(el.id ), class: "btn" %>
+            <%= link_to "View", post_path(el.id), class: "btn" %>
+            <%=
+              link_to "Delete",
+              el,
+              class: "btn_delete",
+              :method => :delete,
+              :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." }            
+            %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+  <% if @collects.empty? %>
+    <div class='home_last_mssg'>
+      <%#= image_tag "large.jpg" %>
+      <span>No collections for you. Go ahead and create one!!</span>
+    </div>
+  <% end %>
+
+</div>
