@@ -4,12 +4,11 @@ class CollectsController < ApplicationController
     def index
         @collects = Collect.all
         @posts = Post.all
-        
     end
     
     def show
-        
-        @post = Post.find(params[:id])
+        @collect = Collect.find(params[:id])
+        @post = Post.find_by(collect_id: params[:id])
         if @post.user_id != session[:user_id]
             flash[:edit_post_error] = "You can't view other user's note"
             redirect_to posts_path, :alert => "You can't edit a post that is not yours :("
