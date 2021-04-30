@@ -4,12 +4,12 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
+    @collects = Collect.all
   end
 
   def show
-    
       @post = Post.find(params[:id])
-      if @post.user_id != session[:user_id]
+      if @post.user_id != session[:user_id] && session[:rol] != "admin"
           flash[:edit_post_error] = "You can't view other user's note"
           redirect_to posts_path, :alert => "You can't edit a post that is not yours :("
       end
@@ -23,7 +23,15 @@ class PostsController < ApplicationController
     
     post_params2 = post_params
     post_params2["user_id"] = current_user.id
+    # Hay que ponerlo not null
+    post_params2["collect_id"] = 1
+    
     @post = Post.new(post_params2)
+    puts(post_params2)
+    puts(@post.title)
+    puts(@post.content)
+    puts(@post.user_id)
+
       if @post.save
           redirect_to posts_path, :notice => "Post created!!"
       else
@@ -57,7 +65,7 @@ class PostsController < ApplicationController
   end
 
   private def post_params
-      params.require(:post).permit(:title, :content, :user_id)
+      params.require(:post).permit(:title, :content, :user_id, :collect_id)
   end
 
 end

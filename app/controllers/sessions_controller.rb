@@ -15,6 +15,8 @@ class SessionsController < ApplicationController
       session[:user_id] = @user.id
       session[:email] = @user.email
       session[:username] = @user.username
+      session[:rol] = @user.rol
+      
       redirect_to posts_path
     else
       flash[:login_error] = "Login incorrecto"

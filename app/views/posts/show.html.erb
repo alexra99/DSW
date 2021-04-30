@@ -2,7 +2,7 @@
 <div class="notes_wrapper">
   <div class="home">
 
-    <div class="note" id=>
+    <div class="note">
       <div class="note_content">
         <%if @post.img%>
           <%= image_tag (@post.img)%>
@@ -29,9 +29,7 @@
           <script type="text/javascript">
             document.getElementById("color").onchange = function(){
               backRGB = this.value
-
               document.getElementsByClassName("note")[0].style.background = backRGB
-              
             }
             </script>
         <%= link_to "Back", posts_path, class: 'btn' %>
