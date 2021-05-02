@@ -10,7 +10,11 @@ class CollectsController < ApplicationController
     def show
         @collect = Collect.find(params[:id])
         #@post = Post.find_by(collect_id: params[:id])
-        @posts = Post.all    
+        @posts = Post.all
+        if @collect.user_id != session[:user_id] && session[:rol] != "admin"
+            flash[:edit_collect_error] = "You can't view other user's collection"
+            redirect_to collects_path, :alert => "You can't edit a post that is not yours :("
+        end 
     end
     
     def new

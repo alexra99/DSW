@@ -17,20 +17,21 @@ class PostsController < ApplicationController
 
   def new
       @post = Post.new
+      @collects = Collect.all
   end
 
   def create
-    
     post_params2 = post_params
     post_params2["user_id"] = current_user.id
     # Hay que ponerlo not null
-    post_params2["collect_id"] = 1
+    #post_params2["collect_id"] = 1
     
     @post = Post.new(post_params2)
     puts(post_params2)
     puts(@post.title)
     puts(@post.content)
     puts(@post.user_id)
+    puts(post_params["collect_id"])
 
       if @post.save
           redirect_to posts_path, :notice => "Post created!!"
@@ -40,6 +41,7 @@ class PostsController < ApplicationController
   end
 
   def edit
+    @collects = Collect.all
     @post = Post.find(params[:id])
     if @post.user_id != session[:user_id]
         flash[:edit_post_error] = "You can't edit other user's note"

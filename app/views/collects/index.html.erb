@@ -12,8 +12,8 @@
     <span> Hello <%= current_user.username %> You have <%= n_collects %> collections saved!</span>
     <%= link_to "Create Collections", new_collect_path, class: "btn" %>
   </div>
-	<% if flash[:edit_post_error] %>
- 	  <div class="error_message"><%= flash[:edit_post_error] %></div>
+	<% if flash[:edit_collect_error] %>
+ 	  <div class="error_message"><%= flash[:edit_collect_error] %></div>
   <% end %>
 	
   <% unless @collects.empty? %>
