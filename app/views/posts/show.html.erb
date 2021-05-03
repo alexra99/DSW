@@ -4,8 +4,8 @@
 
     <div class="note">
       <div class="note_content">
-        <%if @post.img%>
-          <%= image_tag (@post.img)%>
+        <%if @post.has_photo?%>
+          <%= image_tag (@post.photo_path)%>
         <%end%>
         <span class="note_title"><%= @post.title %></span>
         <span class="note_content"><%= @post.content %></span>

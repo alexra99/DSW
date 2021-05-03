@@ -42,8 +42,8 @@
             <span><h3><%= el.title %></h3></span>
           </div>
           <div class="note_content">
-            <%if el.img%>
-              <%= image_tag (el.img)%>
+            <%if el.has_photo?%>
+              <%= image_tag (el.photo_path)%>
             <%end%>
             <span><%= el.content %></span>
           </div>
