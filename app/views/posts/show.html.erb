@@ -1,12 +1,9 @@
 <% content_for :title, "View Note | AESME" %>
 <div class="notes_wrapper">
   <div class="home">
-
     <div class="note">
       <div class="note_content">
-        <%if @post.has_photo?%>
-          <%= image_tag (@post.photo_path)%>
-        <%end%>
+        <%if @post.has_photo?%> <%= image_tag (@post.photo_path)%> <%end%>
         <span class="note_title"><%= @post.title %></span>
         <span class="note_content"><%= @post.content %></span>
       </div>
@@ -14,32 +11,25 @@
         <div class="note_h_left">
           <% user = User.find(@post.user_id)%>
           <span class="note_username">Note by <%= user.username%></span>
-          <span class='note_time'><%= @post.created_at %></span>
+          <span class="note_time"><%= @post.created_at %></span>
         </div>
       </div>
       <div class="note_actions">
-      <select list="list_colors" id="color" class="btn">
+        <select list="list_colors" id="color" class="btn">
           <datalist id="list_colors">
-            <option style="color:#ffffcc"value="#ffffcc">Amarillo</option>
-            <option style="color:#ff0000" value="#ff0000">Rojo</option>
-            <option style="color:#FF00FF" value="#FF00FF">Rosa</option>
+            <option style="color: #ffffcc;" value="#ffffcc">Amarillo</option>
+            <option style="color: #ff0000;" value="#ff0000">Rojo</option>
+            <option style="color: #ff00ff;" value="#FF00FF">Rosa</option>
           </datalist>
         </select>
-          <script type="text/javascript">
-            document.getElementById("color").onchange = function(){
-              backRGB = this.value
-              document.getElementsByClassName("note")[0].style.background = backRGB
-            }
-            </script>
-        <%= link_to "Back", posts_path, class: 'btn' %>
-        <%= link_to "Edit", edit_post_path(@post.id), class: "btn" %> 
-        <%=
-          link_to "Delete",
-          posts_path,
-          class: "btn_delete",
-          :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." },
-          :method => :delete
-        %>
+        <script type="text/javascript">
+          document.getElementById("color").onchange = function () {
+            backRGB = this.value;
+            document.getElementsByClassName("note")[0].style.background = backRGB;
+          };
+        </script>
+        <%= link_to "Back", posts_path, class: 'btn' %> <%= link_to "Edit", edit_post_path(@post.id), class: "btn" %> <%= link_to "Delete", posts_path, class: "btn_delete", :data => { :confirm => "Are you sure to delete the note? You won't
+        be able to get it back." }, :method => :delete %>
       </div>
     </div>
   </div>

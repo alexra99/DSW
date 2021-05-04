@@ -35,11 +35,14 @@ class UsersController < ApplicationController
   end
 
   def update
+    puts("en update")
       @user = User.find(params[:id])
       if @user.update(user_params)
-        redirect_to users_path, :notice => "user edited!!"
+        flash[:edit_user_success] = "User changed successfully!!"  
+        redirect_to user_path(@user.id), :notice => "user edited!!"
       else
-        render 'edit'
+        flash[:edit_user_error] = "New password and confirmation password are not the same"  
+        redirect_to edit_user_path(@user.id)
       end
   end
 

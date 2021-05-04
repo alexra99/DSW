@@ -1,56 +1,51 @@
-
-<!-- <%= button_to "Login", '/login', method: :get, class:"login100-form-btn"%>
-    <%= button_to "Sign Up", '/users/new', method: :get%> -->    
-
 <%= stylesheet_link_tag "sessions" %>
 
 <div class="limiter">
-	<div class="container-login100">
-		<div class="wrap-login100">
-			<div class="login100-pic js-tilt" data-tilt>
-				<img src="assets/img-01.png" alt="IMG">
-			</div>
- 			<%= form_tag('/login', :method => :post) do %>	
-			<!--<form class="login100-form validate-form">-->
-				<span class="login100-form-title">
-					Member Login
-				</span>
+  <div class="container-login100">
+    <div class="wrap-login100">
+      <div class="login100-pic js-tilt" data-tilt>
+        <img src="assets/img-01.png" alt="IMG" />
+      </div>
+      <%= form_tag('/login', :method => :post) do %>
+      <!--<form class="login100-form validate-form">-->
+      <span class="login100-form-title">
+        Member Login
+      </span>
 
-				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<!--<input class="input100" type="text" name="email" placeholder="Email">-->
-					<%= text_field_tag :username, params[:username], :class => "input100", :placeholder => "Enter Username", :required => true%>
-					<span class="symbol-input100">
-						<i class="fa fa-envelope" aria-hidden="true"></i>
-					</span>
-				</div>
+      <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+        <!--<input class="input100" type="text" name="email" placeholder="Email">-->
+        <%= text_field_tag :username, params[:username], :class => "input100", :placeholder => "Enter Username", :required => true%>
+        <span class="symbol-input100">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </span>
+      </div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Password is required">
-					<!--<input class="input100" type="password" name="pass" placeholder="Password">-->
-					<%= password_field_tag :password, params[:password], :class => "input100", :placeholder => "Enter Password", :required => true %>
-					<span class="focus-input100"></span>
-					<span class="symbol-input100">
-						<i class="fa fa-lock" aria-hidden="true"></i>
-					</span>
-				</div>
-    			<% if flash[:login_error] %>
- 					<div class="error_message"><%= flash[:login_error] %></div>
-  				<% end %>
-	
-				<div class="container-login100-form-btn">
-					<button class="login100-form-btn" type="submit" name="commit" value="Login">LOGIN</button>					
-					<a class="txt" href="#">
-					<br></br>
-						Forgot Username / Password?
-					</a>
-				</div>
+      <div class="wrap-input100 validate-input" data-validate="Password is required">
+        <!--<input class="input100" type="password" name="pass" placeholder="Password">-->
+        <%= password_field_tag :password, params[:password], :class => "input100", :placeholder => "Enter Password", :required => true %>
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+        </span>
+      </div>
+      <% if flash[:login_error] %>
+      <div class="error_message"><%= flash[:login_error] %></div>
+      <% end %>
 
-				<div class="text-center p-t-136">
-					<a class="txt2" href="#">
-						<%= link_to "Create Account🡺", new_user_path %>
-					
-					</a>
-				</div>
-			<% end %>
-		</div>
-	</div>
+      <div class="container-login100-form-btn">
+        <button class="login100-form-btn" type="submit" name="commit" value="Login">LOGIN</button>
+        <a class="txt" href="#">
+          <br />
+          Forgot Username / Password?
+        </a>
+      </div>
+
+      <div class="text-center p-t-136">
+        <a class="txt2" href="#">
+          <%= link_to "Create Account🡺", new_user_path %>
+        </a>
+      </div>
+      <% end %>
+    </div>
+  </div>
 </div>

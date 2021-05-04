@@ -1,57 +1,41 @@
 <%= stylesheet_link_tag "users" %>
 
-
-
-
 <div class="container">
-<div id="content" class="content p-0">
+  <div id="content" class="content p-0">
+    <% if flash[:edit_user_success] %>
+      <div class="success_message"><%= flash[:edit_user_success] %></div>
+    <% end %>
     <div class="profile-header">
-        <div class="profile-header-cover"></div>
-        <div class="profile-header-content">
-            <div class="profile-header-img mb-4">
-                <img src="https://www.adl-logistica.org/wp-content/uploads/2019/07/imagen-perfil-sin-foto.png" class="mb-4" alt="" />
-            </div>
-
-            <div class="profile-header-info">
-          
-                <h3 class="m-t-sm"><%= @user.username %></h3>
-                <h6 class="m-b-sm">E-mail: <%= @user.email %></h6>
-                <br>
-                <div class="form-group row">
-                 
-                    <% if current_user.id == @user.id%>
-
-                    <div class="col-md-4">
-                        <%= button_to "Back", posts_path, class: "btn form-control", :method => :get%>
-                    </div>
-                    <% else %>
-                    <div class="col-md-4">
-                        <%= button_to "Back", users_path, class: "btn form-control", :method => :get%>
-                    </div>
-                    <%end%>
-               
-                    
-                    <% if @user.id == current_user.id || current_user.rol == "admin" %>
-                    <div class="col-md-4">    
-                    <%= button_to "Edit profile", edit_user_path(@user.id), class: "btn form-control", :method => :get %>
-                    </div>
-                    <div class="col-md-4">
-                    <%=
-                        button_to "Delete",
-                        @user,
-                        :method => :delete,
-                        class: "btn form-control",
-                        :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." }
-                    %>
-                    </div>
-                    <%end%>
-                
-                </div>
-               
-              
-            </div>
+      <div class="profile-header-cover"></div>
+      <div class="profile-header-content">
+        <div class="profile-header-img mb-4">
+          <img src="https://www.adl-logistica.org/wp-content/uploads/2019/07/imagen-perfil-sin-foto.png" class="mb-4" alt="" />
         </div>
+        <div class="profile-header-info">
+          <h3 class="m-t-sm"><%= @user.username %></h3>
+          <h6 class="m-b-sm">E-mail: <%= @user.email %></h6>
+          <br />
+          <div class="form-group row">
+            <% if current_user.id == @user.id%>
 
-        
+            <div class="col-md-4">
+              <%= button_to "Back", posts_path, class: "btn form-control", :method => :get%>
+            </div>
+            <% else %>
+            <div class="col-md-4">
+              <%= button_to "Back", users_path, class: "btn form-control", :method => :get%>
+            </div>
+            <%end%> <% if @user.id == current_user.id || current_user.rol == "admin" %>
+            <div class="col-md-4">
+              <%= button_to "Edit profile", edit_user_path(@user.id), class: "btn form-control", :method => :get %>
+            </div>
+            <div class="col-md-4">
+              <%= button_to "Delete", @user, :method => :delete, class: "btn form-control", :data => { :confirm => "Are you sure to delete the note? You won't be able to get it back." } %>
+            </div>
+            <%end%>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>

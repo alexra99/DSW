@@ -10,7 +10,7 @@
     <%= form_for @collect, url: { action: 'update' } do |f| %>
       <div class="eu_div">
         <span class='edit_span'>Title</span>
-        <%= f.text_field :name, class: "e_username", placeholder: 'Title..', autofocus: true, spellcheck:false, autocomplete: false %>
+        <%= f.text_field :name, class: "e_username", placeholder: 'Title..', autofocus: true, spellcheck:false, autocomplete: false, :required => true %>
         <% @collect.errors.full_messages_for(:name).each do |message| %>
           <div><%= message %></div>
         <% end %>

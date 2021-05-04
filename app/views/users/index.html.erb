@@ -1,84 +1,54 @@
 <%= stylesheet_link_tag "users" %>
-
 <div class="container">
-
-<div class="row justify-content-center">
+  <div class="row justify-content-center">
     <%= link_to 'Back', posts_path, class: 'btn btn-back'%>
-</div>
-
-<% if flash[:edit_user_error] %>
+  </div>
+  <% if flash[:edit_user_error] %>
   <div class="error_message"><%= flash[:edit_user_error] %></div>
-<% end %>
-
-<span class="border border-secondary row flex-lg-nowrap">
-<div class="col">
-
-
-    <div class="row align-items-center">
-      <div class="col">
-
-      </div>
-      <div class="col">
-        <h4>Name</h4>
-      </div><div class="col">
-        <h4>Email</h4>
-      </div>
-      <div class="col">
-        <h4>Actions</h4>
-      </div>
-    </div>
-    
-
-  <div class="row">
+  <% end %>
+  <span class="border border-secondary row flex-lg-nowrap">
+    <div class="col">
+      <div class="row align-items-center">
+        <div class="col"></div>
         <div class="col">
-          <hr>
+          <h4>Name</h4>
+        </div>
+        <div class="col">
+          <h4>Email</h4>
+        </div>
+        <div class="col">
+          <h4>Actions</h4>
         </div>
       </div>
-
-    <% @users.each do |user| %>
-      <div style="margin-bottom: 30px; " class="row align-items-center">
+      <div class="row">
+        <div class="col">
+          <hr />
+        </div>
+      </div>
+      <% @users.each do |user| %>
+      <div style="margin-bottom: 30px;" class="row align-items-center">
         <div class="col">
           <div class="profile-header-img-users mb-6">
-                <img src="https://www.adl-logistica.org/wp-content/uploads/2019/07/imagen-perfil-sin-foto.png" class="mb-4" alt="" />
+            <img src="https://www.adl-logistica.org/wp-content/uploads/2019/07/imagen-perfil-sin-foto.png" class="mb-4" alt="" />
           </div>
         </div>
-        <div class="col align-middle" >
+        <div class="col align-middle">
           <h5><%= user.username %></h5>
         </div>
         <div class="col">
           <h5><%= user.email %></h5>
         </div>
         <div class="col">
-          <%= link_to 'Show', user_path(user.id), class: 'btn btn-primary' %>
-          <% if current_user.rol == "admin" %>
-            <%= link_to "Edit", edit_user_path(user), class: 'btn btn-primary' %>
-            <%= link_to "Delete", user_path(user.id), method: :delete, data: { confirm: "You sure?" }, class: 'btn btn-danger' %>
-            <% if !user.rol == "admin" %>
-              <%= link_to "Make Admin", {action: "make_admin", id: user.id }, method: :put, class: 'btn btn-primary'  %>
-            <% end %>
-          <% end %>
-    
+          <%= link_to 'Show', user_path(user.id), class: 'btn btn-primary' %> <% if current_user.rol == "admin" %> <%= link_to "Edit", edit_user_path(user), class: 'btn btn-primary' %> <%= link_to "Delete", user_path(user.id), method:
+          :delete, data: { confirm: "You sure?" }, class: 'btn btn-danger' %> <% if !user.rol == "admin" %> <%= link_to "Make Admin", {action: "make_admin", id: user.id }, method: :put, class: 'btn btn-primary' %> <% end %> <% end %>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <hr>
+          <hr />
         </div>
       </div>
-      <% end %>    
-
-
-
-
-
-
+      <% end %>
+    </div>
+  </span>
 </div>
-
-</span>
-  
-</div>
-
-<div>
-</div>
-
-

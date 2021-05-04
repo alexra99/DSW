@@ -1,42 +1,30 @@
 <% content_for :title, "New Note" %>
 
-  <div class="edit">
+<div class="edit">
+  <div class="edit_info">
+    <span>Create Note</span>
+  </div>
 
-    <div class="edit_info">
-      <span>Create Note</span>
-    </div>
+  <%= form_for @post, html: {multipart: true}, url: { action: 'create' } do |f| %>
 
-    <%= form_for @post, html: {multipart: true}, url: { action: 'create' } do |f| %>
-      
-      <div class="eu_div">
-        <span class='edit_span'>Title</span>
-        <%= f.text_field :title, class: "e_username", placeholder: 'Title...', autofocus: true, spellcheck:false, autocomplete: false %>
-        <% @post.errors.full_messages_for(:title).each do |message| %>
-          <div><%= message %></div>
-        <% end %>
-      </div>
-
-      <div class="eb_div">
-        <span class='edit_span'>Content</span>
-        <%= f.text_area :content, placeholder: "Content...", autofocus: true, class: "e_bio", spellcheck:false, autocomplete: false %>
-        <% @post.errors.full_messages_for(:content).each do |message| %>
-          <div><%= message %></div>
-        <% end %>
-      </div>
-      <% collect_list = [] %>
-      
-      <% @collects.each do |el|%>
-        <% if el.user_id == current_user.id || current_user.rol == "admin"%>
-          <% collect_list.push(el) %>
-        <%end%>
-      <% end %>
-        
-      <%= f.collection_select :collect_id, collect_list, :id, :name, include_blank: true, class:"btn" %>
-      
-      <div class="note_actions">
-        <%= f.file_field :photo, accept: 'image/png,image/jpeg', class: "upload_image_input"%>
-        <%= link_to "Cancel Note", posts_path, class: "cancel_btn" %>   
-        <%= f.submit "Create Note", class: "btn" %>
-      </div>
+  <div class="eu_div">
+    <span class="edit_span">Title</span>
+    <%= f.text_field :title, class: "e_username", placeholder: 'Title...', autofocus: true, spellcheck:false, autocomplete: false %> <% @post.errors.full_messages_for(:title).each do |message| %>
+    <div><%= message %></div>
     <% end %>
   </div>
+
+  <div class="eb_div">
+    <span class="edit_span">Content</span>
+    <%= f.text_area :content, placeholder: "Content...", autofocus: true, class: "e_bio", spellcheck:false, autocomplete: false %> <% @post.errors.full_messages_for(:content).each do |message| %>
+    <div><%= message %></div>
+    <% end %>
+  </div>
+  <% collect_list = [] %> <% @collects.each do |el|%> <% if el.user_id == current_user.id || current_user.rol == "admin"%> <% collect_list.push(el) %> <%end%> <% end %> <%= f.collection_select :collect_id, collect_list, :id, :name,
+  include_blank: true, class:"btn" %>
+
+  <div class="note_actions">
+    <%= f.file_field :photo, accept: 'image/png,image/jpeg', class: "upload_image_input"%> <%= link_to "Cancel Note", posts_path, class: "cancel_btn" %> <%= f.submit "Create Note", class: "btn" %>
+  </div>
+  <% end %>
+</div>

@@ -6,5 +6,5 @@ class User < ApplicationRecord
     validates :email, presence: true
     validates :password, presence:true, :confirmation =>true
 
-    validates_confirmation_of :password
+    #validates_confirmation_of :password
 end
