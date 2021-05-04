@@ -2,6 +2,9 @@ class Post < ApplicationRecord
     belongs_to :user
     belongs_to :collect, optional: true
 
+    validates :title, presence: true
+    validates :content, presence: true
+
     attr_accessor :photo
 
     PHOTOS = File.join Rails.root, 'public', 'photo_store'

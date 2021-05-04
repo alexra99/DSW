@@ -36,11 +36,9 @@ class UsersController < ApplicationController
 
   def update
       @user = User.find(params[:id])
-      puts("Usuario en update")
       if @user.update(user_params)
         redirect_to users_path, :notice => "user edited!!"
       else
-        
         render 'edit'
       end
   end
@@ -49,11 +47,10 @@ class UsersController < ApplicationController
       @user = User.find(params[:id])
       @user.destroy
       redirect_to users_path, :notice => "user deleted!!"
-      puts("en destroy")
   end
 
   private def user_params
-      params.require(:user).permit(:username, :password, :email, :rol)
+      params.require(:user).permit(:username, :password, :email, :rol, :password_confirmation)
   end
 
 end

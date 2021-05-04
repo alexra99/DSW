@@ -3,29 +3,30 @@
   <div class="edit">
 
     <div class="edit_info">
-      <%#= image_tag  "ruby-red.png", class: "edit_img", alt: "Your avatar" %>
       <span>Edit Note</span>
     </div>
 
     <%= form_for @post, url: { action: 'update' } do |f| %>
-      <% if @post.errors.any? %>
-        <%= render 'partials/emssg', mssg: @post.errors.full_messages[0] %>
-      <% end %>
-
       <div class="eu_div">
         <span class='edit_span'>Title</span>
         <%= f.text_field :title, class: "e_username", placeholder: 'Title..', autofocus: true, spellcheck:false, autocomplete: false %>
+        <% @post.errors.full_messages_for(:title).each do |message| %>
+          <div><%= message %></div>
+        <% end %>
       </div>
         <%if @post.has_photo?%>
           <%= image_tag (@post.photo_path)%>
+          <%= f.label :title, "Current image: #{@post.photo_name}"%>
         <%end%>
-      <%= f.label :title, "Current image: #{@post.photo_name}"%>
-        
-      <%= f.file_field :photo, accept: 'image/png,image/jpeg'%>
+            
+      <%= f.file_field :photo, accept: 'image/png,image/jpeg', class: "upload_image_input"%>
        
       <div class="eb_div">
         <span class='edit_span'>Content</span>
         <%= f.text_area :content, placeholder: "Content..", autofocus: true, class: "e_bio", spellcheck:false, autocomplete: false %>
+        <% @post.errors.full_messages_for(:content).each do |message| %>
+          <div><%= message %></div>
+        <% end %>
       </div>
 
       <% collect_list = [] %>

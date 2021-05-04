@@ -8,13 +8,12 @@
     </div>
 
     <%= form_for @collect, url: { action: 'create' } do |f| %>
-      <% if @collect.errors.any? %>
-        <%= render 'partials/emssg', mssg: @collect.errors.full_messages[0] %>
-      <% end %>
-
       <div class="eu_div">
         <span class='edit_span'>Title</span>
         <%= f.text_field :name, class: "e_username", placeholder: 'Title...', autofocus: true, spellcheck:false, autocomplete: false %>
+        <% @collect.errors.full_messages_for(:name).each do |message| %>
+          <div><%= message %></div>
+        <% end %>
       </div>
 
       <div class="note_actions">

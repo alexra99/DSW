@@ -8,8 +8,8 @@
     <% if (current_user.id == el.user_id || current_user.rol == "admin") && el.collect_id == @collect.id %>
       <div class="note">
         <div class="note_content">
-          <%if el.img%>
-            <%= image_tag (el.img)%>
+          <%if el.has_photo? %>
+            <%= image_tag (el.photo_path)%>
           <%end%>
           <span class="note_title"><%= el.title %></span>
           <span class="note_content"><%= el.content %></span>

@@ -12,8 +12,6 @@ Rails.application.routes.draw do
   resources :posts
   resources :collects
   get "/about", to: "posts#about"
-  resources :users do
-    resources :posts
-  end
+  resources :users
   
 end

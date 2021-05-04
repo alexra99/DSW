@@ -1,4 +1,3 @@
-
 class PostsController < ApplicationController
   skip_before_action :authorized, only: [:new, :create]
 
@@ -21,23 +20,18 @@ class PostsController < ApplicationController
   end
 
   def create
+    @collects = Collect.all
+
     post_params2 = post_params
     post_params2["user_id"] = current_user.id
-    # Hay que ponerlo not null
-    #post_params2["collect_id"] = 1
     
     @post = Post.new(post_params2)
-    puts(post_params2)
-    puts(@post.title)
-    puts(@post.content)
-    puts(@post.user_id)
-    puts(post_params["collect_id"])
 
-      if @post.save
-          redirect_to posts_path, :notice => "Post created!!"
-      else
-          render 'new'
-      end
+    if @post.save
+        redirect_to posts_path, :notice => "Post created!!"
+    else
+        render 'new'
+    end
   end
 
   def edit
@@ -50,6 +44,7 @@ class PostsController < ApplicationController
   end
 
   def update
+    @collects = Collect.all
     @post = Post.find(params[:id])
       if @post.update(post_params)
           redirect_to posts_path, :notice => "Post edited!!"

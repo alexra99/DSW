@@ -48,7 +48,6 @@
             <span><%= el.content %></span>
           </div>
           <div class="note_header common_header">
-            <%#= image_tag "ruby-red.png" %>
             <div class="note_h_left">
               <% user = User.find(el.user_id)%>
               <span class="note_username">Note by <%= user.username%></span>
@@ -72,7 +71,6 @@
   <% end %>
   <% if @posts.empty? %>
     <div class='home_last_mssg'>
-      <%#= image_tag "large.jpg" %>
       <span>No notes for you. Go ahead and create one!!</span>
     </div>
   <% end %>

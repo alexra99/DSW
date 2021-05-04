@@ -41,15 +41,7 @@
                 
                 <div class="col d-flex flex-column flex-sm-row justify-content-between mb-3">
                   <div class="text-center text-sm-left mb-2 mb-sm-0">
-                    <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap"><%= @user.username %></h4>
-                    
-                    
-                    <div class="mt-2">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fa fa-fw fa-camera"></i>
-                        <span>Change Photo</span>
-                      </button>
-                    </div>
+                    <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">Information from <%= @user.username %></h4>    
                   </div>
                   
                 </div>
@@ -57,7 +49,7 @@
               
               <div class="tab-content pt-3">
                 <div class="tab-pane active">
-                  <%= form_for @user, url: { action: 'update' } do |f| %>
+                  <%= form_for @user, url: { _method: 'post' } do |f| %>
                     <div class="row">
                       <div class="col">
                         <div class="row">
@@ -66,6 +58,9 @@
                             <div class="form-group">
                               <label>Username</label>
                               <%= f.text_field :username, class: "form-control", placeholder: @user.username, autofocus: true, spellcheck:false, autocomplete: false %>
+                              <% @user.errors.full_messages_for(:username).each do |message| %>
+                                <div><%= message %></div>
+                              <% end %>
                             </div>
                           </div>
                           <div class="col">
@@ -77,10 +72,12 @@
                             <div class="form-group">
                               <label>Email</label>
                               <%= f.text_field :email, class: "form-control", placeholder: @user.email, autofocus: true, spellcheck:false, autocomplete: false %>
+                              <% @user.errors.full_messages_for(:email).each do |message| %>
+                                <div><%= message %></div>
+                              <% end %>
                             </div>
                           </div>
-                           <div class="col">
-                            
+                          <div class="col">                           
                           </div>
                         </div>
                        
@@ -89,20 +86,14 @@
                     <div class="row">
                       <div class="col-12 col-sm-6 mb-3">
                         <div class="mb-2"><b>Change Password</b></div>
-                        <!--<div class="row">
-                          <div class="col">
-                            <div class="form-group">
-                              <label>Current Password</label>
-                              <%= f.password_field :password, class: "form-control", placeholder: '••••••', autofocus: true, spellcheck:false, autocomplete: false %>
-                            </div>
-                          </div>
-                        </div>-->
                         <div class="row">
                           <div class="col">
                             <div class="form-group">
                               <label>New Password</label>
                               <%= f.password_field :password, class: "form-control", placeholder: '••••••', autofocus: true, spellcheck:false, autocomplete: false %>
-                     
+                              <% @user.errors.full_messages_for(:password).each do |message| %>
+                                <div><%= message %></div>
+                              <% end %>
                             </div>
                           </div>
                         </div>
@@ -110,14 +101,17 @@
                           <div class="col">
                             <div class="form-group">
                               <label>Confirm <span class="d-none d-xl-inline">Password</span></label>
-                              <%= f.password_field :password, class: "form-control", placeholder: '••••••', autofocus: true, spellcheck:false, autocomplete: false %>
+                              <%= f.password_field :password_confirmation, class: "form-control", placeholder: '••••••', autofocus: true, spellcheck:false, autocomplete: false %>
+                              <% @user.errors.full_messages_for(:password_confirmation).each do |message| %>
+                                <div><%= message %></div>
+                              <% end %>
                           </div>
                         </div>
                         
                       </div>
                       <div class="row">
                         <div class="col d-flex justify-content-end">
-                          <%= f.submit "Update User", class: "btn" %>
+                          <%= f.submit "Update User", class: "btn", :method => :post %>
                         </div>
                       </div>
                  

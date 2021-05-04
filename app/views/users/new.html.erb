@@ -6,54 +6,43 @@
 		<div class="container-login100">
 			<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
-				<form class="login100-form validate-form">
-					<span class="login100-form-title p-b-59">
-						Sign Up
-					</span>
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input type="text" placeholder="Email" name="user[email]" id="user_email"><br>
-						<span class="focus-input100"></span>
+				<span class="login100-form-title p-b-59">
+					Sign Up
+				</span>
+				 <%= form_for @user, url: { action: 'create' } do |f| %>
+      
+					<div class="eu_div">
+						<%= f.text_field :username, class: "wrap-input100 validate-input", placeholder: 'Username', autofocus: true, spellcheck:false, autocomplete: false %>
+						<% @user.errors.full_messages_for(:username).each do |message| %>
+							<div><%= message %></div>
+						<% end %>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Username is required">
-						<input type="text" placeholder="Username" name="user[username]" id="user_username"><br> 
-						<span class="focus-input100"></span>
+					<div class="eu_div">
+						<%= f.text_field :email, class: "wrap-input100 validate-input", placeholder: 'Email', autofocus: true, spellcheck:false, autocomplete: false %>
+						<% @user.errors.full_messages_for(:email).each do |message| %>
+							<div><%= message %></div>
+						<% end %>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input type="password" placeholder="Password" name="user[password]" id="user_password"><br>  
-						<span class="focus-input100"></span>
+					<div class="eu_div">
+						<%= f.text_field :password_digest, class: "wrap-input100 validate-input", placeholder: 'Password is required', autofocus: true, spellcheck:false, autocomplete: false %>
+						<% @user.errors.full_messages_for(:password_digest).each do |message| %>
+							<div><%= message %></div>
+						<% end %>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Repeat Password is required">
-						<input type="password" placeholder="Confirm Password" name="user[password]" id="user_password"><br>  
-						<span class="focus-input100"></span>
+					<div class="eu_div">
+						<%= f.text_field :password_digest_confirmation, class: "wrap-input100 validate-input", placeholder: 'Password must be repeated', autofocus: true, spellcheck:false, autocomplete: false %>
+						<% @user.errors.full_messages_for(:password_digest_confirmation).each do |message| %>
+							<div><%= message %></div>
+						<% end %>
 					</div>
-					
-					<div class="row">
-						<div class="col md-3">
-							
-								<input class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30" type="submit" name="commit" value="Create User" data-disable-with="Create User"></form>
-							
-						</div>
-						<div class="col">
-							<br>
-						</div>
-						
-						
-							
-								<div class="login100-form-bgbtn"></div>
-								<%= link_to 'Back', '/login', class: 'dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30'%>
-							
-						
-					</div>
-					
-						
-					
 
-					
+					<%= f.submit "Create User", class: "dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30" %>
+					<%= link_to 'Back', '/login', class: 'dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30'%>
 
-				</form>
+				<% end %>
 			</div>
 		</div>
 	</div>
