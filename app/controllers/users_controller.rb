@@ -18,16 +18,24 @@ class UsersController < ApplicationController
 
   def create
       @user = User.create(user_params)
-      
-      session[:user_id] = @user.id
 
-      redirect_to '/login'
+      if @user.id != nil
+        puts("HOLA #{@user.id}")
+        flash[:edit_user_success] = "User created successfully!!"  
+        session[:user_id] = @user.id
+        redirect_to '/login'
+      else
+        flash[:edit_user_error] = "New password and confirmation password are not the same"  
+        redirect_to new_user_path
+      end 
   end
 
 
   def edit
     @user = User.find(params[:id])
-    if @user.id != session[:user_id]
+    @actual_user = User.find(session[:user_id])
+
+    if @user.id != session[:user_id] && @actual_user.rol != 'admin'
         flash[:edit_user_error] = "You can't edit other user"  
         
         redirect_to users_path, :alert => "You can't edit a user that is not yours :("
@@ -35,7 +43,6 @@ class UsersController < ApplicationController
   end
 
   def update
-    puts("en update")
       @user = User.find(params[:id])
       if @user.update(user_params)
         flash[:edit_user_success] = "User changed successfully!!"  

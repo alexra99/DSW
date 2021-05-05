@@ -37,7 +37,9 @@ class PostsController < ApplicationController
   def edit
     @collects = Collect.all
     @post = Post.find(params[:id])
-    if @post.user_id != session[:user_id]
+    @user = User.find(session[:user_id])
+
+    if @post.user_id != session[:user_id] && @user.rol != 'admin'
         flash[:edit_post_error] = "You can't edit other user's note"
         redirect_to posts_path, :alert => "You can't edit a post that is not yours :("
     end

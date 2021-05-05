@@ -4,24 +4,6 @@
   <div class="home_info">
     <% n_posts = 0%> <% @posts.each do |el| %> <% if current_user.id == el.user_id || current_user.rol == "admin" %> <% n_posts = n_posts + 1%> <% end %> <% end %>
     <span> Hello <%= current_user.username %> You have <%= n_posts %> notes saved!</span>
-
-    <!--<select list="list_collection" id="collections" class="btn" onchange="myFunction()">
-      <datalist id="list_collection">
-        <% @collects.each do |el|%>
-          <% if el.user_id == current_user.id || current_user.rol == "admin"%>
-            <option><%= el.name %> </option>
-          <%end%>
-        <% end %>
-      </datalist>
-    </select>
-    
-    <script>
-        function myFunction(){
-          var e = document.getElementById("collections");
-          var strUser = e.value;
-          console.log(strUser);
-        }
-    </script>-->
     <%= link_to "Create Note", new_post_path, class: "btn" %>
   </div>
   <% if flash[:edit_post_error] %>

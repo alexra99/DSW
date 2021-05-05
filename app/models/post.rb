@@ -10,6 +10,10 @@ class Post < ApplicationRecord
     PHOTOS = File.join Rails.root, 'public', 'photo_store'
     after_save :save_photo
 
+    def remove_photo
+        @file_data = nil
+    end
+
     def photo=(file_data)
         unless file_data.blank?
             @file_data = file_data

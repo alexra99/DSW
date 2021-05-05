@@ -12,34 +12,38 @@
 				<%= form_for @user, url: { action: 'create' } do |f| %>
       
 					<div class="eu_div">
-						<%= f.text_field :username, class: "wrap-input100 validate-input", placeholder: 'Username', autofocus: true, spellcheck:false, autocomplete: false %>
+						<%= f.text_field :username, class: "wrap-input100 validate-input", placeholder: 'Username', autofocus: true, spellcheck:false, autocomplete: false, :required => true %>
 						<% @user.errors.full_messages_for(:username).each do |message| %>
 							<div><%= message %></div>
 						<% end %>
 					</div>
 
 					<div class="eu_div">
-						<%= f.text_field :email, class: "wrap-input100 validate-input", placeholder: 'Email', autofocus: true, spellcheck:false, autocomplete: false %>
+						<%= f.text_field :email, class: "wrap-input100 validate-input", placeholder: 'Email', autofocus: true, spellcheck:false, autocomplete: false, :required => true %>
 						<% @user.errors.full_messages_for(:email).each do |message| %>
 							<div><%= message %></div>
 						<% end %>
 					</div>
 
 					<div class="eu_div">
-						<%= f.text_field :password_digest, class: "wrap-input100 validate-input", placeholder: 'Password is required', autofocus: true, spellcheck:false, autocomplete: false %>
-						<% @user.errors.full_messages_for(:password_digest).each do |message| %>
+						<%= f.password_field :password, class: "wrap-input100 validate-input", placeholder: 'Password is required', autofocus: true, spellcheck:false, autocomplete: false, :required => true %>
+						<% @user.errors.full_messages_for(:password).each do |message| %>
 							<div><%= message %></div>
 						<% end %>
 					</div>
 
 					<div class="eu_div">
-						<%= f.text_field :password_digest_confirmation, class: "wrap-input100 validate-input", placeholder: 'Password must be repeated', autofocus: true, spellcheck:false, autocomplete: false %>
-						<% @user.errors.full_messages_for(:password_digest_confirmation).each do |message| %>
+						<%= f.password_field :password_confirmation, class: "wrap-input100 validate-input", placeholder: 'Password must be repeated', autofocus: true, spellcheck:false, autocomplete: false, :required => true %>
+						<% @user.errors.full_messages_for(:password_confirmation).each do |message| %>
 							<div><%= message %></div>
 						<% end %>
 					</div>
 
-					<%= f.submit "Create User", class: "dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30" %>
+					<% if flash[:edit_user_error] %>
+                        <div class="error_message"><%= flash[:edit_user_error] %></div>
+                    <% end %>
+
+					<%= f.submit "Create User", :method => :post, class: "dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30" %>
 					<%= link_to 'Back', '/login', class: 'dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30'%>
 
 				<% end %>
@@ -47,6 +51,7 @@
 		</div>
 	</div>
 
+	<!--
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 	<script src="vendor/animsition/js/animsition.min.js"></script>
 	<script src="vendor/bootstrap/js/popper.js"></script>
@@ -55,7 +60,7 @@
 	<script src="vendor/daterangepicker/moment.min.js"></script>
 	<script src="vendor/daterangepicker/daterangepicker.js"></script>
 	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/main.js"></script> -->
 </body>
 
  

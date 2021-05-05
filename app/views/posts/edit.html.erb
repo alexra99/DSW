@@ -12,7 +12,6 @@
     <div><%= message %></div>
     <% end %>
   </div>
-  <%if @post.has_photo?%> <%= image_tag (@post.photo_path)%> <%= f.label :title, "Current image: #{@post.photo_name}"%> <%end%> 
   
   <%= f.file_field :photo, accept: 'image/png,image/jpeg', class: "upload_image_input"%>
 
@@ -32,7 +31,8 @@
   <%= f.collection_select :collect_id, collect_list, :id, :name, include_blank: true, :selected => @post.collect_id, class:"btn" %>
 
   <div class="note_actions">
-    <%= link_to "Cancel Note", posts_path, class: "cancel_btn" %> <%= f.submit "Update Note", class: "btn" %>
+    <%= link_to "Cancel Note", posts_path, class: "cancel_btn" %> 
+    <%= f.submit "Update Note", class: "btn" %>
   </div>
   <% end %>
 </div>
