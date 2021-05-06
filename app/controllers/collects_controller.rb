@@ -55,8 +55,6 @@ class CollectsController < ApplicationController
         @collect = Collect.find(params[:id])
         @collect.destroy
         redirect_to  collects_path, :notice => "Collect deleted!!"
-        puts("en destroy")
-    
     end
     
     private def collect_params

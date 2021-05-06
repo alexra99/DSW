@@ -20,7 +20,6 @@ class UsersController < ApplicationController
       @user = User.create(user_params)
 
       if @user.id != nil
-        puts("HOLA #{@user.id}")
         flash[:edit_user_success] = "User created successfully!!"  
         session[:user_id] = @user.id
         redirect_to '/login'

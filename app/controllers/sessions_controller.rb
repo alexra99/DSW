@@ -9,9 +9,7 @@ class SessionsController < ApplicationController
 
   def create  
     @user = User.find_by(username: params[:username])
-    puts("En create session")
     if @user && @user.authenticate(params[:password])
-      puts("auth ok")
       session[:user_id] = @user.id
       session[:email] = @user.email
       session[:username] = @user.username
